@@ -1,4 +1,3 @@
-
 name: Deploy website
 
 on:
@@ -6,18 +5,18 @@ on:
     branches:
       - "main"
   workflow_dispatch:
-    
-      
+
 jobs:
   deploy:
     runs-on: ubuntu-22.04
     steps:
-    - uses: actions/checkout@v3
-    - name: copy to nginx
-      uses: appleboy/ssh-action@v0.1.7
-      with:
-        host: ${{ secrets.HOST }}
-        username: ${{ secrets.USERNAME }}
-        key: ${{ secrets.KEY }}
-        port: ${{ secrets.PORT }}
-        script: whoami
+      - uses: actions/checkout@v3
+      - name: copy to nginx
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.KEY }}
+          port: ${{ secrets.PORT }}
+          source: "*.html,*.css"
+          target: "/www/moby-it"
