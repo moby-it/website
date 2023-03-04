@@ -1,0 +1,16 @@
+h1 {
+  font-size: 8rem;
+  font-family: heading;
+}
+h2 {
+  font-size: 4rem;
+  font-family: heading;
+}
+h3 {
+  font-size: 2rem;
+  font-family: heading;
+}
+@font-face {
+  font-family: heading;
+  src: url("../assets/Gewtymol.ttf");
+}
