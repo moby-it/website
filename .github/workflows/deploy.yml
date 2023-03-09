@@ -20,4 +20,4 @@ jobs:
           port: ${{ secrets.PORT }}
           source: "index.html,style.css,styles/,assets/"
           target: "/www/moby-it"
-          overwrite: true
+          rm: true

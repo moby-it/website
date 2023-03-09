@@ -132,8 +132,3 @@ a {
   color: var(--primary);
   text-decoration: inherit;
 }
-ol,
-ul {
-  padding-top: 1rem;
-  padding-left: 5em;
-}

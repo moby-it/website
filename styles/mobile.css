@@ -1,0 +1,21 @@
+@media only screen and (max-width: 425px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  body {
+    font-size: 16px;
+  }
+  .navbar {
+    display: none;
+  }
+  header {
+    justify-content: center;
+  }
+  .banner,
+  .section {
+    padding: 1rem 2rem;
+  }
+}
