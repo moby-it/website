@@ -129,12 +129,8 @@ table {
   border-spacing: 0;
 }
 a {
-  color: inherit;
+  color: var(--primary);
   text-decoration: inherit;
-}
-a:hover {
-  color: white;
-  transition: color 0.5s ease;
 }
 ol,
 ul {

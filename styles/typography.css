@@ -25,3 +25,10 @@ h3 {
   font-family: heading;
   src: url("../assets/AeonikProTRIAL-Regular.otf");
 }
+@font-face {
+  font-family: heading-italic;
+  src: url("../assets/AeonikProTRIAL-RegularItalic.otf");
+}
+em {
+  font-family: heading-italic;
+}
