@@ -90,6 +90,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  white-space: normal;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -130,4 +131,13 @@ table {
 a {
   color: inherit;
   text-decoration: inherit;
+}
+a:hover {
+  color: white;
+  transition: color 0.5s ease;
+}
+ol,
+ul {
+  padding-top: 1rem;
+  padding-left: 5em;
 }

@@ -1,7 +1,43 @@
-.banner {
+.banner,
+header {
+  color: var(--secondary);
   padding: 1rem;
-  background-color: cyan;
+  background-color: var(--dark-bg);
+}
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 32px 192px 32px 128px;
+  min-height: 600px;
+}
+.logo {
+  font-family: heading;
 }
 .section {
-  padding: 1rem;
+  padding: 58px 112px;
+}
+.section span,
+.section p,
+.section li {
+  padding: 0 40px;
+}
+.light {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+.light span,
+.light p,
+.light li {
+  color: var(--dark-bg);
+}
+.dark {
+  background-color: var(--dark-bg);
+  color: var(--secondary);
+}
+.section h2 {
+  padding-bottom: 40px;
+}
+.text-center {
+  text-align: center;
 }
