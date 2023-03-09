@@ -1,0 +1,35 @@
+.logo {
+  font-family: heading;
+}
+main {
+  scroll-behavior: smooth;
+}
+.section {
+  padding: 58px 112px;
+}
+.section span,
+.section p,
+.section li {
+  padding: 0 40px;
+}
+.light {
+  background: url("/assets/software.jpg");
+  background-color: var(--secondary);
+  opacity: 0.9;
+  color: var(--primary);
+}
+.light span,
+.light p,
+.light li {
+  color: var(--dark-bg);
+}
+.dark {
+  background: url("/assets/sea.png");
+  color: var(--secondary);
+}
+.section h2 {
+  padding-bottom: 40px;
+}
+.text-center {
+  text-align: center;
+}
