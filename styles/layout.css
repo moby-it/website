@@ -3,6 +3,8 @@
 }
 main {
   scroll-behavior: smooth;
+  margin-top: 80px;
+
 }
 .section {
   padding: 5rem 7rem;
@@ -13,9 +15,8 @@ main {
   padding: 0 40px;
 }
 .light {
-  background: url("/assets/software.jpg");
   background-size: cover;
-  background-color: var(--secondary);
+  background-color: var(--light--bg);
   opacity: 0.9;
   color: var(--primary);
 }
