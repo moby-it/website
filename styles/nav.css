@@ -1,7 +1,7 @@
 header {
   z-index: 100;
   width: 100vw;
-  top:0;
+  top: 0;
   left: 0;
   background-color: var(--light--bg);
   position: fixed;
@@ -17,7 +17,7 @@ header {
   display: flex;
   align-items: center;
   gap: 12px;
-  flex:1;
+  flex: 1;
 }
 .logo a {
   display: flex;
@@ -27,21 +27,23 @@ header {
   display: flex;
   gap: 6px;
 }
-.header .logo img{
+.header .logo img {
   cursor: pointer;
 }
-.header .logo img{
+.header .logo img {
   cursor: pointer;
 }
 .header span {
-  flex:3;
-  font-family: heading-italic;
+  flex: 3;
+
+  font-family: "Aeonik Pro";
+  font-style: italic;
   font-size: 1.125rem;
   text-align: center;
 }
 .header ul {
-  font-family: heading;
-  flex:1;
+  font-family: 'Aeonik Pro';
+  flex: 1;
   display: flex;
   justify-content: center;
   gap: 1.5rem;

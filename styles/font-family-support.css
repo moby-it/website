@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Aeonik Pro Light';
+    src: url('/assets/fonts/AeonikPro-Light.woff2') format('woff2'),
+        url('/assets/fonts/AeonikPro-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aeonik Pro Light';
+    src: url('/assets/fonts/AeonikPro-LightItalic.woff2') format('woff2'),
+        url('/assets/fonts/AeonikPro-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aeonik Pro';
+    src: url('/assets/fonts/AeonikPro-Regular.woff2') format('woff2'),
+        url('/assets/fonts/AeonikPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aeonik Pro';
+    src: url('/assets/fonts/AeonikPro-RegularItalic.woff2') format('woff2'),
+        url('/assets/fonts/AeonikPro-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aeonik Pro';
+    src: url('/assets/fonts/AeonikPro-Bold.woff2') format('woff2'),
+        url('/assets/fonts/AeonikPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aeonik Pro';
+    src: url('/assets/fonts/AeonikPro-BoldItalic.woff2') format('woff2'),
+        url('/assets/fonts/AeonikPro-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+

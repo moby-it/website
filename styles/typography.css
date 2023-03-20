@@ -11,24 +11,17 @@ strong {
 h1 {
   font-size: 8rem;
   line-height: 1;
-  font-family: heading;
+  font-family: "Aeonik Pro", sans-serif;
 }
 h2 {
   font-size: 4rem;
-  font-family: heading;
+  font-family: "Aeonik Pro", sans-serif;
 }
 h3 {
   font-size: 2rem;
-  font-family: heading;
-}
-@font-face {
-  font-family: heading;
-  src: url("../assets/AeonikProTRIAL-Regular.otf");
-}
-@font-face {
-  font-family: heading-italic;
-  src: url("../assets/AeonikProTRIAL-RegularItalic.otf");
+  font-family: "Aeonik Pro", sans-serif;
 }
 em {
-  font-family: heading-italic;
+  font-family: "Aeonik Pro", sans-serif;
+  font-style: italic;
 }
