@@ -4,7 +4,6 @@
 main {
   scroll-behavior: smooth;
   margin-top: 80px;
-
 }
 .section {
   padding: 5rem 7rem;
@@ -13,6 +12,15 @@ main {
 .section p,
 .section li {
   padding: 0 40px;
+}
+.section > div {
+  margin: auto;
+  max-width: 60%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .light {
   background-size: cover;
