@@ -17,8 +17,6 @@ main {
   transition: box-shadow ease-in-out .3s;
   box-shadow: var(--secondary--opacity--weak) 0px 10px 20px, var(--secondary--opacity--strong) 0px 6px 6px;
 }
-.section:hover {
-}
 .section span,
 .section p,
 .section li {
@@ -51,4 +49,20 @@ strong  {
 }
 .align-center {
   align-items: center;
+}
+@media screen and (max-width: 768px) {
+  main {
+    margin-top: 0;
+  }
+  #main-section-wrapper {
+    flex-direction: column !important;
+  }
+  .section {
+    padding: 1rem 1rem;
+  }
+  .section span,
+  .section p,
+  .section li {
+    padding: 0 20px;
+  }
 }

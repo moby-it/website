@@ -11,3 +11,13 @@
 .banner span {
   max-width: 80%;
 }
+@media screen and (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+    padding: 2rem 2rem;
+  }
+  .banner span {
+    max-width: 100%;
+  }
+}
+  
