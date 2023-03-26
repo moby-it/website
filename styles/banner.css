@@ -19,5 +19,11 @@
   .banner span {
     max-width: 100%;
   }
+  .banner h2 {
+    text-align: center;
+  }
+  #techicons {
+    width: 200px;
+  }
 }
   
