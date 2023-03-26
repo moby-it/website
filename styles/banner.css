@@ -1,13 +1,13 @@
 .banner {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  gap: 40px;
-  justify-content: space-evenly;
-  padding: 5rem 6rem;
-  color: var(--secondary);
+  padding: 2rem 6rem;
+  background-image: linear-gradient(to right bottom,  var(--primary--opacity--strong), var(--primary--opacity--weak));
 }
-.banner h1,
+.banner h2 {
+  color: var(--primary);
+}
 .banner span {
-  max-width: 700px;
+  max-width: 80%;
 }
