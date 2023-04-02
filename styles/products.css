@@ -1,0 +1,15 @@
+.products {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+}
+
+.product .cover {
+  padding: 1rem 2rem;
+}

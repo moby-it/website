@@ -1,0 +1,13 @@
+.card {
+  border-radius: 10px;
+  padding: 2rem 1rem;
+  transition: box-shadow ease-in-out .3s;
+  box-shadow: var(--secondary--opacity--weak) 0px 10px 20px, var(--secondary--opacity--strong) 0px 6px 6px;
+}
+.card .title {
+  color: var(--primary);
+
+}
+.card .subtitle {
+  font-style: italic;
+}

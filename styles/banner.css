@@ -1,14 +1,13 @@
 .banner {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 2rem 6rem;
   background-image: linear-gradient(to right bottom,  var(--primary--opacity--strong), var(--primary--opacity--weak));
 }
-.banner h2 {
+.banner .page-title {
   color: var(--primary);
 }
-.banner span {
+.banner .subtitle {
   max-width: 80%;
 }
 @media screen and (max-width: 768px) {
