@@ -1,0 +1,13 @@
+.team {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-member .profile-img {
+  width: 350px;
+  object-fit: cover;
+  height: 300px;
+}
