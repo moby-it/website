@@ -1,79 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-3WF1Q8JYNE"
-    ></script>
-    <script>
-      if (window.location.hostname === "moby-it.com") {
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-          dataLayer.push(arguments);
-        }
-        gtag("js", new Date());
 
-        gtag("config", "G-3WF1Q8JYNE");
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3WF1Q8JYNE"></script>
+  <script>
+    if (window.location.hostname === "moby-it.com") {
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
       }
-    </script>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Moby IT</title>
-  </head>
-  <body>
-    <header>
-      <div class="header">
-        <div class="logo">
-          <img
-            src="assets/logo.png"
-            alt="moby-it logo"
-            width="150"
-            height="34"
-          />
-          <div class="links">
-            <a href="https://www.linkedin.com/company/moby-it" target="_blank">
-              <img src="assets/linkedin.svg" alt="" />
-            </a>
-            <a href="https://github.com/moby-it" target="_blank">
-              <img src="assets/github-circle.svg" alt="" />
-            </a>
+      gtag("js", new Date());
+
+      gtag("config", "G-3WF1Q8JYNE");
+    }
+  </script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Moby IT</title>
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <div class="logo">
+        <a href="/">
+          <img src="assets/logo.png" alt="moby-it logo" width="150" height="34" />
+        </a>
+        <div class="links">
+          <a href="https://www.linkedin.com/company/moby-it" target="_blank">
+            <img src="assets/linkedin.svg" alt="" />
+          </a>
+          <a href="https://github.com/moby-it" target="_blank">
+            <img src="assets/github-circle.svg" alt="" />
+          </a>
+        </div>
+      </div>
+      <span>software precicely for you</span>
+      <ul class="navbar">
+        <li>
+          <a class="nav-item" href="/">Home</a>
+        </li>
+        <li>
+          <a class="nav-item" href="/products.html">Products</a>
+        </li>
+        <li>
+          <a class="nav-item" href="/team.html">Team</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <div class="banner justify-center">
+      <div class="column gap-1">
+        <h2 class="page-title text-center">
+          <em>
+            Meet the Team
+          </em>
+        </h2>
+      </div>
+    </div>
+    <div class="column" id="main-section-wrapper">
+      <div class="team">
+        <div class="team-member card">
+          <div class="column">
+            <h4 class="row gap-1 align-center title">George Spanos
+              <a href="https://www.linkedin.com/in/george-spanos/" target="_blank">
+                <img class="cursor-pointer" src="/assets/linkedin.svg" alt="" width="30">
+              </a>
+              <a href="https://github.com/George-Spanos" target="_blank">
+                <img class="cursor-pointer" src="/assets/github-circle.svg" alt="" width="30">
+              </a>
+            </h4>
+            <span class="subtitle">Founder, Obsessed with Software</span>
+            <img class="profile-img" src="/assets/george.jpg" alt="">
           </div>
         </div>
-        <span>software precicely for you</span>
-        <ul class="navbar">
-          <li>
-            <a class="nav-item" href="/index.html#development">Development</a>
-          </li>
-          <li>
-            <a class="nav-item" href="/index.html#services">Services</a>
-          </li>
-          <li>
-            <a class="nav-item" href="/index.html#academy">Academy</a>
-          </li>
-          <li>
-            <a class="nav-item" href="/products.html">Products</a>
-          </li>
-          <li>
-            <a class="nav-item" href="/team.html">Team</a>
-          </li>
-        </ul>
+        <div class="team-member card">
+          <div class="column">
+            <h4 class="row gap-1 align-center title">Nektarios Makrigiannis
+              <a href="https://www.linkedin.com/in/nektarios-makrygiannis-32aa9312a/" target="_blank">
+                <img class="cursor-pointer" src="/assets/linkedin.svg" alt="" width="30">
+              </a>
+            </h4>
+            <span class="subtitle">Database Engineer, Beats Roguelike Games</span>
+            <img class="profile-img" src="/assets/nekti.png" alt="">
+          </div>
+        </div>
+        <div class="team-member card">
+          <div class="column">
+            <h4 class="row gap-1 align-center title">Panagiotis Varamentis
+              <a href="https://www.linkedin.com/in/panagiotis-varamentis/" target="_blank">
+                <img class="cursor-pointer" src="/assets/linkedin.svg" width="30">
+              </a>
+            </h4>
+            <span class="subtitle">Software Engineer, Storyteller, Catdad</span>
+            <img class="profile-img" src="/assets/panos.png" alt="">
+          </div>
+        </div>
+        <div class="team-member card">
+          <div class="column">
+            <h4 class="row gap-1 align-center title">Katerina Spatharou
+              <a href="https://www.linkedin.com/in/katerina-spatharou-1507991b8/" target="_blank">
+                <img class="cursor-pointer" src="/assets/linkedin.svg" alt="" width="30">
+              </a>
+            </h4>
+            <span class="subtitle">Designer, Ghost</span>
+            <img class="profile-img" src="/assets/katerina.jpeg" alt="">
+          </div>
+        </div>
       </div>
-    </header>
-    <main>
-    </main>
-    <!-- <footer>
+    </div>
+  </main>
+  <!-- <footer>
       <p>some footer content</p>
     </footer> -->
-  </body>
+</body>
+
 </html>
