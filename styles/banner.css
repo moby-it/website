@@ -1,14 +1,10 @@
 .banner {
   display: flex;
   align-items: center;
-  padding: 2rem 6rem;
-  background-image: linear-gradient(to right bottom,  var(--primary--opacity--strong), var(--primary--opacity--weak));
+  padding: 3rem 0;
 }
-.banner .page-title {
-  color: var(--primary);
-}
-.banner .subtitle {
-  max-width: 80%;
+.banner .page-title::after {
+  background-image: url("/assets/whale.png");
 }
 @media screen and (max-width: 768px) {
   .banner {

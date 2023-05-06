@@ -129,7 +129,7 @@ table {
   border-spacing: 0;
 }
 a {
-  color: var(--primary);
+  color: initial;
   text-decoration: inherit;
 }
 html {
