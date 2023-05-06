@@ -1,5 +1,4 @@
-body,
-footer {
+body{
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -9,30 +8,52 @@ strong {
   font-weight: bold;
 }
 h1 {
-  font-size: 8rem;
-  font-weight: 600;
-  line-height: 1;
+  font-size: 4.5rem;
+  line-height: 6rem;
   font-family: "Aeonik Pro", sans-serif;
 }
+/* no used?? */
 h2 {
   font-size: 4rem;
-  font-weight: 600;
   font-family: "Aeonik Pro", sans-serif;
 }
 h3 {
   font-size: 3rem;
-  font-weight: 500;
+  line-height: 4rem;
   font-family: "Aeonik Pro", sans-serif;
 }
 h4 {
   font-size: 2rem;
-  font-weight: 500;
+  line-height: 3rem;
+  font-family: "Aeonik Pro", sans-serif;
+}
+h6 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
   font-family: "Aeonik Pro", sans-serif;
 }
 em {
   font-family: "Aeonik Pro", sans-serif;
   font-style: italic;
 }
-strong  {
-  color: var(--primary);
+@media only screen and (max-width: 425px) {
+  .tail {
+    display: none;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1.25rem;
+  }
+  h6 {
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+  }
+  body {
+    font-size: 16px;
+  }
 }

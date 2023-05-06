@@ -1,14 +1,13 @@
 .banner {
   display: flex;
   align-items: center;
-  padding: 2rem 6rem;
-  background-image: linear-gradient(to right bottom,  var(--primary--opacity--strong), var(--primary--opacity--weak));
+  padding: 3rem 0;
+  gap: 18px;
+  max-width: 863px;
 }
-.banner .page-title {
-  color: var(--primary);
-}
-.banner .subtitle {
-  max-width: 80%;
+.tail {
+  position: absolute;
+  right: -10px;
 }
 @media screen and (max-width: 768px) {
   .banner {
@@ -20,9 +19,6 @@
   }
   .banner h2 {
     text-align: center;
-  }
-  #techicons {
-    width: 200px;
   }
 }
   
