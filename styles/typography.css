@@ -31,9 +31,6 @@ em {
   font-family: "Aeonik Pro", sans-serif;
   font-style: italic;
 }
-strong  {
-  color: var(--primary);
-}
 @media only screen and (max-width: 425px) {
   h1 {
     font-size: 3.5rem;

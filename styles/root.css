@@ -1,7 +1,7 @@
-body {
-  background-image: url("/assets/background.png");
-  background-size: cover;
-}
-main {
-  padding: 0 352px;
+.main-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  max-width: 1216px;
 }

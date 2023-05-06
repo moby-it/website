@@ -129,9 +129,10 @@ table {
   border-spacing: 0;
 }
 a {
-  color: initial;
+  color: var(--primary);
   text-decoration: inherit;
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }

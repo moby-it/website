@@ -9,6 +9,10 @@
 @import "styles/card.css";
 @import "styles/layout.css";
 @import "styles/banner.css";
+
+/* pages */
+
+@import "styles/home.css";
 @import "styles/team.css";
 @import "styles/products.css";
 @import "styles/mobile.css";
