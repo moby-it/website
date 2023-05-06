@@ -4,10 +4,30 @@
   padding: 1rem;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 3rem;
 }
 
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 23px;
+}
+.team-member-data {
+  display: flex;
+  flex-direction: column;
+}
+.team-member-data span{
+  color: var(--gray);
+}
+.team-member-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 .team-member .profile-img {
-  width: 350px;
+  width: 274px;
   object-fit: cover;
-  height: 300px;
+  border-radius: 2rem;
+  height: 274px;
 }

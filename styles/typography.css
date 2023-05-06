@@ -27,6 +27,11 @@ h4 {
   line-height: 3rem;
   font-family: "Aeonik Pro", sans-serif;
 }
+h6 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-family: "Aeonik Pro", sans-serif;
+}
 em {
   font-family: "Aeonik Pro", sans-serif;
   font-style: italic;
