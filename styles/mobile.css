@@ -1,22 +1,5 @@
 @media only screen and (max-width: 425px) {
-  
-  .products {
-    flex-direction: column !important;
-  }
-  .product {
-    max-width: calc(100% - 2rem);
-  }
-  .navbar {
-    display: none;
-  }
-  header {
-    justify-content: center;
-  }
-  .banner,
-  .section .card {
-    padding: 1rem 2rem;
-  }
-  main {
-    margin-top: 0;
+  footer.team-page, footer.products-page {
+    background: url("/assets/footer-home.png");
   }
 }

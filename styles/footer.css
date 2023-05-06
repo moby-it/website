@@ -1,20 +1,31 @@
 footer {
-  background: url("/assets/footer.png");
   background-size: cover;
   padding: 5rem 2rem 2rem 2rem;
   display: flex;
   justify-content: space-around;
   text-align: center;
 }
-footer.home {
+
+footer.team-page {
+  background: url("/assets/footer-team.png");
+}
+
+footer.home-page {
   background: url("/assets/footer-home.png");
 }
+
+footer.products-page {
+  background: url("/assets/footer-products.png");
+}
+
 footer div {
   flex: 1;
 }
+
 .footer-logo {
   width: 150px;
 }
+
 footer,
 footer img,
 footer a {
@@ -32,6 +43,7 @@ footer a {
   display: flex;
   gap: 10px;
 }
+
 @media only screen and (max-width: 425px) {
   footer {
     flex-direction: column;

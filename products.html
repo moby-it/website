@@ -36,16 +36,7 @@
         <a href="/">
           <img src="assets/logo.png" alt="moby-it logo" width="150" height="34" />
         </a>
-        <div class="links">
-          <a href="https://www.linkedin.com/company/moby-it" target="_blank">
-            <img src="assets/linkedin.svg" alt="" />
-          </a>
-          <a href="https://github.com/moby-it" target="_blank">
-            <img src="assets/github-circle.svg" alt="" />
-          </a>
-        </div>
       </div>
-      <span>software precicely for you</span>
       <ul class="navbar">
         <li>
           <a class="nav-item" href="/">Home</a>
@@ -57,62 +48,84 @@
           <a class="nav-item" href="/team.html">Team</a>
         </li>
       </ul>
+      <div class="tag-and-links">
+        <span>software precicely for you</span>
+        <div class="links">
+          <a href="https://www.linkedin.com/company/moby-it" target="_blank">
+            <img class="icon-link" src="assets/linkedin.svg" alt="" />
+          </a>
+          <a href="https://github.com/moby-it" target="_blank">
+            <img class="icon-link" src="assets/github-circle.svg" alt="" />
+          </a>
+        </div>
+      </div>
     </div>
   </header>
   <main>
-    <div class="banner justify-center">
+    <div class="products-container">
       <div class="column gap-1">
-        <h2 class="page-title text-center">
-          <em>
-            Composing Software is a Creative Expression.
-          </em>
-        </h2>
-        <span>From utility apps that intend to solve real life problems to game development, we're always eager to
-          create something and <strong> open source
-          </strong> it, wherever situations allow us to.</span>
+        <h3>Composing Software is a Creative Expression.</h3>
+        <h4>From utility apps to game development, we're always eager to create
+          something and open source it.</h4>
       </div>
-    </div>
-    <div class="column" id="main-section-wrapper">
       <div class="products">
-        <div class="product card">
-          <div class="cover column">
-            <h4 class="row gap-1 align-center title">Scrum Poker Planning
-              <a href="https://poker-planning.net" target="_blank">
+        <div class="product">
+          <div class="content">
+            <h4>Play Poker Odds</h4>
+            <span class="description">Guess your winning odds in a given Texas Hold'em situation. No bets, just
+              fun.</span>
+          </div>
+          <div class="metadata">
+            <div class="tags">
+              <div class="tag">Angular</div>
+              <div class="tag">ExpressJS</div>
+              <div class="tag">Docker</div>
+            </div>
+            <div class="links">
+              <a href="https://playpokerodds.com/" target="_blank">
                 <img class="cursor-pointer" src="/assets/link.svg" alt="" width="30">
               </a>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div>
+            <h4>Scrum Poker Planning</h4>
+            <span class="description">User Friendly, Open Source, Free Forever.</span>
+          </div>
+          <div class="metadata">
+            <div class="tags">
+              <div class="tag">SolidJS</div>
+              <div class="tag">Golang</div>
+            </div>
+            <div class="links">
               <a href="https://github.com/moby-it/planning-poker" target="_blank">
                 <img class="cursor-pointer" src="/assets/github-circle.svg" alt="" width="30">
               </a>
-            </h4>
-            <span class="subtitle">User Friendly, Open Source, Free Forever</span>
-          </div>
-        </div>
-        <div class="product card">
-          <div class="cover column">
-            <h4 class="row gap-1 align-center title">Play Poker Odds
-              <a href="https://playpokerodds.com" target="_blank">
+              <a href="https://poker-planning.net/" target="_blank">
                 <img class="cursor-pointer" src="/assets/link.svg" alt="" width="30">
               </a>
-            </h4>
-            <span class="subtitle">Guess your winning odds in a given Texas Hold'em situation. No bets, just fun.</span>
-          </div>
-        </div>
-        <div class="product card">
-          <div class="cover column">
-            <h4 class="row gap-1 align-center title">Useless Dragon
-              <a href="https://github.com/moby-it/useless_dragon" target="_blank">
-                <img class="cursor-pointer" src="/assets/github-circle.svg" alt="" width="30">
-              </a>
-            </h4>
-            <span class="subtitle">Our first attemp to make a game</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </main>
-  <!-- <footer>
-      <p>some footer content</p>
-    </footer> -->
+  <footer class="products-page">
+    <div class="footer-links">
+      <div class="footer-icons">
+        <a href="https://www.linkedin.com/company/moby-it/" target="_blank">
+          <img class="cursor-pointer" src="/assets/linkedin-white.svg" alt="" width="30">
+        </a>
+        <a href="https://github.com/moby-it" target="_blank">
+          <img class="cursor-pointer" src="/assets/github-circle-white.svg" alt="" width="30">
+        </a>
+        <a href="mailto:contact@moby-it.com">contact@moby-it.com</a>
+      </div>
+    </div>
+    <span class="footer-links">© 2023 Moby IT. All rights reserved.</span>
+    <img class="footer-logo" src="/assets/logo-horizontal.png" alt="">
+  </footer>
 </body>
 
 </html>
