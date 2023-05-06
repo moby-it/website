@@ -1,62 +1,87 @@
 .logo {
   font-family: "Aeonik Pro", sans-serif;
 }
+
 main {
   scroll-behavior: smooth;
   margin-top: 80px;
   display: flex;
   flex-direction: column;
 }
+
 .section {
   display: flex;
   flex-direction: column;
   max-width: 1060px;
 }
+
 .section span,
 .section p,
 .section li {
   padding: 0 40px;
 }
+
 .light {
   background-size: cover;
   background-color: var(--light--bg);
   opacity: 0.9;
   color: var(--primary);
 }
+
 .text-center {
   text-align: center;
 }
+
 .cursor-pointer {
   cursor: pointer;
 }
+
 .row {
   display: flex;
 }
+
 .column {
   display: flex;
   flex-direction: column;
 }
+
 .justify-center {
   justify-content: center;
 }
+
 .justify-between {
   justify-content: space-between;
 }
+
 .align-center {
   align-items: center;
 }
+
 .flex-1 {
   flex: 1;
 }
+
 .flex-2 {
   flex: 2;
 }
+
 .flex-3 {
   flex: 3;
 }
+
 .flex-4 {
   flex: 4;
 }
+
 .flex-5 {
   flex: 5;
+}
+
+@media only screen and (max-width:425px) {
+  main {
+    margin-top: 0;
+  }
+  .main-body {
+    margin-top: 1rem;
+  }
 }

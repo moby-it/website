@@ -68,10 +68,6 @@ header {
   gap: 1.5rem;
 }
 
-.nav-item {
-  text-decoration: inherit;
-}
-
 .nav-item:hover {
   padding-bottom: 10px;
   color: var(--primaryz);
@@ -108,5 +104,8 @@ header {
 
   .icon-link {
     width: 32px;
+  }
+  .tag-and-links {
+    flex-direction: column;
   }
 }

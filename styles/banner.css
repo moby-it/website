@@ -1,24 +1,28 @@
 .banner {
-  display: flex;
-  align-items: center;
   padding: 3rem 0;
   gap: 18px;
-  max-width: 863px;
+  max-width: 60%;
 }
+
 .tail {
+  width: 18%;
   position: absolute;
-  right: -10px;
+  bottom: 150px;
+  right: 0px;
 }
+
 @media screen and (max-width: 768px) {
   .banner {
     flex-direction: column;
-    padding: 2rem 2rem;
+    padding: 2rem;
+    padding-top: 1rem;
   }
+
   .banner span {
     max-width: 100%;
   }
+
   .banner h2 {
     text-align: center;
   }
 }
-  
