@@ -30,3 +30,15 @@
   flex-wrap: wrap;
   gap: 28px;
 }
+@media only screen and (max-width: 425px) {
+  .home-cards {
+    align-items: center;
+    justify-content: center;
+  }
+  .home-cards-section {
+    flex-direction: column;
+  }
+  .home-cards-section  h4 {
+    min-width: 160px;
+  }
+}
