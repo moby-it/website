@@ -30,6 +30,9 @@
   flex-wrap: wrap;
   gap: 28px;
 }
+#academy {
+  width: 520px;
+}
 @media only screen and (max-width: 425px) {
   .home-cards {
     align-items: center;
