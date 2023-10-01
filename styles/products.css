@@ -3,7 +3,7 @@
   background: url("/assets/products-bg.png");
   background-size: cover;
   color: white;
-  padding: 5rem;
+  padding: 6rem 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,6 +21,9 @@
   display: flex;
   gap: 1rem;
   padding: 1rem;
+  justify-content: center;
+  max-width: 1150px;
+  flex-wrap: wrap;
 }
 
 .product {
@@ -85,6 +88,8 @@
   .products-container {
     margin-top: 0;
     padding: 2rem;
-    padding-top: 9rem;
+  }
+  .products-container h3 {
+    color: var(--primary);
   }
 }
