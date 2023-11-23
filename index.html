@@ -33,12 +33,10 @@
 
   <body>
     <header>
-      <section id="site-id">
-        <a href="/">
-          <img id="logo" src="assets/logo.png" alt="moby-it logo" width="150" height="34" />
-        </a>
+      <a id="site-id" ref="/">
+        <img id="logo" src="assets/logo.png" alt="moby-it logo" width="150" height="34" />
         <em>software precisely for you</em>
-      </section>
+      </a>
       <nav>
         <ul>
           <li>
@@ -54,13 +52,13 @@
       </nav>
       <address class="links">
         <a href="https://www.linkedin.com/company/moby-it" target="_blank">
-          <img class="icon-link" src="assets/linkedin.svg" alt="" />
+          <img class="icon-link" src="assets/linkedin.svg" alt="linkedin-icon" />
         </a>
         <a href="https://github.com/moby-it" target="_blank">
-          <img class="icon-link" src="assets/github-circle.svg" alt="" />
+          <img class="icon-link" src="assets/github-circle.svg" alt="github-icon" />
         </a>
         <a href="mailto:contact@moby-it.com" target="_blank">
-          <img class="icon-link" src="assets/mail.svg" alt="" />
+          <img class="icon-link" src="assets/mail.svg" alt="email" />
         </a>
       </address>
     </header>
@@ -70,33 +68,119 @@
           <em>Efficient Solutions, <br />Exact Results</em>
         </h1>
         <h4>Production-ready software that solves real-world problems</h4>
-        <img id="tail" src="/assets/whale.png" alt="" />
+        <img id="tail" src="/assets/whale.png" alt="whale-tail" />
       </section>
-      <section class="what-we-do">
-        <h4 class="dive">Dive deeper</h4>
-        <img src="/assets/arrow-down.svg" width="48" alt="" />
-        <article>
-          <h3>IT Services</h3>
-          <article class="card">
-            <img src="/assets/icons/code-brackets-square.svg" alt="" />
-            <h4 class="title">Application Development</h4>
-            <span class="content"
-              >With over 8 years of experience in enterprise software development, we have the
-              skills and expertise to help you accelerate your development process by taking on
-              tasks that might be sitting idle in your pipeline.</span
-            >
+      <div id="home-content">
+        <section class="what-we-do">
+          <h2>We provide</h2>
+          <section>
+            <article class="card">
+              <h4 class="title">
+                <img src="/assets/icons/code-brackets-square.svg" alt="code-brackets" />
+                Application Development
+              </h4>
+              <p class="content">
+                With over 8 years of experience in enterprise software development, we have the
+                skills and expertise to help you accelerate your development process by taking on
+                tasks that might be sitting idle in your pipeline.
+              </p>
+            </article>
+            <article class="card">
+              <h4 class="title">
+                <img src="/assets/icons/database_settings.svg" alt="database" />
+                Database Development
+              </h4>
+              <p class="content">
+                Our team has extensive experience working with SQL-based solutions for
+                <em>FinTech</em>
+                companies as well as <em>Banks</em>. Whether you need help designing, implementing,
+                scaling, or replicating your relational database systems, we've got you covered.
+              </p>
+            </article>
+          </section>
+        </section>
+        <section class="what-we-value">
+          <h2>We value</h2>
+          <section>
+            <article class="card">
+              <h4 class="title">
+                <img src="/assets/icons/user-scan.svg" alt="user-target" /> User Centered Design
+              </h4>
+              <p class="content">
+                We focus on delivering products that solve user problems not hypothetical ones. You
+                bring the idea, we help you flesh it out.
+              </p>
+            </article>
+            <article class="card">
+              <h4 class="title">
+                <img src="/assets/icons/multi-bubble.svg" alt="chat-bubbles" /> Close Collaboration
+              </h4>
+              <p class="content">
+                Regular and transparent communication is key for any project's success and
+                longevity.
+              </p>
+            </article>
+            <article class="card">
+              <h4 class="title">
+                <img src="/assets/icons/packages.svg" alt="packaging" />Working Iteratively
+              </h4>
+              <p class="content">
+                Splitting a project into small delivarable chunks is a crucial tool for getting
+                early feedback.
+              </p>
+            </article>
+            <article class="card">
+              <h4 class="title">
+                <img src="/assets/icons/3d-bridge.svg" alt="bridge" />Open-ended
+              </h4>
+              <p class="content">
+                We highly value independence. Any project deliverable will be in a state that is
+                easy to maintained and extended by any experienced software team.
+              </p>
+            </article>
+          </section>
+        </section>
+        <section>
+          <h2>We love teaching</h2>
+          <article class="card" id="academy">
+            <h4 class="title">
+              <img class="title" src="/assets/icons/academy.svg" width="56" alt="graduate-hat" />
+              Academy
+            </h4>
+            <section class="content">
+              <p>
+                Driving from our own experience as ex-teachers who became engineers we provide
+                <em>hands-on training</em> and <em>career advice</em> to help you build the skills
+                and confidence you need to succeed in the tech industry.
+              </p>
+              <p>
+                In case you are not even sure if a career in tech is a good fit for you,
+                <em>don't worry we've all been there</em>. We would be happy to give you an overview
+                of our experience in tech so far as individuals and as a company.
+              </p>
+              <p>
+                This of course is <em>free-of-charge</em> so don't hesitate to
+                <a class="row align-center gap-1" href="mailto:contact@moby-it.com"
+                  >reach out to us</a
+                >!
+              </p>
+            </section>
           </article>
-          <article class="card">
-            <img src="/assets/icons/database_settings.svg" alt="" />
-            <h4 class="title">Database Development</h4>
-            <span class="content"
-              >Our team has extensive experience working with SQL-based solutions in enterprise
-              business environments. Whether you need help designing, implementing, scaling, or
-              replicating your relational database systems, we've got you covered.</span
-            >
-          </article>
-        </article>
-      </section>
+        </section>
+      </div>
     </main>
+    <footer class="home-page-footer">
+      <address class="footer-links footer-icons">
+        <a href="https://www.linkedin.com/company/moby-it/" target="_blank">
+          <img class="cursor-pointer" src="/assets/linkedin-white.svg" alt="" width="30" />
+        </a>
+        <a href="https://github.com/moby-it" target="_blank">
+          <img class="cursor-pointer" src="/assets/github-circle-white.svg" alt="" width="30" />
+        </a>
+        <a href="mailto:contact@moby-it.com">contact@moby-it.com</a>
+      </address>
+      <p class="footer-links">© 2023 Moby IT. All rights reserved.</p>
+      <img class="footer-logo" src="/assets/logo-horizontal.png" alt="" />
+    </footer>
   </body>
 </html>
