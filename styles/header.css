@@ -1,13 +1,11 @@
-header {
-  z-index: 100;
-  width: 100vw;
-  top: 0;
-  left: 0;
-  background-color: var(--light--bg);
-  position: fixed;
+#site-id {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
 }
 
-.header {
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,96 +14,30 @@ header {
   gap: 1rem;
 }
 
-.tag-and-links {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 18px;
-}
-
-.header .logo {
-  margin-left: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  flex: 1;
-}
-
-.logo a {
-  display: flex;
-  align-items: center;
-}
-
-.logo .links {
-  display: flex;
-  gap: 6px;
-}
-
-.header .logo img {
-  cursor: pointer;
-}
-
-.header .logo img {
-  cursor: pointer;
-}
-
-.header>* {
-  flex: 1;
-}
-
-.header span {
+header nav ul {
   font-family: "Aeonik Pro";
-  font-style: italic;
-  font-size: 1.125rem;
-  text-align: center;
-}
-
-.header ul {
-  font-family: 'Aeonik Pro';
   flex: 1;
   display: flex;
   justify-content: center;
   gap: 1.5rem;
 }
 
-.nav-item:hover {
-  padding-bottom: 10px;
-  color: var(--primaryz);
+nav a:hover {
+  color: black;
   transition: color 0.5s ease;
 }
 
 @media only screen and (max-width: 425px) {
-  .header {
-    flex-direction: column;
-    padding: 20px
-  }
-
   header {
+    flex-direction: column;
+    padding: 20px;
     position: relative;
   }
 
-  .header .logo {
-    flex-direction: column;
-    gap: 0;
-  }
-
-  .header span {
-    flex: 1;
-    font-size: 1rem;
-    text-align: center;
-  }
-
-  .header ul {
+  header nav ul {
     flex: 1;
     display: flex;
     justify-content: center;
-    gap: .75rem;
-  }
-
-  .icon-link {
-    width: 32px;
-  }
-  .tag-and-links {
-    flex-direction: column;
+    gap: 0.75rem;
   }
 }
