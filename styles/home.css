@@ -32,7 +32,7 @@
 #academy em {
   font-weight: bold;
 }
-@media only screen and (min-width: 425px) {
+@media (width >= 425px) {
   .what-we-do .card {
     height: 390px;
   }

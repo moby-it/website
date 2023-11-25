@@ -4,9 +4,12 @@ footer {
   display: flex;
   justify-content: space-around;
   text-align: center;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 0.75rem;
 }
 
-footer.team-page {
+.team-page-footer {
   background: url("/assets/footer-team.png");
 }
 
@@ -14,7 +17,7 @@ footer.team-page {
   background: url("/assets/footer-home.png");
 }
 
-footer.products-page {
+.products-page-footer {
   background: url("/assets/footer-products.png");
 }
 
@@ -24,6 +27,7 @@ footer div {
 
 .footer-logo {
   width: 150px;
+  object-fit: contain;
 }
 
 footer,

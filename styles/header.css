@@ -1,19 +1,28 @@
 #site-id {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 12px;
+  justify-content: center;
+  gap: 1rem;
   color: black;
   cursor: pointer;
 }
-header {
+#site-id img {
+  object-fit: contain;
+}
+body > header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 24px 48px;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
+address {
+  display: flex;
+  gap: 0.75rem;
+}
 header nav ul {
   font-family: "Aeonik Pro";
   flex: 1;
@@ -27,7 +36,7 @@ nav a:hover {
   transition: color 0.5s ease;
 }
 
-@media only screen and (max-width: 425px) {
+@media (width <= 425px) {
   header {
     flex-direction: column;
     padding: 20px;

@@ -1,20 +1,18 @@
-.products-container {
-  margin-top: 50px;
+main > article {
   background: url("/assets/products-bg.png");
   background-size: cover;
-  color: white;
-  padding: 6rem 5rem;
+  color: #001f3f;
+  padding: 3rem 2rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.products-container h3,
-.products-container h4 {
-  max-width: 842px;
+main > h2 {
+  padding: 1rem;
   text-align: center;
 }
-
 .products {
   margin-top: 50px;
   flex: 1;
@@ -38,23 +36,23 @@
   box-sizing: border-box;
 }
 
-.product h4 {
-  color: black;
-  text-align: left;
-}
-
-.product .description {
+.product header p {
   color: var(--gray);
 }
 
-.tags {
+.metadata {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.metadata > ul:first-child {
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
-
 }
 
-.tag {
+.metadata > ul:first-child li {
   padding: 8px 16px;
   color: black;
   background-color: var(--secondary);
@@ -66,30 +64,11 @@
   gap: 16px;
 }
 
-.metadata {
-  padding-top: 1rem;
-  display: flex;
-  justify-content: space-between;
-}
-
-@media only screen and (max-width: 1024px) {
-  .products {
-    flex-direction: column;
-  }
+@media (width <= 1024px) {
   .product {
     max-width: 300px;
   }
-
-  .metadata {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .products-container {
-    margin-top: 0;
-    padding: 2rem;
-  }
-  .products-container h3 {
-    color: var(--primary);
+  footer {
+    padding: 1rem;
   }
 }
