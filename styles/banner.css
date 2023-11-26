@@ -4,6 +4,7 @@
   padding: 3rem 0;
   gap: 18px;
   max-width: 60%;
+  align-self: center;
 }
 
 #tail {

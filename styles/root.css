@@ -7,10 +7,19 @@ main {
   flex: 1;
   scroll-behavior: smooth;
   display: flex;
-  align-items: center;
   flex-direction: column;
 }
 
+main > article {
+  background: url("/assets/products-bg.png");
+  background-size: cover;
+  color: #001f3f;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
 .light {
   background-size: cover;
   background-color: var(--light--bg);
@@ -18,7 +27,7 @@ main {
   color: var(--primary);
 }
 
-@media only screen and (min-width: 426px) {
+@media (width >= 426px) {
   main {
     margin-top: 0;
   }
@@ -29,7 +38,7 @@ main {
     display: initial;
   }
 }
-@media only screen and (max-width: 425px) {
+@media (width<= 425px) {
   .mobile {
     display: initial;
   }
