@@ -1,31 +1,14 @@
-.team {
+#team {
+  background: none;
   display: flex;
-  gap: 1rem;
-  padding: 1rem;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
-  margin-top: 3rem;
-}
-
-.team-member {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 23px;
-}
-.team-member-data {
-  display: flex;
-  flex-direction: column;
-}
-.team-member-data span{
+  gap: 2rem;
   color: var(--gray);
+  flex-wrap: wrap;
 }
-.team-member-links {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.team-member .profile-img {
+.team-member > img {
   width: 274px;
   object-fit: cover;
   border-radius: 2rem;

@@ -1,155 +1,149 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3WF1Q8JYNE"></script>
+    <script>
+      if (window.location.hostname === "moby-it.com") {
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
 
-<head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3WF1Q8JYNE"></script>
-  <script>
-    if (window.location.hostname === "moby-it.com") {
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
+        gtag("config", "G-3WF1Q8JYNE");
       }
-      gtag("js", new Date());
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Moby IT</title>
+  </head>
 
-      gtag("config", "G-3WF1Q8JYNE");
-    }
-  </script>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Moby IT</title>
-</head>
-
-<body>
-  <header>
-    <div class="header">
-      <div class="logo">
-        <a href="/">
-          <img src="assets/logo.png" alt="moby-it logo" width="150" height="34" />
-        </a>
-      </div>
-      <ul class="navbar">
-        <li>
-          <a class="nav-item" href="/">Home</a>
-        </li>
-        <li>
-          <a class="nav-item" href="/products.html">Products</a>
-        </li>
-        <li>
-          <a class="nav-item" href="/team.html">Team</a>
-        </li>
-      </ul>
-      <div class="tag-and-links">
-        <span>software precisely for you</span>
-        <div class="links">
-          <a href="https://www.linkedin.com/company/moby-it" target="_blank">
-            <img class="icon-link" src="assets/linkedin.svg" alt="" />
-          </a>
-          <a href="https://github.com/moby-it" target="_blank">
-            <img class="icon-link" src="assets/github-circle.svg" alt="" />
-          </a>
-          <a href="mailto:contact@moby-it.com" target="_blank">
-            <img class="icon-link" src="assets/mail.svg" alt="" />
-          </a>
-        </div>
-      </div>
-    </div>
-  </header>
-  <main>
-    <div class="products-container">
-      <div class="column gap-2">
-        <h3>Composing Software is a Creative Expression.</h3>
-        <h4>From utility apps to game development, we're always eager to create
-          something and open source it.</h4>
-      </div>
-      <div class="products">
-        <div class="product">
-          <div class="content">
-            <h4>Play Poker Odds</h4>
-            <span class="description">Guess your winning odds in a given Texas Hold'em situation. No bets, just
-              fun.</span>
-          </div>
-          <div class="metadata">
-            <div class="tags">
-              <div class="tag">Angular</div>
-              <div class="tag">ExpressJS</div>
-              <div class="tag">Docker</div>
-            </div>
-            <div class="links">
-              <a href="https://playpokerodds.com/" target="_blank">
-                <img class="cursor-pointer" src="/assets/link.svg" alt="" width="30">
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="product">
-          <div>
-            <h4>Scrum Poker Planning</h4>
-            <span class="description">User Friendly, Open Source, Free Forever.</span>
-          </div>
-          <div class="metadata">
-            <div class="tags">
-              <div class="tag">SolidJS</div>
-              <div class="tag">Golang</div>
-            </div>
-            <div class="links">
-              <a href="https://github.com/moby-it/planning-poker" target="_blank">
-                <img class="cursor-pointer" src="/assets/github-circle.svg" alt="" width="30">
-              </a>
-              <a href="https://poker-planning.net/" target="_blank">
-                <img class="cursor-pointer" src="/assets/link.svg" alt="" width="30">
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="product">
-          <div>
-            <h4>Boochat</h4>
-            <span class="description">Meet and Chat applications</span>
-          </div>
-          <div class="metadata">
-            <div class="tags">
-              <div class="tag">Flutter</div>
-              <div class="tag">NestJS</div>
-              <div class="tag">RabbitMQ</div>
-              <div class="tag">MongoDB</div>
-              <div class="tag">Event Storming</div>
-              <div class="tag">Domain Driven Design</div>
-            </div>
-            <div class="links">
-              <a href="https://github.com/moby-it/boochat-server" target="_blank">
-                <img class="cursor-pointer" src="/assets/github-circle.svg" alt="" width="30">
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
-  <footer class="products-page">
-    <div class="footer-links">
-      <div class="footer-icons">
-        <a href="https://www.linkedin.com/company/moby-it/" target="_blank">
-          <img class="cursor-pointer" src="/assets/linkedin-white.svg" alt="" width="30">
+  <body>
+    <header>
+      <a id="site-id" ref="/">
+        <img id="logo" src="assets/logo.png" alt="moby-it logo" width="150" height="34" />
+        <em>software precisely for you</em>
+      </a>
+      <nav>
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/products.html">Products</a>
+          </li>
+          <li>
+            <a href="/team.html">Team</a>
+          </li>
+        </ul>
+      </nav>
+      <address>
+        <a href="https://www.linkedin.com/company/moby-it" target="_blank">
+          <img class="icon-link" src="assets/linkedin.svg" alt="linkedin-icon" />
         </a>
         <a href="https://github.com/moby-it" target="_blank">
-          <img class="cursor-pointer" src="/assets/github-circle-white.svg" alt="" width="30">
+          <img class="icon-link" src="assets/github-circle.svg" alt="github-icon" />
+        </a>
+        <a href="mailto:contact@moby-it.com" target="_blank">
+          <img class="icon-link" src="assets/mail.svg" alt="email" />
+        </a>
+      </address>
+    </header>
+    <main>
+      <h2>Composing Software is a Creative Expression.</h2>
+      <article>
+        <section class="products">
+          <article class="product">
+            <header>
+              <h4>Play Poker Odds</h4>
+              <p class="description">
+                Guess your winning odds in a given Texas Hold'em situation. No bets, just fun.
+              </p>
+            </header>
+            <section class="metadata">
+              <ul>
+                <li>Angular</li>
+                <li>Express</li>
+                <li>Docker</li>
+              </ul>
+              <ul class="links">
+                <li>
+                  <a href="https://playpokerodds.com/" target="_blank">
+                    <img class="cursor-pointer" src="/assets/link.svg" alt="" width="30" />
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </article>
+          <section class="product">
+            <header>
+              <h4>Scrum Poker Planning</h4>
+              <p class="description">User Friendly, Open Source, Free Forever.</p>
+            </header>
+            <section class="metadata">
+              <ul>
+                <li>SolidJS</li>
+                <li>Golang</li>
+              </ul>
+              <ul class="links">
+                <li>
+                  <a href="https://github.com/moby-it/planning-poker" target="_blank">
+                    <img class="cursor-pointer" src="/assets/github-circle.svg" alt="" width="30" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://poker-planning.net/" target="_blank">
+                    <img class="cursor-pointer" src="/assets/link.svg" alt="" width="30" />
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </section>
+          <section class="product">
+            <header>
+              <h4>Boochat</h4>
+              <p class="description">Meet and Chat applications</p>
+            </header>
+            <section class="metadata">
+              <ul>
+                <li>Flutter</li>
+                <li>NestJS</li>
+                <li>Event Storming</li>
+                <li>DDD</li>
+              </ul>
+              <ul class="links">
+                <li>
+                  <a href="https://github.com/moby-it/boochat-server" target="_blank">
+                    <img class="cursor-pointer" src="/assets/github-circle.svg" alt="" width="30" />
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </section>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <address>
+        <a href="https://www.linkedin.com/company/moby-it/" target="_blank">
+          <img class="cursor-pointer" src="/assets/linkedin-white.svg" alt="" width="30" />
+        </a>
+        <a href="https://github.com/moby-it" target="_blank">
+          <img class="cursor-pointer" src="/assets/github-circle-white.svg" alt="" width="30" />
         </a>
         <a href="mailto:contact@moby-it.com">contact@moby-it.com</a>
-      </div>
-    </div>
-    <span class="footer-links">© 2023 Moby IT. All rights reserved.</span>
-    <img class="footer-logo" src="/assets/logo-horizontal.png" alt="">
-  </footer>
-</body>
-
+      </address>
+      <p>© 2023 Moby IT. All rights reserved.</p>
+    </footer>
+  </body>
 </html>

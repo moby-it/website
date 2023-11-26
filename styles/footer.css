@@ -1,50 +1,21 @@
 footer {
   background-size: cover;
-  padding: 5rem 2rem 2rem 2rem;
+  padding: 2rem;
   display: flex;
-  justify-content: space-around;
-  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
 }
 
-footer.team-page {
-  background: url("/assets/footer-team.png");
-}
-
-footer.home-page {
+.home-page-footer {
   background: url("/assets/footer-home.png");
 }
-
-footer.products-page {
-  background: url("/assets/footer-products.png");
-}
-
-footer div {
-  flex: 1;
-}
-
-.footer-logo {
-  width: 150px;
-}
-
 footer,
 footer img,
 footer a {
   color: white;
 }
-
-.footer-links {
-  display: flex;
-  gap: 23px;
-  flex: 1;
-}
-
-.footer-icons {
-  flex: 1;
-  display: flex;
-  gap: 10px;
-}
-
-@media only screen and (max-width: 425px) {
+@media (width<= 425px) {
   footer {
     flex-direction: column;
     align-items: center;

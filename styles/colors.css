@@ -9,6 +9,3 @@
   --secondary--opacity--weak: rgba(186, 213, 240, 0.19);
   --secondary--opacity--strong: rgba(186, 213, 240, 0.2);
 }
-.gray {
-  color: var(--secondary);
-}

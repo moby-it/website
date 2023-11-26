@@ -1,47 +1,49 @@
-.main-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+#home-content {
   background-image: url("/assets/background.png");
   background-size: cover;
   color: white;
+  width: 100%;
+  padding-top: 8rem;
+  padding-bottom: 4rem;
 }
-
-.dive {
+footer {
+  background: url("/assets/footer-home.png");
+}
+#home-content > section:not(:first-child) {
+  padding-top: 8rem;
+}
+#home-content > section {
   display: flex;
-  color: white;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
 }
-.home-cards-section {
-  margin-top: 124px;
+.what-we-value > section,
+.what-we-do > section {
   display: flex;
-  align-items: center;
-  gap: 84px;
-  margin-bottom: 152px;
-
-}
-.home-cards-section  h4 {
-  min-width: 230px;
-}
-.home-cards {
-  display: flex;
+  flex: 1;
+  gap: 12px;
   flex-wrap: wrap;
-  gap: 28px;
+  justify-content: center;
+  align-items: center;
+}
+.what-we-value {
+  max-width: 1056px;
+  margin: auto;
+}
+#home-content > section > h2 {
+  margin-bottom: 4rem;
 }
 #academy {
-  width: 520px;
+  flex: 1 0 520px;
 }
-@media only screen and (max-width: 425px) {
-  .home-cards {
-    align-items: center;
-    justify-content: center;
+#academy em {
+  font-weight: bold;
+}
+@media (width >= 425px) {
+  .what-we-do .card {
+    height: 390px;
   }
-  .home-cards-section {
-    flex-direction: column;
-  }
-  .home-cards-section  h4 {
-    min-width: 160px;
+  .what-we-value .card {
+    height: 320px;
   }
 }

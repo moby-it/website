@@ -1,28 +1,25 @@
 .banner {
+  display: flex;
+  flex-direction: column;
   padding: 3rem 0;
   gap: 18px;
   max-width: 60%;
+  align-self: center;
 }
 
-.tail {
+#tail {
   width: 18%;
   position: absolute;
-  bottom: 150px;
   right: 0px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 425px) {
+  #tail {
+    display: none;
+  }
   .banner {
-    flex-direction: column;
     padding: 2rem;
     padding-top: 1rem;
-  }
-
-  .banner span {
-    max-width: 100%;
-  }
-
-  .banner h2 {
-    text-align: center;
+    max-width: 80%;
   }
 }
