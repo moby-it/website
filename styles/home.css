@@ -4,6 +4,10 @@
   color: white;
   width: 100%;
   padding-top: 8rem;
+  padding-bottom: 4rem;
+}
+footer {
+  background: url("/assets/footer-home.png");
 }
 #home-content > section:not(:first-child) {
   padding-top: 8rem;
@@ -22,12 +26,15 @@
   justify-content: center;
   align-items: center;
 }
-
+.what-we-value {
+  max-width: 1056px;
+  margin: auto;
+}
 #home-content > section > h2 {
   margin-bottom: 4rem;
 }
 #academy {
-  width: 520px;
+  flex: 1 0 520px;
 }
 #academy em {
   font-weight: bold;
@@ -36,7 +43,7 @@
   .what-we-do .card {
     height: 390px;
   }
-  .what-we-value > section {
-    max-width: 60%;
+  .what-we-value .card {
+    height: 320px;
   }
 }

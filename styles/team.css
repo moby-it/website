@@ -17,7 +17,7 @@
   display: flex;
   flex-direction: column;
 }
-.team-member-data span{
+.team-member-data span {
   color: var(--gray);
 }
 .team-member-links {

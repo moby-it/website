@@ -36,8 +36,8 @@ nav a:hover {
   transition: color 0.5s ease;
 }
 
-@media (width <= 425px) {
-  header {
+@media (width <= 768px) {
+  body > header {
     flex-direction: column;
     padding: 20px;
     position: relative;
@@ -47,6 +47,5 @@ nav a:hover {
     flex: 1;
     display: flex;
     justify-content: center;
-    gap: 0.75rem;
   }
 }
