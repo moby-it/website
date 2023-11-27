@@ -2,6 +2,9 @@ main > h2 {
   padding: 1rem;
   text-align: center;
 }
+h3 {
+  text-align: center;
+}
 .products {
   display: flex;
   justify-content: center;
@@ -24,7 +27,7 @@ main > h2 {
   box-sizing: border-box;
 }
 
-.product header p {
+.product header {
   color: var(--gray);
 }
 
@@ -51,6 +54,13 @@ main > h2 {
 .links {
   display: flex;
   gap: 1rem;
+}
+.labs {
+  color: white;
+  margin: 2rem;
+}
+.labs header {
+  margin-bottom: 1rem;
 }
 footer {
   background: url("/assets/footer-products.png");
