@@ -33,7 +33,7 @@
 
   <body>
     <header>
-      <a id="site-id" ref="/">
+      <a id="site-id" href="/">
         <img id="logo" src="assets/logo.png" alt="moby-it logo" width="150" height="34" />
       </a>
       <nav>
@@ -63,19 +63,21 @@
     </header>
     <main>
       <section class="banner">
-        <h1>
-          <em>Tailor-made<br />Software Solutions</em>
-        </h1>
-        <h4>Materialize your ideas, staff your team - Your tech ally in a digital era.</h4>
-        <img id="tail" src="/assets/whale.png" alt="whale-tail" />
+        <hgroup>
+          <h1>
+            <em>Tailor-made Software Solutions</em>
+          </h1>
+          <h4>Materialize your ideas, staff your team - Your tech ally in a digital era.</h4>
+        </hgroup>
+        <img id="tail" src="/assets/whale.png" alt="whale-tail" aria-hidden="true" />
       </section>
       <section id="home-content">
-        <section class="what-we-do">
+        <section class="what-we-do" aria-hidden="true">
           <h2>We provide</h2>
-          <section>
+          <div>
             <article class="card">
               <header>
-                <img src="/assets/icons/light-bulb-on.svg" alt="light bulb on" />
+                <img src="/assets/icons/light-bulb-on.svg" alt="light bulb on" aria-hidden="true" />
                 <h4 class="title">Product Development</h4>
               </header>
               <p class="content">
@@ -86,7 +88,10 @@
             </article>
             <article class="card">
               <header>
-                <img src="/assets/icons/code-brackets-square.svg" alt="code-brackets" />
+                <img
+                  src="/assets/icons/code-brackets-square.svg"
+                  alt="code-brackets"
+                  aria-hidden="true" />
                 <h4 class="title">Software Services</h4>
               </header>
               <p class="content">
@@ -96,7 +101,7 @@
             </article>
             <article class="card">
               <header>
-                <img src="/assets/icons/database_settings.svg" alt="database" />
+                <img src="/assets/icons/database_settings.svg" alt="database" aria-hidden="true" />
                 <h4>Database Services</h4>
               </header>
               <p class="content">
@@ -105,14 +110,14 @@
                 replicating your relational database systems, we've got you covered.
               </p>
             </article>
-          </section>
+          </div>
         </section>
         <section class="what-we-value">
           <h2>We value</h2>
-          <section>
+          <div>
             <article class="card">
               <header>
-                <img src="/assets/icons/user-scan.svg" alt="user-target" />
+                <img src="/assets/icons/user-scan.svg" alt="user-target" aria-hidden="true" />
                 <h4>User Centered Design</h4>
               </header>
               <p class="content">
@@ -122,7 +127,7 @@
             </article>
             <article class="card">
               <header>
-                <img src="/assets/icons/multi-bubble.svg" alt="chat-bubbles" />
+                <img src="/assets/icons/multi-bubble.svg" alt="chat-bubbles" aria-hidden="true" />
                 <h4>Close Collaboration</h4>
               </header>
               <p class="content">
@@ -132,7 +137,7 @@
             </article>
             <article class="card">
               <header>
-                <img src="/assets/icons/packages.svg" alt="packaging" />
+                <img src="/assets/icons/packages.svg" alt="packaging" aria-hidden="true" />
                 <h4>Working Iteratively</h4>
               </header>
               <p class="content">
@@ -142,7 +147,7 @@
             </article>
             <article class="card">
               <header>
-                <img src="/assets/icons/3d-bridge.svg" alt="bridge" />
+                <img src="/assets/icons/3d-bridge.svg" alt="bridge" aria-hidden="true" />
                 <h4>Open-ended</h4>
               </header>
               <p class="content">
@@ -150,13 +155,17 @@
                 easy to maintained and extended by any experienced software team.
               </p>
             </article>
-          </section>
+          </div>
         </section>
         <section id="academy">
           <h2>We love teaching</h2>
           <article class="card">
             <header>
-              <img src="/assets/icons/academy.svg" width="56" alt="graduate-hat" />
+              <img
+                src="/assets/icons/academy.svg"
+                width="56"
+                alt="graduate-hat"
+                aria-hidden="true" />
               <h4>Academy</h4>
             </header>
             <section class="content">
@@ -173,9 +182,7 @@
               <br />
               <p>
                 Don't hesitate to
-                <a class="row align-center gap-1" href="mailto:contact@moby-it.com"
-                  >reach out to us</a
-                >!
+                <a href="mailto:contact@moby-it.com">reach out to us</a>!
               </p>
             </section>
           </article>
@@ -185,10 +192,18 @@
     <footer class="home-page-footer">
       <address>
         <a href="https://www.linkedin.com/company/moby-it/" target="_blank">
-          <img class="cursor-pointer" src="/assets/linkedin-white.svg" alt="" width="30" />
+          <img
+            class="cursor-pointer"
+            src="/assets/linkedin-white.svg"
+            alt="linkedin icon"
+            width="30" />
         </a>
         <a href="https://github.com/moby-it" target="_blank">
-          <img class="cursor-pointer" src="/assets/github-circle-white.svg" alt="" width="30" />
+          <img
+            class="cursor-pointer"
+            src="/assets/github-circle-white.svg"
+            alt="github icon"
+            width="30" />
         </a>
         <a href="mailto:contact@moby-it.com">contact@moby-it.com</a>
       </address>

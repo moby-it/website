@@ -29,7 +29,7 @@ em {
   font-family: "Aeonik Pro", sans-serif;
   font-style: italic;
 }
-@media (width <= 425px) {
+@media (width < 426px) {
   h1 {
     font-size: 2.5rem;
   }
