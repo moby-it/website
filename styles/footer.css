@@ -8,10 +8,10 @@ footer {
 }
 
 .home-page-footer {
-  background: url("/assets/footer-home.png");
+  background: url("/footer-home.png");
 }
 .team-page-footer {
-  background: url("/assets/footer-team.png");
+  background: url("/footer-team.png");
 }
 footer,
 footer img,

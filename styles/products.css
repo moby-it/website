@@ -63,7 +63,7 @@ h3 {
   margin-bottom: 1rem;
 }
 footer {
-  background: url("/assets/footer-products.png");
+  background: url("/footer-products.png");
 }
 @media (width <= 1024px) {
   footer {
