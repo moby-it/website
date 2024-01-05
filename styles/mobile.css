@@ -1,5 +1,5 @@
 @media only screen and (max-width: 425px) {
   footer.team-page, footer.products-page {
-    background: url("/assets/footer-home.png");
+    background: url("/footer-home.png");
   }
 }

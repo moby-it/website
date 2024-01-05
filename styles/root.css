@@ -11,7 +11,7 @@ main {
 }
 
 main > article {
-  background: url("/assets/products-bg.png");
+  background: url("/products-bg.png");
   background-size: cover;
   color: #001f3f;
   padding: 3rem 2rem;

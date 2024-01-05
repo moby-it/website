@@ -1,5 +1,5 @@
 #home-content {
-  background-image: url("/assets/background.png");
+  background-image: url("/background.png");
   background-size: cover;
   color: white;
   width: 100%;
@@ -10,7 +10,7 @@ hgroup h1 {
   max-width: 600px;
 }
 footer {
-  background: url("/assets/footer-home.png");
+  background: url("/footer-home.png");
 }
 #home-content > section:not(:first-child) {
   padding-top: 8rem;
