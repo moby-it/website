@@ -4,14 +4,9 @@
 @import "styles/font-family-support.css";
 @import "styles/typography.css";
 @import "styles/scrollbar.css";
-@import "styles/footer.css";
-@import "styles/header.css";
 @import "styles/card.css";
 @import "styles/banner.css";
 
 /* pages */
 
-@import "styles/home.css";
-@import "styles/team.css";
-@import "styles/products.css";
 @import "styles/mobile.css";
