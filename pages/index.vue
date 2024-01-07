@@ -92,32 +92,6 @@
           </article>
         </div>
       </section>
-      <section id="academy">
-        <h2>We love teaching</h2>
-        <article class="card">
-          <header>
-            <NuxtImg src="/icons/academy.svg" width="56" alt="graduate-hat" aria-hidden="true" />
-            <h4>Academy</h4>
-          </header>
-          <section class="content">
-            <p>
-              Driving from our own experience as ex-teachers who became engineers, we provide
-              <em>hands-on training</em> and <em>career advice</em> to help you build the skills
-              and confidence you need to succeed in the tech industry.
-            </p>
-            <p>
-              In case you are not even sure if a career in tech is a good fit for you, don't
-              worry; <em>we've all been there</em>. We would be happy to give you an overview of
-              our experience in tech so far, both as individuals and as a company.
-            </p>
-            <br />
-            <p>
-              Don't hesitate to
-              <a href="mailto:contact@moby-it.com">reach out to us</a>!
-            </p>
-          </section>
-        </article>
-      </section>
     </section>
   </main>
 </template>
@@ -162,14 +136,6 @@ hgroup h1 {
 
 #home-content>section>h2 {
   margin-bottom: 3rem;
-}
-
-#academy {
-  flex: 1 0 520px;
-}
-
-#academy em {
-  font-weight: bold;
 }
 
 @media (width >=425px) {
