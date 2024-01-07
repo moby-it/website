@@ -19,13 +19,13 @@
     </nav>
     <address>
       <a href="https://www.linkedin.com/company/moby-it" target="_blank">
-        <NuxtImg class="icon-link" src="/linkedin.svg" alt="linkedin-icon" />
+        <NuxtImg class="icon-link" src="/linkedin.svg" alt="linkedin-icon" :width="30" />
       </a>
       <a href="https://github.com/moby-it" target="_blank">
-        <NuxtImg class="icon-link" src="/github-circle.svg" alt="github-icon" />
+        <NuxtImg class="icon-link" src="/github-circle.svg" alt="github-icon" :width="30" />
       </a>
       <a href="mailto:contact@moby-it.com" target="_blank">
-        <NuxtImg class="icon-link" src="/mail.svg" alt="email" />
+        <NuxtImg class="icon-link" src="/mail.svg" alt="email" :width="30" />
       </a>
     </address>
   </header>
