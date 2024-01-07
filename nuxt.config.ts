@@ -8,9 +8,9 @@ export default defineNuxtConfig({
   },
   nitro: {
     routeRules: {
-      '/': {
+      '*': {
         prerender: true
-      }
+      },
     }
   },
   devtools: { enabled: true }

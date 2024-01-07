@@ -158,10 +158,6 @@ h3 {
   margin-bottom: 1rem;
 }
 
-footer {
-  background: url("/footer-products.png");
-}
-
 @media (width <=1024px) {
   footer {
     padding: 1rem;
