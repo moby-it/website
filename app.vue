@@ -39,7 +39,9 @@ useHead({
 </script>
 <template>
   <Header />
-  <NuxtPage />
+  <section>
+    <NuxtPage />
+  </section>
   <Footer />
 </template>
 <style>

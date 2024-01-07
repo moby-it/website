@@ -2,7 +2,7 @@
 <template>
   <header>
     <NuxtLink id="site-id" to="/">
-      <NuxtImg id="logo" src="/logo.png" alt="moby-it logo" :width="150" :height="34" />
+      <NuxtImg src="/logo.png" alt="moby-it logo" :width="150" :height="34" />
     </NuxtLink>
     <nav>
       <ul>
