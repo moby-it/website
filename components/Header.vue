@@ -73,7 +73,7 @@ nav a:hover {
 }
 
 @media (width <=768px) {
-  body>header {
+  header {
     flex-direction: column;
     padding: 20px;
     position: relative;

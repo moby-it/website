@@ -11,13 +11,6 @@ permissions:
   id-token: write
 
 jobs:
-  build:
-    runs-on: ubuntu-22.04
-    steps:
-      - name: Checkout your repository using git
-        uses: actions/checkout@v3
-      - name: Install, build, and upload your site
-        run: pnpm build
   deploy:
     needs: build
     runs-on: ubuntu-22.04
