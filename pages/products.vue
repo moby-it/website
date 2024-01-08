@@ -1,8 +1,11 @@
----
-import Layout from "../layouts/Layout.astro";
----
+<script setup>
 
-<Layout title="Products">
+useHead({
+  title: 'Products'
+});
+
+</script>
+<template>
   <main>
     <h2>Products We Made</h2>
     <article>
@@ -24,12 +27,7 @@ import Layout from "../layouts/Layout.astro";
             <ul class="links">
               <li>
                 <a href="https://playpokerodds.com/" target="_blank">
-                  <img
-                    class="cursor-pointer"
-                    src="/link.svg"
-                    alt=""
-                    width="30"
-                  />
+                  <img src="/link.svg" alt="" width="30" />
                 </a>
               </li>
             </ul>
@@ -47,26 +45,13 @@ import Layout from "../layouts/Layout.astro";
             </ul>
             <ul class="links">
               <li>
-                <a
-                  href="https://github.com/moby-it/planning-poker"
-                  target="_blank"
-                >
-                  <img
-                    class="cursor-pointer"
-                    src="/github-circle.svg"
-                    alt=""
-                    width="30"
-                  />
+                <a href="https://github.com/moby-it/planning-poker" target="_blank">
+                  <img  src="/github-circle.svg" alt="" width="30" />
                 </a>
               </li>
               <li>
                 <a href="https://poker-planning.net/" target="_blank">
-                  <img
-                    class="cursor-pointer"
-                    src="/link.svg"
-                    alt=""
-                    width="30"
-                  />
+                  <img  src="/link.svg" alt="" width="30" />
                 </a>
               </li>
             </ul>
@@ -91,16 +76,8 @@ import Layout from "../layouts/Layout.astro";
             </ul>
             <ul class="links">
               <li>
-                <a
-                  href="https://github.com/moby-it/boochat-server"
-                  target="_blank"
-                >
-                  <img
-                    class="cursor-pointer"
-                    src="/github-circle.svg"
-                    alt=""
-                    width="30"
-                  />
+                <a href="https://github.com/moby-it/boochat-server" target="_blank">
+                  <img  src="/github-circle.svg" alt="" width="30" />
                 </a>
               </li>
             </ul>
@@ -108,27 +85,88 @@ import Layout from "../layouts/Layout.astro";
         </article>
       </article>
     </article>
-    <footer>
-      <address>
-        <a href="https://www.linkedin.com/company/moby-it/" target="_blank">
-          <img
-            class="cursor-pointer"
-            src="/linkedin-white.svg"
-            alt=""
-            width="30"
-          />
-        </a>
-        <a href="https://github.com/moby-it" target="_blank">
-          <img
-            class="cursor-pointer"
-            src="/github-circle-white.svg"
-            alt=""
-            width="30"
-          />
-        </a>
-        <a href="mailto:contact@moby-it.com">contact@moby-it.com</a>
-      </address>
-      <p>© 2023 Moby IT. All rights reserved.</p>
-    </footer>
   </main>
-</Layout>
+</template>
+
+<style>
+main>h2 {
+  padding: 1rem;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 50px;
+  padding: 1rem;
+  max-width: 1150px;
+  flex-wrap: wrap;
+}
+
+.product {
+  background-color: var(--light--bg);
+  border-radius: 2rem;
+  min-height: 192px;
+  display: flex;
+  width: 556px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.75rem;
+  box-sizing: border-box;
+}
+
+.product header {
+  color: var(--gray);
+}
+
+.metadata {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.metadata>ul:first-child {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.metadata>ul:first-child li {
+  padding: 6px 12px;
+  font-size: smaller;
+  color: black;
+  background-color: var(--secondary);
+  border-radius: 2rem;
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+}
+
+.labs {
+  color: white;
+  margin: 2rem;
+}
+
+.labs header {
+  margin-bottom: 1rem;
+}
+
+@media (width <=1024px) {
+  footer {
+    padding: 1rem;
+  }
+}
+
+@media (width <=600px) {
+  .product {
+    width: auto;
+  }
+}
+</style>
