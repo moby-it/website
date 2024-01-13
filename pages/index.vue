@@ -3,7 +3,7 @@
     <section class="banner">
       <hgroup>
         <h1>
-          <em>Tailor-made Software Solutions</em>
+          Tailor-made Software Solutions
         </h1>
         <h4>Materialize your ideas, staff your team - Your tech ally in a digital era.</h4>
       </hgroup>
