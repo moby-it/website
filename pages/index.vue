@@ -7,7 +7,6 @@
         </h1>
         <h4>Materialize your ideas, staff your team - Your tech ally in a digital era.</h4>
       </hgroup>
-      <NuxtImg id="tail" src="/whale.png" alt="whale-tail" aria-hidden="true" />
     </section>
     <section id="home-content">
       <section class="what-we-do" aria-hidden="true">
@@ -16,33 +15,33 @@
           <article class="card">
             <header>
               <NuxtImg src="/icons/community.svg" alt="communication" aria-hidden="true" />
-              <h4>Software Consulting</h4>
+              <h4>Consulting & Analysis</h4>
             </header>
             <p class="content">
               Whether you're tackling intricate software challenges or just curious about
-              digitizing your business needs, we're here to help you find smart, practical
-              solutions that fit your business just right.
+              digitizing your business needs, we're here to help you <em>find smart, practical
+                solutions </em>that fit your business just right.
             </p>
           </article>
           <article class="card">
             <header>
               <NuxtImg src="/icons/light-bulb-on.svg" alt="light bulb on" aria-hidden="true" />
-              <h4 class="title">Product Development</h4>
+              <h4 class="title">Design & Development</h4>
             </header>
             <p class="content">
               From concept to code, we can help you empower your business in the digital
               landscape. We provide strategic Business Analysis, functional UI Design and
-              meticulous Software Development in a cost-efficient manner.
+              meticulous Software Development in a <em>cost-efficient manner</em>.
             </p>
           </article>
           <article class="card">
             <header>
               <NuxtImg src="/icons/code-brackets-square.svg" alt="code-brackets" aria-hidden="true" />
-              <h4 class="title">Software Services</h4>
+              <h4 class="title">Development Support</h4>
             </header>
             <p class="content">
               With over 8 years of experience staffing enterprise software development teams, we
-              have the skills and expertise to help you accelerate your development process.
+              have the skills and expertise to help you <em> accelerate your development process</em>.
             </p>
           </article>
         </div>

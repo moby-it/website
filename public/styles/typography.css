@@ -27,7 +27,7 @@ h5 {
 }
 em {
   font-family: "Aeonik Pro", sans-serif;
-  font-style: italic;
+  font-weight: bold;
 }
 @media (width < 426px) {
   h1 {
