@@ -6,6 +6,13 @@ export default defineNuxtConfig({
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
   },
+  routeRules: {
+    "/api/event": {
+      proxy: {
+        to: "https://plausible.io/api/event"
+      }
+    }
+  },
   nitro: {
     routeRules: {
       '*': {

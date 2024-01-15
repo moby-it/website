@@ -30,7 +30,7 @@ useHead({
   ],
   script: [
     {
-      src: 'https://plausible.io/js/script.js',
+      src: 'https://moby-it.com/script.js',
       defer: true,
       "data-domain": 'moby-it.com'
     }
