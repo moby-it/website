@@ -30,7 +30,7 @@ useHead({
   ],
   script: [
     {
-      src: 'https://moby-it.com/script.js',
+      src: 'https://moby-it.com/js/script.js',
       defer: true,
       "data-domain": 'moby-it.com'
     }
