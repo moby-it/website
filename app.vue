@@ -26,11 +26,15 @@ useHead({
     {
       "http-equiv": 'x-ua-compatible',
       content: 'IE=edge'
+    },
+    {
+      name: "viewport",
+      content: 'width=device-width,initial-scale=1.0'
     }
   ],
   script: [
     {
-      src: 'https://moby-it.com/js/script.js',
+      src: 'https://plausible.io/js/script.js',
       defer: true,
       "data-domain": 'moby-it.com'
     }
@@ -39,7 +43,7 @@ useHead({
 </script>
 <template>
   <Header />
-  <section>
+  <section class="page">
     <NuxtPage />
   </section>
   <Footer />

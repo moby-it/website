@@ -1,3 +1,10 @@
+<script setup>
+useSeoMobyHead(
+  {
+    title: 'Moby IT - Sofware Services',
+    description: 'Digitizing businesses workflows at predictable costs.'
+  });
+</script>
 <template>
   <main>
     <section class="banner">
