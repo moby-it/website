@@ -26,7 +26,7 @@ useHead({
             </ul>
             <ul class="links">
               <li>
-                <a href="https://playpokerodds.com/" target="_blank">
+                <a href="https://playpokerodds.com/" target="_blank" title="website">
                   <img src="/link.svg" alt="" width="30" />
                 </a>
               </li>
@@ -45,13 +45,13 @@ useHead({
             </ul>
             <ul class="links">
               <li>
-                <a href="https://github.com/moby-it/planning-poker" target="_blank">
-                  <img  src="/github-circle.svg" alt="" width="30" />
+                <a href="https://github.com/moby-it/planning-poker" target="_blank" title="Github">
+                  <img src="/github-circle.svg" alt="" width="30" />
                 </a>
               </li>
               <li>
-                <a href="https://poker-planning.net/" target="_blank">
-                  <img  src="/link.svg" alt="" width="30" />
+                <a href="https://poker-planning.net/" target="_blank" title="website">
+                  <img src="/link.svg" alt="" width="30" />
                 </a>
               </li>
             </ul>
@@ -76,8 +76,8 @@ useHead({
             </ul>
             <ul class="links">
               <li>
-                <a href="https://github.com/moby-it/boochat-server" target="_blank">
-                  <img  src="/github-circle.svg" alt="" width="30" />
+                <a href="https://github.com/moby-it/boochat-server" target="_blank" title="Github">
+                  <img src="/github-circle.svg" alt="" width="30" />
                 </a>
               </li>
             </ul>
