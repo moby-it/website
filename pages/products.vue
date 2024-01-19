@@ -12,29 +12,6 @@ useHead({
       <section class="products">
         <article class="product">
           <header>
-            <h4>Play Poker Odds</h4>
-            <p class="description">
-              Guess your winning odds in a given Texas Hold'em situation. No
-              bets, just fun.
-            </p>
-          </header>
-          <section class="metadata">
-            <ul>
-              <li>Angular</li>
-              <li>Express</li>
-              <li>Docker</li>
-            </ul>
-            <ul class="links">
-              <li>
-                <a href="https://playpokerodds.com/" target="_blank" title="website">
-                  <img src="/link.svg" alt="" width="30" />
-                </a>
-              </li>
-            </ul>
-          </section>
-        </article>
-        <article class="product">
-          <header>
             <h4>Scrum Poker Planning</h4>
             <p class="description">User Friendly, Open Source, Free Forever.</p>
           </header>
