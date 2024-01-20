@@ -27,7 +27,7 @@ useHead({
         <NuxtImg src="/team/mado.jpg" alt="Mado Profile Picture" :width="274" :height="274" />
         <section>
           <h4>Mado Kallivoka</h4>
-          <h5>Operation Manager</h5>
+          <h5>Operations Manager</h5>
           <aside>Wears weird shoes</aside>
         </section>
         <section>
