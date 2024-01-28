@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   modules: [
     '@nuxt/image',
+    '@nuxtjs/i18n'
   ],
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },

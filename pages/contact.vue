@@ -40,42 +40,44 @@ async function submitForm() {
 
 </script>
 <template>
-  <Card min-width="60%">
-    <template #header>
-      <h1>Contact Us</h1>
-    </template>
-    <template v-if="status !== 'success'" #content>
-      <header>
-        <div>
-          <label for="email">Email:</label>
-          <input v-model="form.email" type="email" id="email" name="email" placeholder="example@company.com">
-        </div>
-        <p>Date: {{ new Date().toLocaleDateString() }}</p>
-      </header>
-      <section class="contact-body">
-        <p>Hello Moby! My name is <input name="username" v-model="form.name" placeholder="Your Name"> and I represent
-          <input v-model="form.company" name="company" placeholder="Company name">.
-        </p>
-        <section class="services"><span>I'm interested in</span>
-          <ClientOnly>
-            <VueMultiselect v-model="form.services" :multiple="true" :close-on-select="true" :options="options"
-              placeholder="Select a service" />
-          </ClientOnly>
-        </section>
-        <textarea v-model="form.moreInfo" name="details" id="details"
-          placeholder="I'd also like to learn more about..."></textarea>
+  <form @submit.prevent="submitForm">
+    <Card min-width="60%">
+      <template #header>
+        <h1>Contact Us</h1>
+      </template>
+      <template v-if="status !== 'success'" #content>
+        <header>
+          <div>
+            <label for="email">Email:</label>
+            <input v-model="form.email" type="email" id="email" name="email" placeholder="example@company.com">
+          </div>
+          <p>Date: {{ new Date().toLocaleDateString() }}</p>
+        </header>
+        <section class="contact-body">
+          <p>Hello Moby! My name is <input name="username" v-model="form.name" placeholder="Your Name"> and I represent
+            <input v-model="form.company" name="company" placeholder="Company name">.
+          </p>
+          <section class="services"><span>I'm interested in</span>
+            <ClientOnly>
+              <VueMultiselect v-model="form.services" :multiple="true" :close-on-select="true" :options="options"
+                placeholder="Select a service" />
+            </ClientOnly>
+          </section>
+          <textarea v-model="form.moreInfo" name="details" id="details"
+            placeholder="I'd also like to learn more about..."></textarea>
 
-        <p class="error" v-for="error of formErrors">{{ error }}</p>
-      </section>
-      <Button @clicked="submitForm" min-width="100px" :disabled="status === 'pending' || disabled"> {{ buttonText }}
-        <LoadingSpinner v-if="status === 'pending'" />
-      </Button>
-    </template>
-    <template v-else #content>
-      <h4 style="text-align:center;">We got your message and we'll reach out to you shortly!</h4>
-      <NuxtLink to="/">Back to Home</NuxtLink>
-    </template>
-  </Card>
+          <p class="error" v-for="error of formErrors">{{ error }}</p>
+        </section>
+        <Button type="submit" min-width="100px" :disabled="status === 'pending' || disabled"> {{ buttonText }}
+          <LoadingSpinner v-if="status === 'pending'" />
+        </Button>
+      </template>
+      <template v-else #content>
+        <h4 style="text-align:center;">We got your message and we'll reach out to you shortly!</h4>
+        <NuxtLink to="/">Back to Home</NuxtLink>
+      </template>
+    </Card>
+  </form>
 </template>
 <style scoped>
 h1,
