@@ -8,20 +8,20 @@ export type Service = {
 const services: Service[] = [
   {
     title: 'Consulting & Analysis',
-    imgUrl: '/icons/code-brackets-square-pink.svg',
+    imgUrl: 'https://placehold.co/150x150',
     id: 'consulting-and-analysis',
     price: '2.000'
   },
   {
     title: 'Design & Development',
-    imgUrl: '/icons/code-brackets-square-pink.svg',
+    imgUrl: 'https://placehold.co/150x150',
     id: 'design-and-development',
     price: '8.000'
 
   },
   {
     title: 'Development Support',
-    imgUrl: '/icons/code-brackets-square-pink.svg',
+    imgUrl: 'https://placehold.co/150x150',
     id: 'development-support',
     price: '6.000'
   },
@@ -248,7 +248,8 @@ const model = defineModel<boolean>();
 
 .service-descriptions>section>div {
   grid-area: image;
-  background-color: lightcoral;
+  background-image: url('https://placehold.co/780x780');
+  background-size: cover;
 }
 
 h2 {

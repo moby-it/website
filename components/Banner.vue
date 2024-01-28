@@ -1,9 +1,12 @@
 
 <script setup lang="ts">
-const props = defineProps<{ title: string; }>();
+defineProps({
+  title: { type: String, required: true },
+  imageUrl: { type: String, default: 'https://placehold.co/1440x700' }
+});
 </script>
 <template>
-  <section class="banner">
+  <section class="banner" :style="{ backgroundImage: `url(${$props.imageUrl})` }">
     <hgroup>
       <h1 v-html="$props.title">
       </h1>
@@ -15,7 +18,8 @@ const props = defineProps<{ title: string; }>();
 
 <style scoped>
 .banner {
-  background-color: lightcoral;
+  background-size: cover;
+  background-position: top;
   min-height: 75vh;
   display: flex;
   flex-direction: column;

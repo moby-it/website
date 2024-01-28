@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import type { Service } from '~/pages/services-and-pricing.vue';
 const props = defineProps<{ service: Service; discount: boolean; discountPrice?: string; }>();
-console.log('service: ', props.service.title, '. discount price', props.discountPrice);
 </script>
 <template>
   <NuxtLink :to="'#' + $props.service.id">

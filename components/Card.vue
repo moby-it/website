@@ -6,11 +6,15 @@ defineProps({
   minWidth: {
     type: String,
     default: '390px'
-  }
+  },
+  maxWidth: {
+    type: String,
+    default: 'auto'
+  },
 });
 </script>
 <template>
-  <article class="card" :style="{ minHeight, minWidth }">
+  <article class="card" :style="{ minHeight, minWidth,maxWidth }">
     <header>
       <slot name="header"></slot>
     </header>

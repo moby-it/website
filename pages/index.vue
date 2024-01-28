@@ -22,7 +22,7 @@ useSeoMobyHead(
       <article id="what-we-do" class="what-we-do" aria-hidden="true">
         <h2>We provide</h2>
         <div>
-          <Card :minHeight="'445px'">
+          <Card :minHeight="'445px'" max-width="390px">
             <template #header>
               <NuxtImg src="/icons/community.svg" alt="communication" aria-hidden="true" :width="80" />
               <h4>Consulting & Analysis</h4>
@@ -41,7 +41,7 @@ useSeoMobyHead(
               </ul>
             </template>
           </Card>
-          <Card>
+          <Card max-width="390px">
             <template #header>
               <NuxtImg src="/icons/light-bulb-on.svg" alt="light bulb on" aria-hidden="true" :width="80" />
               <h4 class="title">Design & Development</h4>
@@ -58,7 +58,7 @@ useSeoMobyHead(
                 </em>package</p>
             </template>
           </Card>
-          <Card :minHeight="'445px'">
+          <Card :minHeight="'445px'" max-width="390px">
             <template #header>
               <NuxtImg src="/icons/code-brackets-square.svg" alt="code-brackets" aria-hidden="true" :width="80" />
               <h4 class="title">Development Support</h4>
