@@ -10,11 +10,9 @@ defineProps({
     <header>
       <slot name="header"></slot>
     </header>
-    <p class="content">
-      <LazyClientOnly>
-        <slot name="content"></slot>
-      </LazyClientOnly>
-    </p>
+    <div class="content">
+      <slot name="content"></slot>
+    </div>
   </article>
 </template>
 <style scoped>
@@ -44,8 +42,7 @@ defineProps({
 .card header img {
   width: 96px;
 }
-
-.card .content {
+.content {
   color: var(--gray);
 }
 

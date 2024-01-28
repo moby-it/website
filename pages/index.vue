@@ -7,21 +7,18 @@ useSeoMobyHead(
 </script>
 <template>
   <main>
-    <section class="banner">
-      <hgroup>
-        <h1>
-          Tailor-made Software Solutions
-        </h1>
+    <Banner title="Tailor-made Software Solutions">
+      <template #subtitle>
         <h4>Digitizing workflows for <abbr title="Small and Medium Enterprises"> SMEs</abbr>
-          at <NuxtLink to="#what-we-do"> predictable costs.</NuxtLink>
+          at <NuxtLink to="/services-and-pricing"> predictable costs.</NuxtLink>
         </h4>
         <h4>Your tech ally in a digital era.</h4>
-      </hgroup>
+      </template>
       <Button @clicked="() => navigateTo('/contact')">
         Don't be a stranger
       </Button>
-    </section>
-    <section>
+    </Banner>
+    <section id="">
       <article id="what-we-do" class="what-we-do" aria-hidden="true">
         <h2>We provide</h2>
         <div>
@@ -92,54 +89,15 @@ useSeoMobyHead(
       </article>
     </section>
     <div>
-      <ScrollToTop :selector="'main > section:last-child'" />
+      <ScrollToTop selector="#what-we-do" />
     </div>
   </main>
 </template>
 <style scoped>
-.banner {
-  background-color: lightcoral;
-  min-height: 75vh;
-  display: flex;
-  flex-direction: column;
-  padding: var(--gap-3);
-  gap: var(--gap-1);
-}
-
 .card ul {
   display: flex;
   flex-direction: column;
   gap: var(--gap-1);
-}
-
-.banner hgroup {
-  max-width: 60%;
-  margin-bottom: var(--gap-3);
-}
-
-a {
-  color: var(--secondary);
-}
-
-hgroup h1 {
-  margin-bottom: var(--gap-2);
-}
-
-@media screen and (max-width: 425px) {
-  .banner {
-    padding: var(--gap-2);
-    padding-top: var(--gap-1);
-    max-width: 40%;
-  }
-}
-
-main>section:nth-child(2) {
-  background-image: url("/background.png");
-  background-size: cover;
-  color: white;
-  width: 100%;
-  padding-top: 8rem;
-  padding-bottom: 4rem;
 }
 
 .customers>div,
@@ -153,9 +111,6 @@ main>section:nth-child(2) {
   margin-bottom: var(--gap-3);
 }
 
-/* .customers { 
-  background-color: white;
-} */
 .what-we-do h2,
 .what-we-do h4,
 .customers h2,

@@ -23,21 +23,22 @@ onMounted(() => {
 </script>
 
 <template>
-  <NuxtImg v-if="show" ref="img" id="scroll-up" @click="scrollToTop" src="/icons/arrow-up.svg" alt="arrow up"
+  <NuxtImg v-show="show" ref="img" id="scroll-up" @click="scrollToTop" src="/icons/arrow-up.svg" alt="arrow up"
     aria-label="scroll to top" :width="30" />
 </template>
 <style scoped>
 img {
   cursor: pointer;
+  background-color: var(--primary--opacity--weak);
   position: fixed;
   right: var(--gap-2);
   bottom: var(--gap-2);
   border-radius: 50%;
-  border: 2px solid black;
+  border: 2px solid var(--primary--opacity--weak);
   padding: var(--gap-1);
 }
-
 img:hover {
-  background-color: lightgray;
+  background-color: var(--primary--opacity--strong);
+
 }
 </style>
