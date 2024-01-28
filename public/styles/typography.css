@@ -91,6 +91,16 @@ em {
   font-weight: bold;
 }
 
+small {
+  font-size: small;
+}
+p {
+  margin-bottom: var(--gap-1);
+}
+.italic {
+  font-style: italic;
+}
+
 @media (width < 426px) {
   body {
     font-size: 14px;

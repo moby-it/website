@@ -72,6 +72,7 @@ header nav ul {
   display: flex;
   justify-content: center;
   gap: var(--gap-3);
+  list-style: none;
 }
 
 nav a:hover {
