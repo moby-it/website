@@ -84,13 +84,13 @@ const model = defineModel<boolean>();
                   your processes?</em>
                 Or maybe you are ready to take your business to the next step and don't know how. In a digital era, every
                 business managers has wonder weather a "program" will help them <em> cut costs and/or scale </em> at some
-                point.</p>
+                point. In case you're wondering, we're here for you.</p>
             </section>
             <section>
               <h4>The process</h4>
               <p>
-                With this <em> low-cost package</em> you have the ability to explore a plethora of digital solutions
-                (assuming there are any), leveraging our multi-year experience in digitizing business workflows. Below are
+                With this <em> low-cost package</em> you have the ability to explore any possible digital solutions
+                with us, leveraging our multi-year experience in digitizing business workflows. Below are
                 some indicative steps of the process:
               </p>
               <ol>
@@ -100,9 +100,9 @@ const model = defineModel<boolean>();
                   enough. During the meeting we typically require some business workflow description diagrams.
                 </li>
                 <li>
-                  We go into a <em>deep think</em> - having your needs in mind, we evaluate a plethora of digital
-                  solutions that
-                  could help your business scale, cut costs, achieve its goals, or combination
+                  We go into a <em>deep think</em> - having your needs in mind, we brainstorm around your issue and
+                  evaluate how any digital solution could help your business scale, cut costs, achieve its goals, or
+                  combination
                   thereof.
                 </li>
               </ol>
@@ -110,7 +110,7 @@ const model = defineModel<boolean>();
             <section>
               <h4>Outcome</h4>
               <p>You get a <em> Functional Specification Document (FSD)</em> that thoroughly describes the proposed
-                solution(s). Alongside the FSD we provide a <em> timeframe </em>in which we could deliver the proposed
+                solution(s). Alongside the FSD, we provide a <em> timeframe </em>in which we could deliver the proposed
                 solution, if requested so. </p>
               <p>This package lives by our values of <em> open-ended relations</em> and <em>partnerships driven by
                   value</em>. You're free to choose weather you proceed with the implementation immidiately, or
@@ -131,15 +131,37 @@ const model = defineModel<boolean>();
             <h2>Design & Development</h2>
             <section>
               <h4>Problem Space</h4>
-              <p></p>
+              <p>Are you an <em> entrepreneur gearing up to raise capital</em> or already in possession of it, now seeking
+                technical
+                co-founders? Or perhaps you're facing a business challenge that requires a <em> well-defined digital
+                  solution?</em>
+              </p>
+              <p>Our Design & Development package is tailored specifically for you.</p>
+              <p class="italic">
+                This package follows naturally from our Consulting & Analysis package, catering to entrepreneurs, business
+                owners, and operations managers who have a clear vision of the digital product their business needs.
+              </p>
             </section>
             <section>
               <h4>The process</h4>
-              <p></p>
+              <p>When purchasing this package, you get a unit of <em> 3 people dedicated to your project </em>- an
+                analyst, a designer and a developer, for a specific duration. This unit operates autonomously within Moby
+                IT and is responsible of addressing any possible need that might arise during the Product Development
+                Cycle. Picture it as your own compact, high-functioning company. Every member <em> leverages modern
+                  technology stacks</em>, Cloud infrastructure and efficient communcation methodologies, in order to
+                deliver effective products at an impressive pace.</p>
+
+              <p class="italic">As mentioned above, the unit is dedicated to you for a specific duration. This duration is
+                agreed upon signing, impling any cost thereof, since each month has a fixed price. This makes sure that
+                you know what you'll be billed ahead of time, eliminating unexpected costs that are typically associated
+                with software projects. In Moby IT, we take full responsibility for any unforeseen challenges.
+              </p>
             </section>
             <section>
               <h4>Outcome</h4>
-              <p></p>
+              <p>You will receive a comprehensive software platform tailored to your needs. Additionally, we provide
+                insights into maintenance and future scalability of the software, equipping you with knowledge for
+                long-term success.</p>
               <em>Price:
                 <Price :has-discount="!!model" :original-price="prices[1]" :discounted-price="discountPrices[1]" />
               </em>
@@ -236,6 +258,10 @@ const model = defineModel<boolean>();
   display: flex;
   flex-direction: column;
   gap: var(--gap-2);
+}
+
+#design-and-development>.description {
+  padding-right: var(--gap-1);
 }
 
 .description h4 {

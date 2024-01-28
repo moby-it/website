@@ -8,7 +8,7 @@ defineProps<{
 <template>
   <span v-if="hasDiscount" class="original-price">{{ originalPrice }} </span>
   <span class="price">{{ hasDiscount ? discountedPrice : originalPrice }}</span>
-  € /per month
+  € / per month
 </template>
 <style>
 .original-price {
