@@ -14,7 +14,7 @@ defineEmits(['linkClicked']);
       <NuxtLink active-class="active" to="/about-us" @click="() => $emit('linkClicked', e)">About Us</NuxtLink>
     </li>
     <li>
-      <NuxtLink active-class="active" to="https://gspanos.tech" @click="() => $emit('linkClicked', e)">Blog</NuxtLink>
+      <NuxtLink active-class="active" to="https://gspanos.tech" target="_blank" @click="() => $emit('linkClicked', e)">Blog</NuxtLink>
     </li>
     <li>
       <NuxtLink active-class="active" to="/contact" @click="() => $emit('linkClicked', e)">Contact</NuxtLink>
