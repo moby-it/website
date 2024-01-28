@@ -112,15 +112,12 @@ header div {
 .services {
   display: flex;
   align-items: center;
+  padding-inline-start: 0;
 }
 
 .services span {
   min-width: fit-content;
   margin-right: var(--gap-1);
-}
-
-.services {
-  padding-inline-start: 0;
 }
 
 .card {
@@ -129,7 +126,7 @@ header div {
 }
 
 label {
-  font-size: larger;
+  font-size: 1.2rem;
 }
 
 textarea {
@@ -138,7 +135,7 @@ textarea {
 }
 
 .contact-body input {
-  max-width: 150px;
+  max-width: 140px;
 }
 
 input,

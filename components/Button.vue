@@ -17,13 +17,13 @@ defineEmits(['clicked']);
 .cta {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   gap: var(--gap-1);
   align-self: start;
   background-color: var(--primary--opacity--strong);
   border-radius: var(--radius);
   border: none;
-  padding: var(--gap-1);
+  padding: 1rem;
   color: white;
   cursor: pointer;
 }

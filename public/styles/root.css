@@ -16,7 +16,7 @@ body {
 
 ul:not(.nav-links, .multiselect__content),
 ol {
-  padding-inline-start: var(--gap-3);
+  padding-inline-start: var(--gap-4);
 }
 
 abbr {

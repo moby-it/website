@@ -39,7 +39,7 @@ const isMobile = inject<ComputedRef<Boolean>>('isMobile');
         Moby IT works with <em> a network of experts</em>, which I have acquired through my career. Most of
         these people have over 13 years of experience in their respective fields. Through focus, discipline and
         dedication, we're able to provide quality services with predictable costs. We trust in our ability and experience
-        to anticipate change enough, so that we can reflect it in our <NuxtLink to="/services-and-pricing">pricing
+        to anticipate change enough, so that we can reflect it in our <NuxtLink to="/services-and-pricing#services">pricing
           model </NuxtLink>.
       </p>
     </section>
@@ -87,39 +87,15 @@ h4 {
   margin-bottom: var(--gap-1);
 }
 
+.about-us,
+.values {
+  padding: 0 var(--gap-2);
+}
+
 .quote {
   display: flex;
   align-items: flex-start;
   gap: var(--gap-1);
-}
-
-
-.about-us>p,
-.values,
-.quote {
-  padding: 0 var(--gap-3);
-  font-size: larger;
-  margin: 0 auto var(--gap-1) auto;
-}
-
-.members {
-  display: flex;
-  justify-content: center;
-  gap: var(--gap-2);
-}
-
-.member {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.member img {
-  border-radius: 12px;
-}
-
-.member p {
-  font-weight: 300;
 }
 
 @media (width < 426px) {
@@ -130,11 +106,8 @@ h4 {
 }
 
 @media (width >=1024px) {
-
-  .about-us>p,
-  .values,
-  .quote {
+  .about-us, .values {
     max-width: 60%;
+    margin: 0 auto var(--gap-1) auto;
   }
-}
-</style>
+}</style>

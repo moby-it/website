@@ -57,13 +57,14 @@ button,
 input {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5;
 }
 
 h1 {
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   line-height: 1.1em;
+  font-weight: 600;
   font-family: "Aeonik Pro", sans-serif;
 }
 
@@ -84,6 +85,11 @@ h4 {
 
 h5 {
   font-size: 1.25rem;
+  font-family: "Aeonik Pro", sans-serif;
+}
+
+h5 {
+  font-size: 1rem;
   font-family: "Aeonik Pro", sans-serif;
 }
 

@@ -50,7 +50,7 @@ address {
   flex: 1;
   display: flex;
   justify-content: center;
-  gap: var(--gap-3);
+  gap: var(--gap-2);
   list-style: none;
   flex-wrap: wrap;
   row-gap: var(--gap-1);

@@ -19,7 +19,7 @@ useSeoMobyHead(
       </Button>
     </Banner>
     <section>
-      <article id="what-we-do" class="what-we-do" aria-hidden="true">
+      <article id="what-we-do" class="what-we-do">
         <h2>We provide</h2>
         <div>
           <Card minHeight="565px" max-width="390px">
@@ -91,13 +91,14 @@ useSeoMobyHead(
       </article>
     </section>
     <div>
-      <ScrollToTop selector="#what-we-do" />
+      <ScrollToTop selector="#what-we-do, footer, .customers" />
     </div>
   </main>
 </template>
 <style scoped>
 h2 {
   text-align: center;
+  margin-bottom: var(--gap-2);
 }
 
 .card ul {
@@ -114,7 +115,7 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-bottom: var(--gap-3);
+  margin-bottom: var(--gap-4);
 }
 
 .what-we-do header,
@@ -125,6 +126,6 @@ h2 {
 
 .what-we-do>h4 {
   text-align: center;
-  margin-bottom: var(--gap-3);
+  margin-bottom: var(--gap-4);
 }
 </style>

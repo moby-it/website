@@ -50,8 +50,8 @@ footer {
   ;
   background-image: url("/footer.png");
   background-size: cover;
-  margin-top: var(--gap-3);
-  padding: var(--gap-3) var(--gap-2);
+  margin-top: var(--gap-4);
+  padding: var(--gap-4) var(--gap-2);
   gap: var(--gap-1);
 }
 
@@ -111,7 +111,7 @@ ul {
       "partners links"
       "copyrights copyrights"
     ;
-    gap: var(--gap-3);
+    gap: var(--gap-4);
   }
 
   .social,

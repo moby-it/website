@@ -19,7 +19,7 @@ watchEffect(() => {
   <Teleport to="body">
     <nav class="mobile" v-if="expanded">
       <header>
-        <NuxtImg src="/logo.png" alt="moby-it logo" :width="150" :height="34" />
+        <img src="/logo.png" alt="moby-it logo" width="150" height="34" />
         <NuxtImg src="/icons/x.svg" width="28" @click="() => expanded = !expanded" />
       </header>
       <section class="links">
@@ -56,7 +56,7 @@ watchEffect(() => {
 .mobile header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: var(--gap-3);
+  margin-bottom: var(--gap-4);
 }
 
 address {
@@ -80,7 +80,7 @@ address {
   list-style: none;
   flex-wrap: wrap;
   row-gap: var(--gap-1);
-  font-size: 2rem;
+  font-size: 1.4rem;
   text-align: center;
 }
 

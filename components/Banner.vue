@@ -26,9 +26,9 @@ const isMobile = inject('isMobile');
   min-height: 75vh;
   display: flex;
   flex-direction: column;
-  padding: var(--gap-3);
+  padding: var(--gap-4);
   gap: var(--gap-1);
-  margin-bottom: var(--gap-3);
+  margin-bottom: var(--gap-4);
 }
 
 .title {
@@ -37,10 +37,9 @@ const isMobile = inject('isMobile');
 
 .banner hgroup {
   max-width: 40%;
-  margin-bottom: var(--gap-3);
+  margin-bottom: var(--gap-2);
 }
-
-hgroup h1 {
+hgroup h1:not(:only-child) {
   margin-bottom: var(--gap-2);
 }
 

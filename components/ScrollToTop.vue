@@ -11,12 +11,12 @@ onMounted(() => {
   const observer = new IntersectionObserver((entries, observer) => {
     for (const entry of entries) {
       if (entry.isIntersecting)
-        show.value = true;
-      else
         show.value = false;
+      else
+        show.value = true;
     }
   }, { root: null, threshold: 0.1 });
-  const el = document.querySelector(props.selector);
+  const el = document.querySelector('#site-id');
   if (el)
     observer.observe(el);
 });

@@ -58,7 +58,7 @@ const model = defineModel<boolean>();
               business
               around the world and we provide Purchasing Power Parity discounts.</p>
             <section class="regional-pricing">
-              <label for="regional-pricing">Activate regional pricing</label>
+              <label for="regional-pricing"><em> Activate regional pricing</em></label>
               <Toggle v-model="model" id="regional-pricing"></Toggle>
             </section>
           </aside>
@@ -256,21 +256,21 @@ const model = defineModel<boolean>();
 
 .service-badges {
   display: flex;
-  gap: var(--gap-3);
+  gap: var(--gap-4);
   justify-content: center;
   text-align: center;
   flex-wrap: wrap;
 }
 
 .services>section {
-  padding: 0 var(--gap-3);
+  padding: 0 var(--gap-4);
 }
 
 .service-descriptions {
   display: flex;
   flex-direction: column;
   gap: var(--gap-2);
-  margin: var(--gap-3) 0;
+  margin: var(--gap-4) 0;
 }
 
 .service-descriptions>section {
@@ -278,7 +278,7 @@ const model = defineModel<boolean>();
   grid-template-rows: auto 1fr;
   row-gap: var(--gap-2);
   grid-template-columns: 1fr 1fr;
-  column-gap: var(--gap-3);
+  column-gap: var(--gap-4);
   grid-template-areas:
     "title image"
     "description image"
@@ -316,7 +316,8 @@ hgroup {
 
 .service-descriptions>section>div {
   grid-area: image;
-  background-image: url('https://placehold.co/800x800');
+  background-image: url('https://placehold.co/550x1000');
+  background-position: center;
   background-size: cover;
 }
 
@@ -341,7 +342,7 @@ h2 {
       "image"
     ;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr 1fr;
+    grid-template-rows: auto 1fr 300px;
     justify-content: center;
   }
 }
