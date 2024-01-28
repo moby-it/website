@@ -95,7 +95,9 @@ small {
   font-size: small;
 }
 
-p {
+p,
+ul,
+ol {
   margin-bottom: var(--gap-1);
 }
 

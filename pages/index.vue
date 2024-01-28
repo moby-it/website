@@ -15,7 +15,7 @@ useSeoMobyHead(
         <h4>Your tech ally in a digital era.</h4>
       </template>
       <Button @clicked="() => navigateTo('/contact')">
-        Don't be a stranger
+       Contact Us
       </Button>
     </Banner>
     <section id="">
