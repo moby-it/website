@@ -74,7 +74,7 @@ const model = defineModel<boolean>();
         <section id="consulting-and-analysis">
           <hgroup>
             <h2>Consulting & Analysis</h2>
-            <p class="italic">Not all problems are solved with software. We're here to help you figure this out.
+            <p class="italic">Not all problems are solved with software. We're here to help identify those who do.
             </p>
           </hgroup>
           <section class="description">
@@ -83,7 +83,7 @@ const model = defineModel<boolean>();
               <p>Are you a <em>business owner</em> or <em>operations manager</em>? Have you <em>identified bottlenecks in
                   your processes?</em>
                 Or maybe you are ready to take your business to the next step and don't know how. In a digital era, every
-                business managers has wonder weather a "program" will help them <em> cut costs and/or scale </em> at some
+                business manager has wondered weather a "program" will help them <em> cut costs and/or scale </em> at some
                 point. In case you're wondering, we're here for you.</p>
             </section>
             <section>
@@ -110,7 +110,8 @@ const model = defineModel<boolean>();
             <section>
               <h4>Outcome</h4>
               <p>You get a <em> Functional Specification Document (FSD)</em> that thoroughly describes the proposed
-                solution(s). Alongside the FSD, we provide a <em> timeframe </em>in which we could deliver the proposed
+                solution(s) from a business standpoint. Alongside the FSD, we provide a <em> timeframe </em>in which we
+                could deliver the proposed
                 solution, if requested so. </p>
               <p>This package lives by our values of <em> open-ended relations</em> and <em>partnerships driven by
                   value</em>. You're free to choose weather you proceed with the implementation immidiately, or
@@ -138,18 +139,19 @@ const model = defineModel<boolean>();
               </p>
               <p>Our Design & Development package is tailored specifically for you.</p>
               <p class="italic">
-                This package follows naturally from our Consulting & Analysis package, catering to entrepreneurs, business
+                This package is a natural follow-up of the Consulting & Analysis package, catering to entrepreneurs,
+                business
                 owners, and operations managers who have a clear vision of the digital product their business needs.
               </p>
             </section>
             <section>
               <h4>The process</h4>
               <p>When purchasing this package, you get a unit of <em> 3 people dedicated to your project </em>- an
-                analyst, a designer and a developer, for a specific duration. This unit operates autonomously within Moby
-                IT and is responsible of addressing any possible need that might arise during the Product Development
-                Cycle. Picture it as your own compact, high-functioning company. Every member <em> leverages modern
-                  technology stacks</em>, Cloud infrastructure and efficient communcation methodologies, in order to
-                deliver effective products at an impressive pace.</p>
+                analyst, a designer and a developer. This unit operates autonomously within Moby IT and is responsible of
+                addressing any possible need that might arise during the Product Development Cycle. Picture it as your own
+                compact, high-functioning company. Every member <em> leverages modern technology stacks</em>, Cloud
+                infrastructure and efficient communcation methodologies, in order to deliver effective products at an
+                impressive pace.</p>
 
               <p class="italic">As mentioned above, the unit is dedicated to you for a specific duration. This duration is
                 agreed upon signing, impling any cost thereof, since each month has a fixed price. This makes sure that
