@@ -52,7 +52,7 @@
 }
 
 header:has(nav) {
-  min-height: 10vh;
+  min-height: 6vh;
   display: flex;
   justify-content: space-between;
   align-items: center;

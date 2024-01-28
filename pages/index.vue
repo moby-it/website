@@ -12,9 +12,12 @@ useSeoMobyHead(
         <h1>
           Tailor-made Software Solutions
         </h1>
-        <h4>Digitizing businesses workflows at predictable costs.</h4>
+        <h4>Digitizing workflows for small and medium enterprises at predictable costs.</h4>
         <h4>Your tech ally in a digital era.</h4>
       </hgroup>
+      <Button @clicked="() => navigateTo('/contact')">
+        Contact Us
+      </Button>
     </section>
     <section>
       <section class="what-we-do" aria-hidden="true">
@@ -60,7 +63,7 @@ useSeoMobyHead(
           <Card>
             <template #header>
               <NuxtImg src="/icons/user-scan.svg" alt="user-target" aria-hidden="true" />
-              <h4>User Centered Design</h4>
+              <h4>Transparency</h4>
             </template>
             <template #content>
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
@@ -95,7 +98,7 @@ useSeoMobyHead(
               <NuxtImg src="/icons/3d-bridge.svg" alt="bridge" aria-hidden="true" />
               <h4>Open-ended</h4>
             </template>
-            <template #content> 
+            <template #content>
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
               industry's standard dummy text ever since the 1500s.
             </template>
@@ -120,6 +123,7 @@ useSeoMobyHead(
 
 .banner hgroup {
   max-width: 60%;
+  margin-bottom: var(--gap-3);
 }
 
 hgroup h1 {
