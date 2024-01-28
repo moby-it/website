@@ -9,12 +9,13 @@ const isMobile = inject('isMobile');
 <template>
   <section class="banner" :style="{ backgroundImage: isMobile ? 'none' : `url(${$props.imageUrl})` }">
     <hgroup>
-      <h1 v-html="$props.title">
+      <h1 class="title" v-html="$props.title">
       </h1>
       <slot name="subtitle"></slot>
     </hgroup>
-    <NuxtImg v-if="isMobile" :src="$props.imageUrl" style="background-position: center ;object-fit: cover;" height="300" />
-      <slot></slot>
+    <NuxtImg v-if="isMobile" :src="$props.imageUrl" style="background-position: center ;object-fit: cover;"
+      height="300" />
+    <slot></slot>
   </section>
 </template>
 
@@ -30,13 +31,17 @@ const isMobile = inject('isMobile');
   margin-bottom: var(--gap-3);
 }
 
+.title {
+  font-size: 2.75rem;
+}
+
 .banner hgroup {
-  max-width: 60%;
+  max-width: 40%;
   margin-bottom: var(--gap-3);
 }
 
 hgroup h1 {
-  margin-bottom: var(--gap-3);
+  margin-bottom: var(--gap-2);
 }
 
 @media (width<=768px) {
@@ -47,6 +52,12 @@ hgroup h1 {
 
   .banner hgroup {
     max-width: 100%;
+  }
+}
+
+@media (width <=1024px) and (width >= 769px) {
+  .banner hgroup {
+    max-width: 50%;
   }
 }
 </style>
