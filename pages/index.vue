@@ -12,7 +12,7 @@ useSeoMobyHead(
         <h1>
           Tailor-made Software Solutions
         </h1>
-        <h4>Digitizing workflows for small and medium enterprises at predictable costs.</h4>
+        <h4>Digitizing workflows for <abbr title="Small and Medium Enterprises"> SMEs</abbr> at predictable costs.</h4>
         <h4>Your tech ally in a digital era.</h4>
       </hgroup>
       <Button @clicked="() => navigateTo('/contact')">
@@ -22,16 +22,24 @@ useSeoMobyHead(
     <section>
       <section class="what-we-do" aria-hidden="true">
         <h2>We provide</h2>
+
         <div>
-          <Card>
+          <Card :minHeight="'445px'">
             <template #header>
               <NuxtImg src="/icons/community.svg" alt="communication" aria-hidden="true" :width="80" />
               <h4>Consulting & Analysis</h4>
             </template>
             <template #content>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book.
+              <ul>
+                <li>
+                  <em>You bring </em>an intricate business problem that could be digitized for cost-savings and/or scaling
+                  profits.
+                </li>
+                <li><em>We bring </em>our years of experience in digitizing business workflows across many domains. We
+                  analyze your problem and structure a well-rounded, cost-efficient solution.</li>
+                <li><em>You get </em>a functional specification document that describes several solutions to your
+                  problems.</li>
+              </ul>
             </template>
           </Card>
           <Card>
@@ -40,69 +48,44 @@ useSeoMobyHead(
               <h4 class="title">Design & Development</h4>
             </template>
             <template #content>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book.
+              <ul style="margin-bottom: var(--gap-1);">
+                <li><em>You bring</em> a functional specification document of a specific business problem.</li>
+                <li><em>We bring</em> our hands and minds in order to bring the above specification to life. We utilize
+                  UX Driven Development and Lean Practices to provide the best bang for buck software in the market.</li>
+                <li><em>You get</em> a digital platform that addresses the problems desribed in the functional
+                  specification document.</li>
+              </ul>
+              <p style="font-style: italic;">This package is a natural sequence of the <em> Consulting & Analysis
+                </em>package</p>
             </template>
           </Card>
-          <Card>
+          <Card :minHeight="'445px'">
             <template #header>
               <NuxtImg src="/icons/code-brackets-square.svg" alt="code-brackets" aria-hidden="true" :width="80" />
               <h4 class="title">Development Support</h4>
             </template>
             <template #content>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s.
+              <ul>
+                <li>
+                  <em>You bring </em> a developer team that's tackles a tough deadline.
+                </li>
+                <li><em>We bring </em>our years of experience in staffing enteprise software teams and delivering under
+                  pressure.</li>
+                <li><em>You get </em>competent software craftsmanship at affordable prices.</li>
+              </ul>
             </template>
           </Card>
         </div>
+        <h4>Forget about unexpected costs. All of our services come at a <NuxtLink to="/services-and-pricing"> fixed montly price!
+          </NuxtLink>
+        </h4>
       </section>
-      <section class="what-we-value">
-        <h2>We value</h2>
+      <section class="customers">
+        <h2>Customers</h2>
         <div>
-          <Card>
-            <template #header>
-              <NuxtImg src="/icons/user-scan.svg" alt="user-target" aria-hidden="true" />
-              <h4>Transparency</h4>
-            </template>
-            <template #content>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book.
-            </template>
-          </Card>
-          <Card>
-            <template #header>
-              <NuxtImg src="/icons/multi-bubble.svg" alt="chat-bubbles" aria-hidden="true" />
-              <h4>Close Collaboration</h4>
-            </template>
-            <template #content>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book.
-            </template>
-          </Card>
-          <Card>
-            <template #header>
-              <NuxtImg src="/icons/packages.svg" alt="packaging" aria-hidden="true" />
-              <h4>Working Iteratively</h4>
-            </template>
-            <template #content>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book.
-            </template>
-          </Card>
-          <Card>
-            <template #header>
-              <NuxtImg src="/icons/3d-bridge.svg" alt="bridge" aria-hidden="true" />
-              <h4>Open-ended</h4>
-            </template>
-            <template #content>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s.
-            </template>
-          </Card>
+          <NuxtLink target="_blank" to="https://www.nrb.be/en/">
+            <NuxtImg :width="200" :src="'/nrb.svg'" style="filter: grayscale(1);"></NuxtImg>
+          </NuxtLink>
         </div>
       </section>
     </section>
@@ -111,7 +94,7 @@ useSeoMobyHead(
     </div>
   </main>
 </template>
-<style>
+<style scoped>
 .banner {
   background-color: lightcoral;
   min-height: 75vh;
@@ -121,9 +104,19 @@ useSeoMobyHead(
   gap: var(--gap-1);
 }
 
+.card ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-1);
+}
+
 .banner hgroup {
   max-width: 60%;
   margin-bottom: var(--gap-3);
+}
+
+a {
+  color: var(--secondary);
 }
 
 hgroup h1 {
@@ -147,7 +140,7 @@ main>section:nth-child(2) {
   padding-bottom: 4rem;
 }
 
-.what-we-value>div,
+.customers>div,
 .what-we-do>div {
   display: flex;
   flex: 1;
@@ -157,9 +150,13 @@ main>section:nth-child(2) {
   align-items: center;
   margin-bottom: var(--gap-3);
 }
-
+/* .customers { 
+  background-color: white;
+} */
 .what-we-do h2,
-.what-we-value h2 {
+.what-we-do h4,
+.customers h2,
+.customers h4 {
   text-align: center;
   margin-bottom: var(--gap-2);
 }
