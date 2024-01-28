@@ -97,7 +97,7 @@ h4 {
 .about-us>p,
 .values,
 .quote {
-  max-width: 60%;
+  padding: 0 var(--gap-3);
   font-size: larger;
   margin: 0 auto var(--gap-1) auto;
 }
@@ -126,6 +126,15 @@ h4 {
   .quote {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media (width >=1024px) {
+
+  .about-us>p,
+  .values,
+  .quote {
+    max-width: 60%;
   }
 }
 </style>
