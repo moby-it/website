@@ -16,7 +16,7 @@
           <NuxtLink to="/about-us">About Us</NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/blog">Blog</NuxtLink>
+          <NuxtLink to="https://gspanos.tech">Blog</NuxtLink>
         </li>
         <li>
           <NuxtLink to="/contact">Contact</NuxtLink>

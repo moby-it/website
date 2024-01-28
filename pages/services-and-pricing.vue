@@ -16,14 +16,14 @@ const services: Service[] = [
     title: 'Design & Development',
     imgUrl: 'https://placehold.co/150x150',
     id: 'design-and-development',
-    price: '8.000'
+    price: '8.500'
 
   },
   {
     title: 'Development Support',
     imgUrl: 'https://placehold.co/150x150',
     id: 'development-support',
-    price: '6.000'
+    price: '6.200'
   },
 ];
 const discountPrices: string[] = [
