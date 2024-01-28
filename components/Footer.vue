@@ -18,11 +18,11 @@
 footer {
   background-image: url("/footer.png");
   background-size: cover;
-  padding: 3rem 2rem;
+  padding: var(--gap-3) var(--gap-2);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  gap: var(--gap-1);
   align-items: center;
 }
 
@@ -31,7 +31,8 @@ address a,
 p {
   display: flex;
   align-items: flex-start;
-  gap: 0.75rem;
+  gap: var(--gap-1);
+
   height: 30px;
 }
 
@@ -45,7 +46,7 @@ footer a {
   footer {
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: var(--gap-1);
   }
 }
 </style>

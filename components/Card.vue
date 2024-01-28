@@ -1,12 +1,22 @@
+<template>
+  <article class="card">
+    <header>
+      <slot name="header"></slot>
+    </header>
+    <p class="content">
+      <slot name="content"></slot>
+    </p>
+  </article>
+</template>
+<style scoped>
 .card {
   box-sizing: border-box;
   width: 390px;
-  min-height: 310px;
   background: var(--light--bg);
   display: flex;
   flex-direction: column;
-  border-radius: 56px;
-  padding: 40px 42px;
+  border-radius: 3rem;
+  padding: var(--gap-2);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   box-shadow:
     var(--secondary--opacity--weak) 0px 10px 20px,
@@ -15,21 +25,24 @@
 
 .card header {
   display: flex;
-  gap: 18px;
+  gap: var(--gap-1);
   color: var(--dark--bg);
-  margin-bottom: 1rem;
+  margin-bottom: var(--gap-1);
   text-align: center;
   align-items: center;
 }
+
 .card header img {
   width: 96px;
 }
+
 .card .content {
   color: var(--gray);
 }
 
-@media (width <= 425px) {
+@media (width <=425px) {
   .card {
     width: 300px !important;
   }
 }
+</style>

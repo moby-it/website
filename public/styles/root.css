@@ -20,29 +20,10 @@ main > article {
   align-items: center;
   flex: 1;
 }
+
 .light {
   background-size: cover;
   background-color: var(--light--bg);
   opacity: 0.9;
   color: var(--primary);
-}
-
-@media (width >= 426px) {
-  main {
-    margin-top: 0;
-  }
-  .mobile {
-    display: none;
-  }
-  .desktop {
-    display: initial;
-  }
-}
-@media (width<= 425px) {
-  .mobile {
-    display: initial;
-  }
-  .desktop {
-    display: none;
-  }
 }

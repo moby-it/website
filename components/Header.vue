@@ -10,10 +10,16 @@
           <NuxtLink to="/">Home</NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/products">Products</NuxtLink>
+          <NuxtLink to="/services-and-pricing">Services & Pricing</NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/team">Team</NuxtLink>
+          <NuxtLink to="/about-us">About Us</NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/blog">Blog</NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/contact">Contact</NuxtLink>
         </li>
       </ul>
     </nav>
@@ -46,17 +52,18 @@
 }
 
 header:has(nav) {
+  min-height: 10vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 48px;
-  gap: 1rem;
+  padding: var(--gap-2);
+  gap: var(--gap-1);
   flex-wrap: wrap;
 }
 
 address {
   display: flex;
-  gap: 0.75rem;
+  gap: var(--gap-1);
 }
 
 header nav ul {
@@ -64,25 +71,11 @@ header nav ul {
   flex: 1;
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  gap: var(--gap-3);
 }
 
 nav a:hover {
   color: black;
   transition: color 0.5s ease;
-}
-
-@media (width <=768px) {
-  header {
-    flex-direction: column;
-    padding: 20px;
-    position: relative;
-  }
-
-  header nav ul {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-  }
 }
 </style>

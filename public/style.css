@@ -1,12 +1,6 @@
 @import "styles/reset.css";
 @import "styles/root.css";
 @import "styles/colors.css";
-@import "styles/font-family-support.css";
+@import "styles/spacing.css";
 @import "styles/typography.css";
 @import "styles/scrollbar.css";
-@import "styles/card.css";
-@import "styles/banner.css";
-
-/* pages */
-
-@import "styles/mobile.css";
