@@ -12,9 +12,8 @@ const isMobile = inject<ComputedRef<Boolean>>('isMobile');
             Hello, my name is George Spanos and I'm the face behind Moby IT.
           </p>
           <p class="italic">
-            Programming is my hobby and I feel blessed doing that for a job. Studied Math, I'm a teacher at heart.
-            Constantly
-            learning new technologies and trying to make the community better and more inclusive.
+            Programming is my hobby and I feel blessed doing that for a job. Having studied Math, I'm a teacher at heart.
+            Constantly learning new technologies and trying to make the community better and more inclusive.
           </p>
         </span>
       </section>
@@ -24,19 +23,21 @@ const isMobile = inject<ComputedRef<Boolean>>('isMobile');
       <p class="italic">You don't need much people to make a difference. It's more about fiding the right mix of people
         rather than straight quantity.
       </p>
-      <p>At the start of my career I was blessed with increadibly insightful and valuable colegues. They taught me how to
-        work. I believe it's my turn to do the same. </p>
-      <h4>After experiencing how a well-oiled machine works, it's tough to go
-        back.</h4>
+      <p>At the start of my career I was blessed with increadibly insightful mentors as colegues. They taught me how to
+        work efficiently, while keeping a positive attitude about it. I believe it's my turn to do the same. </p>
+
+      <h4>After experiencing how a well-oiled machine works, it's tough to go back.</h4>
+
       <p>Through my 10 year experience in digitizing workflows for Enterprises of all scales, I believe I know how to
         cultivate such an environment in which teams can provides high value software without the high price. There are
         <em> millions of dollars wasted</em> yearly on software project that could've been saved for more efficient
-        investments, with higher ROI for everyone involved, if issues were forseen earlier.
+        investments, with higher ROI for everyone involved, if issues were forseen earlier. I believe most issues
+        <em>can</em> be forseen.
       </p>
-      <p>Moby IT works with an extensive network of experts, which I have aquired through my career. Through focus,
-        discipline and dedication, we're able to provide quality services with predictable costs. We trust in our ability
-        to anticipate change enough, so that we reflect it on our <NuxtLink to="/services-and-pricing">pricing model
-        </NuxtLink> .</p>
+      <p>Moby IT works with an <em> extensive network of experts</em>, which I have aquired through my career. Through
+        focus, discipline and dedication, we're able to provide quality services with predictable costs. We trust in our
+        ability to anticipate change enough, so that we reflect it on our <NuxtLink to="/services-and-pricing">pricing
+          model </NuxtLink> .</p>
     </section>
     <section class="values">
       <h2>Values</h2>
@@ -62,10 +63,9 @@ const isMobile = inject<ComputedRef<Boolean>>('isMobile');
           collaboration is always a choice driven by value and mutual growth.
         </li>
         <li>
-          <em>Personalization</em>: If you always hand pick your partners, you’re unique in your own manner. Every
-          solution
-          is as personalized as its collaborators’ relationship. We work inside the businesses and their problems, and not
-          around them.
+          <em>Personalization</em>: If you hand pick your partners, you’re unique in your own manner. Every
+          solution is as personalized as its collaborators’ relationship. We work inside the businesses and their
+          problems, not around them.
         </li>
       </ul>
     </section>
