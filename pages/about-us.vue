@@ -34,9 +34,10 @@ const isMobile = inject<ComputedRef<Boolean>>('isMobile');
         investments, with higher ROI for everyone involved, if issues were forseen earlier. I believe most issues
         <em>can</em> be forseen.
       </p>
-      <p>Moby IT works with an <em> extensive network of experts</em>, which I have aquired through my career. Through
-        focus, discipline and dedication, we're able to provide quality services with predictable costs. We trust in our
-        ability to anticipate change enough, so that we reflect it on our <NuxtLink to="/services-and-pricing">pricing
+      <p>Moby IT works with an <em> extensive network of experts</em>, which I have aquired through my career. Most of
+        these people have over 13 years of experience in their respective fields. Through focus, discipline and
+        dedication, we're able to provide quality services with predictable costs. We trust in our ability and experience
+        to anticipate change enough, so that we reflect it on our <NuxtLink to="/services-and-pricing">pricing
           model </NuxtLink> .</p>
     </section>
     <section class="values">

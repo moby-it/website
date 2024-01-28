@@ -57,7 +57,7 @@ onMounted(() => {
 <template>
   <Header />
   <section class="page">
-    <NuxtPage />
+`    <NuxtPage />
   </section>
   <Footer />
 </template>

@@ -17,6 +17,9 @@ primary_region = "ams"
   min_machines_running = 0
   processes = ["app"]
 
+[env]
+  AUTOMAILER_URL = "https://automailer.moby-it.com/send-email"
+
 [[vm]]
   cpu_kind = "shared"
   cpus = 1
