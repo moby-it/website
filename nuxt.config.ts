@@ -32,7 +32,7 @@ export default defineNuxtConfig({
     }
   },
   runtimeConfig: {
-    apiKey: process.env.API_KEY,
+    apiKey: '',
     public: {
       automailerUrl: ''
     }
