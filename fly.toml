@@ -9,6 +9,9 @@ primary_region = "ams"
 [build]
   dockerfile = "Dockerfile"
 
+[env]
+ NUXT_PUBLIC_AUTOMAILER_URL = "https://automailer.moby-it.com/send-email"
+
 [http_service]
   internal_port = 3000
   force_https = true
@@ -16,9 +19,6 @@ primary_region = "ams"
   auto_start_machines = true
   min_machines_running = 0
   processes = ["app"]
-
-[env]
-  AUTOMAILER_URL = "https://automailer.moby-it.com/send-email"
 
 [[vm]]
   cpu_kind = "shared"
