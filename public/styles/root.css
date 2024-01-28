@@ -16,10 +16,6 @@ ol {
   padding-inline-start: var(--gap-3);
 }
 
-hgroup {
-  margin-bottom: var(--gap-2);
-}
-
 main>article {
   background: url("/products-bg.png");
   background-size: cover;

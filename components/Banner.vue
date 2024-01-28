@@ -5,8 +5,7 @@ const props = defineProps<{ title: string; }>();
 <template>
   <section class="banner">
     <hgroup>
-      <h1>
-        {{ props.title }}
+      <h1 v-html="$props.title">
       </h1>
       <slot name="subtitle"></slot>
     </hgroup>
@@ -24,6 +23,7 @@ const props = defineProps<{ title: string; }>();
   gap: var(--gap-1);
   margin-bottom: var(--gap-3);
 }
+
 .banner hgroup {
   max-width: 60%;
   margin-bottom: var(--gap-3);

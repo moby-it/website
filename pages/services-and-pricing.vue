@@ -30,11 +30,11 @@ const model = defineModel<boolean>();
 </script>
 <template>
   <article>
-    <Banner title="Services at Predicable Costs">
+    <Banner title="Services at Predicable Prices">
       <template #subtitle>
         <h4>
           In our efforts to simplify communication and boilerplate, we provide each of our services at a <em> fixed
-            montly cost, regardless of scope</em>.
+            montly price, regardless of scope</em>.
           <br>
           We communicate exclusively through timeboxed deliverables and deadlines, focusing on what's immidiate and of
           value.
@@ -59,7 +59,6 @@ const model = defineModel<boolean>();
             <p class="italic">Not all problems are solved with software. We're here to help you figure this out.
             </p>
           </hgroup>
-
           <section class="description">
             <section>
               <h4>Problem Space</h4>
@@ -100,36 +99,50 @@ const model = defineModel<boolean>();
                 postpone it until the investment makes sense.
                 At the end of the day, you get Tech Consulting at affordable prices, while still having the option to
                 immidiately proceed with any action.</p>
-                <em>Price: 2.000 € / per month (min 1 month)</em>
+              <em>Price: 2.000 € / per month (min 1 month)</em>
             </section>
           </section>
           <div></div>
         </section>
         <section id="design-and-development">
-          <h2>Design & Development</h2>
-          <section>
-            <h4>Problem Space</h4>
-            <p></p>
+          <section class="description">
+
+            <h2>Design & Development</h2>
+            <section>
+              <h4>Problem Space</h4>
+              <p></p>
+            </section>
+            <section>
+              <h4>The process</h4>
+              <p></p>
+            </section>
+            <section>
+              <h4>Outcome</h4>
+              <p></p>
+              <em>Price: 8.000 € / per month</em>
+            </section>
           </section>
           <div></div>
-
         </section>
         <section id="development-support">
-          <h2>Development Support</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse elementum nibh sed dolor tincidunt, a
-            euismod dui facilisis. Fusce dapibus laoreet libero. Ut lorem felis, luctus eget ornare ut, dapibus nec arcu.
+          <section class="description">
 
-            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In maximus non
-            nulla et mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-            Donec dignissim ex magna, ut maximus libero vestibulum sagittis. Nulla a metus non ipsum mollis imperdiet quis
-            quis tellus. In tempor ex enim, nec posuere magna cursus nec.
-
-            Quisque placerat efficitur eros, sed pharetra odio faucibus vitae. Etiam fringilla feugiat lorem, dictum
-            molestie magna dignissim quis. Suspendisse in quam lorem. Fusce blandit euismod nulla, non venenatis purus
-            euismod sit amet. Mauris justo lorem, luctus id neque sed, hendrerit tempor augue. Suspendisse non ligula
-            odio. Vivamus sed viverra lectus.</p>
+            <h2>Development Support </h2>
+            <section>
+              <h4>Problem Space</h4>
+              <p></p>
+            </section>
+            <section>
+              <h4>The process</h4>
+              <p></p>
+            </section>
+            <section>
+              <h4>Outcome</h4>
+              <p></p>
+              <em>Price: 6.000 € / per month</em>
+            </section>
+          </section>
           <div></div>
-
         </section>
       </section>
     </section>

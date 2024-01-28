@@ -7,10 +7,10 @@ useSeoMobyHead(
 </script>
 <template>
   <main>
-    <Banner title="Tailor-made Software Solutions">
+    <Banner title="Tailor-made <br> Software Solutions">
       <template #subtitle>
         <h4>Digitizing workflows for <abbr title="Small and Medium Enterprises"> SMEs</abbr>
-          at <NuxtLink to="/services-and-pricing"> predictable costs.</NuxtLink>
+          at <NuxtLink to="/services-and-pricing"> predictable prices.</NuxtLink>
         </h4>
         <h4>Your tech ally in a digital era.</h4>
       </template>
