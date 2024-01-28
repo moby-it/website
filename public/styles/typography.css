@@ -96,7 +96,7 @@ small {
 }
 
 p,
-ul,
+nav:not(:has(ul)) ul,
 ol {
   margin-bottom: var(--gap-1);
 }

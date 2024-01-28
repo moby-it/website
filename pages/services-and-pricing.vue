@@ -97,7 +97,8 @@ const model = defineModel<boolean>();
                 <li>
                   <em> Initial Discussions </em>: We start with a series of 3-4 meetings, where we delve into the
                   specifics of your
-                  business workflows. These 'casual chats' are crucial for us to gather essential information and
+                  business workflows. These <span class="italic"> "casual chats"</span> are crucial for us to gather
+                  essential information and
                   comprehend the nuances of your operations.
                 </li>
                 <li>
@@ -109,7 +110,9 @@ const model = defineModel<boolean>();
             </section>
             <section>
               <h4>Outcome</h4>
-              <p>At the conclusion of our analysis, you receive:</p>
+              <p>At the conclusion of our analysis, you receive a documented strategic analysis of your addressed business
+                problem. Should we identify software as a viable solution for cost-saving or scaling, you will also
+                receive:</p>
               <ul>
                 <li>
                   <em> Functional Specification Document (FSD)</em>: This document provides a detailed description of the
@@ -120,10 +123,14 @@ const model = defineModel<boolean>();
                   implement the solution, should you choose to proceed with us.
                 </li>
               </ul>
-              <p>This package is grounded in our values of <em>open-ended relationships</em>, <em>transparency</em> and
-                <em>value-driven partnerships</em>. It offers you the flexibility to decide when to move forward with
-                implementation, ensuring that you receive not just technical consulting, but a strategic asset at an
-                affordable price.
+              <p>This package is grounded in our values of <span class="italic">open-ended relationships</span>, <span
+                  class="italic">transparency</span> and
+                <span class="italic">value-driven partnerships</span>.<em> We understand that not all problems require a
+                  software solution.</em>. Our role is to offer data-driven insights, empowering you to make informed
+                decisions about what's best for your business at any given time. If a software solution is indeed the
+                right fit, you retain the freedom to choose your technical partner, whether it's Moby IT or another
+                provider. The outcome of this package is a strategic asset for your company, offering more than just
+                technical advice.
               </p>
               <em>
                 Price:
@@ -139,16 +146,15 @@ const model = defineModel<boolean>();
             <h2>Design & Development</h2>
             <section>
               <h4>Problem Space</h4>
-              <p>Are you an <em> entrepreneur gearing up to raise capital</em> or already in possession of it, now seeking
-                technical
-                co-founders? Or perhaps you're facing a business challenge that requires a <em> well-defined digital
-                  solution?</em>
+              <p>Are you an <em> entrepreneur searching for ways to launch/improve their MVP?</em>? Or you're already in
+                possession of it, now seeking technical advicsory and ownership? Maybe you're just facing a business
+                challenge that requires a <em> well-defined digital solution?</em>
               </p>
               <p>Our Design & Development package is tailored specifically for you.</p>
               <p class="italic">
                 This package is a natural follow-up of the Consulting & Analysis package, catering to entrepreneurs,
-                business
-                owners, and operations managers who have a clear vision of the digital product their business needs.
+                business owners, and operations managers who have a clear vision of the digital product their business
+                needs.
               </p>
             </section>
             <section>
@@ -158,8 +164,7 @@ const model = defineModel<boolean>();
                 addressing any possible need that might arise during the Product Development Cycle. Picture it as your own
                 compact, high-functioning company. Every member <em> leverages modern technology stacks, Cloud
                   infrastructure and efficient communcation methodologies</em>, in order to deliver effective products at
-                an
-                impressive pace.</p>
+                an impressive pace.</p>
 
               <p class="italic">As mentioned above, the unit is dedicated to you for a specific duration. This duration is
                 agreed upon signing, impling any cost thereof, since each month has a fixed price. This makes sure that
@@ -187,10 +192,10 @@ const model = defineModel<boolean>();
             </hgroup>
             <section>
               <h4>Problem Space</h4>
-              <p>Are you an applications director facing tough deadlines? Or a Project
-                Manager that is constantly feeling pressure by the Product's Department pace. In either of those
-                cases, we have the experience to help you. Our team, with an average of 10 years in the field, is
-                well-versed in collaborating with Enterprise Software Teams.</p>
+              <p>Are you an applications director facing tough deadlines? Or a Project Manager that is constantly feeling
+                pressure by the Product's Department pace. In either of those cases, we have the experience to help you.
+                Our team, with an average of 10 years in the field, is well-versed in collaborating with Enterprise
+                Software Teams.</p>
             </section>
             <section>
               <h4>The process</h4>
@@ -274,7 +279,7 @@ const model = defineModel<boolean>();
   grid-template-rows: auto 1fr;
   row-gap: var(--gap-2);
   grid-template-columns: 1fr 1fr;
-  column-gap: var(--gap-2);
+  column-gap: var(--gap-3);
   grid-template-areas:
     "title image"
     "description image"

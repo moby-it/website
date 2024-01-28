@@ -21,3 +21,8 @@ defineEmits(['linkClicked']);
     </li>
   </ul>
 </template>
+<style>
+.nav-links {
+  font-size: larger;
+}
+</style>

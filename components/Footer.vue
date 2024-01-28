@@ -19,6 +19,14 @@
         </li>
       </ul>
     </section>
+    <section class="partners">
+      <h3>Partners</h3>
+      <ul>
+        <li>
+          <NuxtLink target="_blank" to="https://www.evangelia.me/">Evangelia</NuxtLink>
+        </li>
+      </ul>
+    </section>
     <section class="social">
       <h3>Links</h3>
       <Address white />
@@ -36,8 +44,8 @@ ul {
 footer {
   display: grid;
   grid-template-areas:
-    "nav services links"
-    "copyrights copyrights copyrights"
+    "nav services partners links"
+    "copyrights copyrights copyrights copyrights"
   ;
   background-image: url("/footer.png");
   background-size: cover;
@@ -52,6 +60,11 @@ footer {
   flex-direction: column;
 }
 
+.partners {
+  grid-area: partners;
+
+}
+
 .social {
   grid-area: links;
   display: flex;
@@ -63,10 +76,12 @@ footer nav {
   display: flex;
   flex-direction: column;
 }
+
 footer address {
   display: flex;
   gap: var(--gap-1);
 }
+
 footer h3 {
   color: var(--secondary);
   margin-bottom: var(--gap-1);
@@ -92,15 +107,15 @@ ul {
   footer {
     grid-template-areas:
       "nav services"
-      "links links"
+      "partners links"
       "copyrights copyrights"
     ;
-    column-gap: var(--gap-2);
-    row-gap: var(--gap-1);
+    gap: var(--gap-3);
   }
 
-  .social {
-    align-items: center;
+  .social,
+  .services {
+    text-align: right;
+    align-items: flex-end;
   }
-}
-</style>
+}</style>

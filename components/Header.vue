@@ -11,7 +11,7 @@ const isMobile = inject<ComputedRef<boolean>>('isMobile');
     <nav class="links" v-if="!isMobile">
       <NavLinks />
     </nav>
-    <Address v-if="!isMobile"></Address>
+    <!-- <Address v-if="!isMobile"></Address> -->
   </header>
 </template>
 <style scoped>

@@ -22,9 +22,9 @@ useSeoMobyHead(
       <article id="what-we-do" class="what-we-do" aria-hidden="true">
         <h2>We provide</h2>
         <div>
-          <Card :minHeight="'445px'" max-width="390px">
+          <Card minHeight="540px" max-width="390px">
             <template #header>
-              <NuxtImg src="/icons/community.svg" alt="communication" aria-hidden="true" :width="80" />
+              <NuxtImg src="/icons/consulting.svg" alt="communication" aria-hidden="true" :width="80" />
               <h4>Consulting & Analysis</h4>
             </template>
             <template #content>
@@ -34,31 +34,35 @@ useSeoMobyHead(
                   scaling
                   profits.
                 </li>
-                <li><em>We bring </em>our years of experience in digitizing business workflows across many domains. We
-                  analyze your problem and structure a well-rounded, cost-efficient solution.</li>
-                <li><em>You get </em>a functional specification document that describes several solutions to your
-                  problems.</li>
+                <li><em>We bring </em>our analytical skills and and years of experience in digitizing business
+                  workflows. We verify that there <span class="italic">is</span> space for a digital solution. If that's
+                  the case, we structure a well-rounded, cost-efficient solution in the form of a <em>Functional
+                    Specification Document </em>.</li>
+                <li><em>You get </em> a documented strategic technical evaluation of your problems and its cost-to-benefit
+                  ratio</li>
               </ul>
             </template>
           </Card>
-          <Card max-width="390px">
+          <Card max-width="390px" min-height="580px">
             <template #header>
-              <NuxtImg src="/icons/light-bulb-on.svg" alt="light bulb on" aria-hidden="true" :width="80" />
+              <NuxtImg src="/icons/design-and-development.svg" alt="light bulb on" aria-hidden="true" :width="80" />
               <h4 class="title">Design & Development</h4>
             </template>
             <template #content>
               <ul style="margin-bottom: var(--gap-1);">
-                <li><em>You bring</em> a functional specification document of a specific business problem.</li>
-                <li><em>We bring</em> our hands and minds in order to bring the above specification to life. We utilize
-                  UX Driven Development and Lean Practices to provide the best bang for buck software in the market.</li>
-                <li><em>You get</em> a digital platform that addresses the problems desribed in the functional
+                <li><em>You bring</em> a Functional Specification Document of a specific business problem.
+                </li>
+                <li><em>We bring</em> our hands and minds in order to bring the above specification to life. Leveraging
+                  our strong in-house design team and experience in working closely with SMEs, we deliver a hand-crafted
+                  solution that exactly matches your needs and business model.</li>
+                <li><em>You get</em> a digital product that addresses the problems described in the functional
                   specification document.</li>
               </ul>
             </template>
           </Card>
-          <Card :minHeight="'445px'" max-width="390px">
+          <Card minHeight="540px" max-width="390px">
             <template #header>
-              <NuxtImg src="/icons/code-brackets-square.svg" alt="code-brackets" aria-hidden="true" :width="80" />
+              <NuxtImg src="/icons/staffing.svg" alt="code-brackets" aria-hidden="true" :width="80" />
               <h4 class="title">Development Support</h4>
             </template>
             <template #content>
@@ -92,6 +96,10 @@ useSeoMobyHead(
   </main>
 </template>
 <style scoped>
+h2 {
+  text-align: center;
+}
+
 .card ul {
   display: flex;
   flex-direction: column;
@@ -109,14 +117,14 @@ useSeoMobyHead(
   margin-bottom: var(--gap-3);
 }
 
-.what-we-do h2,
-.what-we-do h4,
-.customers h2,
-.customers h4 {
+.what-we-do header,
+.customers header {
   text-align: center;
   margin-bottom: var(--gap-2);
 }
-.what-we-do h4 {
+
+.what-we-do>h4 {
+  text-align: center;
   margin-bottom: var(--gap-3);
 }
 </style>

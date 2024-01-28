@@ -23,7 +23,7 @@ defineProps({
     </div>
   </article>
 </template>
-<style scoped>
+<style>
 .card {
   box-sizing: border-box;
   background: var(--light--bg);
@@ -37,11 +37,11 @@ defineProps({
     var(--secondary--opacity--strong) 0px 6px 6px;
 }
 
-.card header {
+.card > header {
   display: flex;
   gap: var(--gap-1);
   color: var(--dark--bg);
-  margin-bottom: var(--gap-1);
+  margin-bottom: var(--gap-3);
   text-align: center;
   align-items: center;
   justify-content: center;
