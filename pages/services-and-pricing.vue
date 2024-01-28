@@ -26,6 +26,12 @@ const services: Service[] = [
     price: '6.000'
   },
 ];
+const discountPrices: string[] = [
+  '1.500',
+  '6.000',
+  '5.000'
+];
+const prices = services.map(s => s.price);
 const model = defineModel<boolean>();
 </script>
 <template>
@@ -60,7 +66,8 @@ const model = defineModel<boolean>();
       </Card>
 
       <section class="service-badges">
-        <ServiceBadge v-for="service of services" :service="service">
+        <ServiceBadge v-for="(service, index) of services" :service="service" :discount="!!model"
+          :discount-price="discountPrices[index]">
         </ServiceBadge>
       </section>
       <section class="service-descriptions">
@@ -110,7 +117,10 @@ const model = defineModel<boolean>();
                 postpone it until the investment makes sense.
                 At the end of the day, you get Tech Consulting at affordable prices, while still having the option to
                 immidiately proceed with any action.</p>
-              <em>Price: {{ services[0].price }} € / per month (min 1 month)</em>
+              <em>
+                Price:
+                <Price :has-discount="!!model" :original-price="prices[0]" :discounted-price="discountPrices[0]" />
+              </em>
             </section>
           </section>
           <div></div>
@@ -130,7 +140,9 @@ const model = defineModel<boolean>();
             <section>
               <h4>Outcome</h4>
               <p></p>
-              <em>Price: {{ services[1].price }} € / per month</em>
+              <em>Price:
+                <Price :has-discount="!!model" :original-price="prices[1]" :discounted-price="discountPrices[1]" />
+              </em>
             </section>
           </section>
           <div></div>
@@ -150,7 +162,9 @@ const model = defineModel<boolean>();
             <section>
               <h4>Outcome</h4>
               <p></p>
-              <em>Price: {{ services[2].price }} € / per month</em>
+              <em>Price:
+                <Price :has-discount="!!model" :original-price="prices[2]" :discounted-price="discountPrices[2]" />
+              </em>
             </section>
           </section>
           <div></div>

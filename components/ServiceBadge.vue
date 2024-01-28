@@ -1,13 +1,17 @@
 <script setup lang="ts">
 import type { Service } from '~/pages/services-and-pricing.vue';
-defineProps<{ service: Service; }>();
+const props = defineProps<{ service: Service; discount: boolean; discountPrice?: string; }>();
+console.log('service: ', props.service.title, '. discount price', props.discountPrice);
 </script>
 <template>
   <NuxtLink :to="'#' + $props.service.id">
     <section class="badge">
       <NuxtImg :src="$props.service.imgUrl" alt="Consulting & Analysis" :width="150"></NuxtImg>
       <h4>{{ $props.service.title }}</h4>
-      <p>{{ $props.service.price }} € / month</p>
+      <p>
+        <Price :has-discount="$props.discount" :original-price="$props.service.price"
+          :discounted-price="$props.discountPrice"></Price>
+      </p>
     </section>
   </NuxtLink>
 </template>
