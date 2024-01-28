@@ -23,7 +23,7 @@
       <h3>Partners</h3>
       <ul>
         <li>
-          <NuxtLink target="_blank" to="https://www.evangelia.me/">Evangelia</NuxtLink>
+          <NuxtLink target="_blank" to="#">Placeholder</NuxtLink>
         </li>
       </ul>
     </section>
