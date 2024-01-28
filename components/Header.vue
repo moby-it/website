@@ -1,27 +1,23 @@
 
+<script setup>
+
+const width = ref(1440); // something bigger than 768 so that the server renders the desktop
+const isMobile = computed(() => width.value <= 768);
+onMounted(() => {
+  width.value = window.innerWidth;
+  window.addEventListener('resize', () => {
+    width.value = window.innerWidth;
+  });
+});
+</script>
 <template>
   <header>
     <NuxtLink id="site-id" to="/">
       <img src="/logo.png" alt="moby-it logo" width="150" height="34" />
     </NuxtLink>
-    <nav>
-      <ul>
-        <li>
-          <NuxtLink to="/">Home</NuxtLink>
-        </li>
-        <li>
-          <NuxtLink to="/services-and-pricing">Services & Pricing</NuxtLink>
-        </li>
-        <li>
-          <NuxtLink to="/about-us">About Us</NuxtLink>
-        </li>
-        <li>
-          <NuxtLink to="https://gspanos.tech">Blog</NuxtLink>
-        </li>
-        <li>
-          <NuxtLink to="/contact">Contact</NuxtLink>
-        </li>
-      </ul>
+    <BurgerMenu v-if="isMobile" />
+    <nav class="links" v-if="!isMobile">
+      <NavLinks />
     </nav>
     <address>
       <a href="https://www.linkedin.com/company/moby-it" target="_blank" title="linkedIn">
@@ -51,14 +47,15 @@
   object-fit: contain;
 }
 
-header:has(nav) {
+header:has(nav),
+header:has(#menu) {
   min-height: 6vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--gap-2);
   gap: var(--gap-1);
   flex-wrap: wrap;
+  padding: var(--gap-2);
 }
 
 address {
@@ -66,7 +63,7 @@ address {
   gap: var(--gap-1);
 }
 
-header nav ul {
+.links ul {
   font-family: "Aeonik Pro";
   flex: 1;
   display: flex;
@@ -77,14 +74,8 @@ header nav ul {
   row-gap: var(--gap-1);
 }
 
-nav a:hover {
+.links a:hover {
   color: black;
   transition: color 0.5s ease;
-}
-
-@media (width <= 701px) {
-  header:has(nav) {
-    justify-content: center;
-  }
 }
 </style>

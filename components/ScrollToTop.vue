@@ -15,7 +15,7 @@ onMounted(() => {
       else
         show.value = false;
     }
-  }, { root: null, threshold: 0.2 });
+  }, { root: null, threshold: 0.1 });
   const el = document.querySelector(props.selector);
   if (el)
     observer.observe(el);

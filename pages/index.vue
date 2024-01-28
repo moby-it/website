@@ -15,10 +15,10 @@ useSeoMobyHead(
         <h4>Your tech ally in a digital era.</h4>
       </template>
       <Button @clicked="() => navigateTo('/contact')">
-       Contact Us
+        Contact Us
       </Button>
     </Banner>
-    <section id="">
+    <section>
       <article id="what-we-do" class="what-we-do" aria-hidden="true">
         <h2>We provide</h2>
         <div>

@@ -36,7 +36,7 @@ const model = defineModel<boolean>();
 </script>
 <template>
   <article>
-    <Banner title="Services at Predicable Prices">
+    <Banner title="Services at Predictable Prices">
       <template #subtitle>
         <h4>
           In our efforts to simplify communication and boilerplate, we provide each of our services at a

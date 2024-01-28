@@ -1,3 +1,5 @@
 <template>
-  <h1>hello from about us</h1>
+  <h1>about us</h1>
 </template>
+<style>
+</style>

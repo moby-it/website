@@ -4,29 +4,11 @@ body {
   min-height: 100vh;
 }
 
-main {
-  flex: 1;
-  scroll-behavior: smooth;
-  display: flex;
-  flex-direction: column;
-}
 
-ul,
-ol {
+nav:not(:has(ul)) ul,
+nav:not(:has(ul)) ol {
   padding-inline-start: var(--gap-3);
 }
-
-main>article {
-  background: url("/products-bg.png");
-  background-size: cover;
-  color: #001f3f;
-  padding: 3rem 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 1;
-}
-
 abbr {
   cursor: help;
 }
@@ -36,4 +18,33 @@ abbr {
   background-color: var(--light--bg);
   opacity: 0.9;
   color: var(--primary);
+}
+
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 500ms ease-in-out;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+
+nav a {
+  color: var(--primary--opacity--weak)
+}
+
+a.active {
+  color: var(--primary--opacity--strong);
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.2s ease-in-out;
+}
+
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(1rem);
 }
