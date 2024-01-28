@@ -12,17 +12,18 @@ useSeoMobyHead(
         <h1>
           Tailor-made Software Solutions
         </h1>
-        <h4>Digitizing workflows for <abbr title="Small and Medium Enterprises"> SMEs</abbr> at predictable costs.</h4>
+        <h4>Digitizing workflows for <abbr title="Small and Medium Enterprises"> SMEs</abbr>
+          at <NuxtLink to="#what-we-do"> predictable costs.</NuxtLink>
+        </h4>
         <h4>Your tech ally in a digital era.</h4>
       </hgroup>
       <Button @clicked="() => navigateTo('/contact')">
-        Contact Us
+        Don't be a stranger
       </Button>
     </section>
     <section>
-      <section class="what-we-do" aria-hidden="true">
+      <article id="what-we-do" class="what-we-do" aria-hidden="true">
         <h2>We provide</h2>
-
         <div>
           <Card :minHeight="'445px'">
             <template #header>
@@ -32,7 +33,8 @@ useSeoMobyHead(
             <template #content>
               <ul>
                 <li>
-                  <em>You bring </em>an intricate business problem that could be digitized for cost-savings and/or scaling
+                  <em>You bring </em>an intricate business problem that could be digitized for cost-savings and/or
+                  scaling
                   profits.
                 </li>
                 <li><em>We bring </em>our years of experience in digitizing business workflows across many domains. We
@@ -76,18 +78,18 @@ useSeoMobyHead(
             </template>
           </Card>
         </div>
-        <h4>Forget about unexpected costs. All of our services come at a <NuxtLink to="/services-and-pricing"> fixed montly price!
+        <h4>All of our services come at a <NuxtLink to="/services-and-pricing"> fixed montly price!
           </NuxtLink>
         </h4>
-      </section>
-      <section class="customers">
+      </article>
+      <article class="customers">
         <h2>Customers</h2>
         <div>
           <NuxtLink target="_blank" to="https://www.nrb.be/en/">
             <NuxtImg :width="200" :src="'/nrb.svg'" style="filter: grayscale(1);"></NuxtImg>
           </NuxtLink>
         </div>
-      </section>
+      </article>
     </section>
     <div>
       <ScrollToTop :selector="'main > section:last-child'" />
@@ -150,6 +152,7 @@ main>section:nth-child(2) {
   align-items: center;
   margin-bottom: var(--gap-3);
 }
+
 /* .customers { 
   background-color: white;
 } */

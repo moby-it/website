@@ -1,17 +1,19 @@
 <script setup>
 defineProps({
   minHeight: {
-    type: Number,
+    type: String,
   }
 });
 </script>
 <template>
-  <article class="card" :style="`min-height: ${$props.minHeight};`">
+  <article class="card" :style="{ minHeight }">
     <header>
       <slot name="header"></slot>
     </header>
     <p class="content">
-      <slot name="content"></slot>
+      <LazyClientOnly>
+        <slot name="content"></slot>
+      </LazyClientOnly>
     </p>
   </article>
 </template>

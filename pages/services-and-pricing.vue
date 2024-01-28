@@ -1,3 +1,6 @@
 <template>
-  <h1>hello from services</h1>
+  <article>
+    <h1>Our services</h1>
+  </article>
 </template>
+<style></style>
