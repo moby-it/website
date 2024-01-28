@@ -2,7 +2,7 @@
 useSeoMobyHead(
   {
     title: 'Moby IT - Sofware Services',
-    description: 'Digitizing businesses workflows at predictable costs.'
+    description: 'Digitizing businesses workflows for small to medium enterprises at predictable prices.'
   });
 </script>
 <template>

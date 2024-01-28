@@ -23,7 +23,8 @@
       <h3>Partners</h3>
       <ul>
         <li>
-          <NuxtLink target="_blank" to="#">Placeholder</NuxtLink>
+          <NuxtLink target="_blank" to="https://www.linkedin.com/in/evangelia-litsa-mitsopoulou-5765135/">Evangelia
+          </NuxtLink>
         </li>
       </ul>
     </section>
@@ -118,4 +119,5 @@ ul {
     text-align: right;
     align-items: flex-end;
   }
-}</style>
+}
+</style>
