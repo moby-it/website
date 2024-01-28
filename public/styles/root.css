@@ -59,7 +59,9 @@ a.active {
   background-color: var(--secondary);
   color: black;
 }
-.multiselect__tag-icon:hover,.multiselect__tag-icon:focus {
+
+.multiselect__tag-icon:hover,
+.multiselect__tag-icon:focus {
   background: var(--primary);
 }
 
@@ -81,8 +83,14 @@ a.active {
   opacity: 0;
   filter: blur(1rem);
 }
+
 @media (width < 426px) {
   .multiselect__option--highlight::after {
     display: none;
+  }
+
+  ul:not(.nav-links, .multiselect__content),
+  ol {
+    padding-inline-start: var(--gap-1);
   }
 }
