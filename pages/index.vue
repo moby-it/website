@@ -54,8 +54,6 @@ useSeoMobyHead(
                 <li><em>You get</em> a digital platform that addresses the problems desribed in the functional
                   specification document.</li>
               </ul>
-              <p style="font-style: italic;">This package is a natural sequence of the <em> Consulting & Analysis
-                </em>package</p>
             </template>
           </Card>
           <Card :minHeight="'445px'" max-width="390px">

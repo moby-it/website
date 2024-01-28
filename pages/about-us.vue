@@ -1,14 +1,23 @@
+<script setup lang="ts">
+const isMobile = inject<ComputedRef<Boolean>>('isMobile');
+</script>
 <template>
   <article>
     <Banner title="It always starts with a story"></Banner>
     <section class="about-us">
-      <blockquote>
+      <section class="quote">
         <NuxtImg src="https://placeholder.co/300x300" width="300" />
-        Hello, my name is George Spanos and I'm the face behind Moby IT.
-        <br>
-        Programming is my hobby and I feel blessed doing that for a job. Studied Math, I'm a teacher at heart. Constantly
-        learning new technologies and trying to make the community better and more inclusive.
-      </blockquote>
+        <span>
+          <p class="italic">
+            Hello, my name is George Spanos and I'm the face behind Moby IT.
+          </p>
+          <p class="italic">
+            Programming is my hobby and I feel blessed doing that for a job. Studied Math, I'm a teacher at heart.
+            Constantly
+            learning new technologies and trying to make the community better and more inclusive.
+          </p>
+        </span>
+      </section>
       <h2>About Me</h2>
       <p> Moby IT the embodiment of my efforts for trying create a company of highly automonous units of people that
         enjoy providing value to people. </p>
@@ -64,7 +73,7 @@
       <h2>Our Core Team</h2>
       <section class="members">
         <section class="member">
-          <NuxtImg src="/team/george.jpg" width="200" height="200"  />
+          <NuxtImg src="/team/george.jpg" width="200" height="200" />
           <small>George Spanos, Software Engineer / Founder</small>
         </section>
         <section class="member">
@@ -87,15 +96,16 @@ h4 {
   margin-bottom: var(--gap-1);
 }
 
-blockquote {
-  display: grid;
-  grid-template-columns: 300px 1fr;
-  column-gap: var(--gap-1);
+.quote {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--gap-1);
 }
 
 
 .about-us>p,
-.values {
+.values,
+.quote {
   max-width: 60%;
   font-size: larger;
   margin: 0 auto var(--gap-1) auto;
@@ -117,7 +127,15 @@ blockquote {
 .member img {
   border-radius: 12px;
 }
+
 .member p {
   font-weight: 300;
+}
+
+@media (width < 426px) {
+  .quote {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 </style>

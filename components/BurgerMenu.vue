@@ -5,9 +5,10 @@ watchEffect(() => {
     document.body.style.overflowY = 'hidden';
     document.querySelector('html').style.overflowY = 'hidden';
   }
-  else if (expanded.value === false)
+  else if (expanded.value === false) {
     document.body.style.overflow = 'auto';
-  document.querySelector('html').style.overflowY = 'hidden';
+    document.querySelector('html').style.overflowY = 'auto';
+  }
 });
 </script>
 <template>
@@ -16,28 +17,28 @@ watchEffect(() => {
     </NuxtImg>
   </section>
   <Teleport to="body">
-      <nav class="mobile" v-if="expanded">
-        <header>
-          <NuxtImg src="/logo.png" alt="moby-it logo" :width="150" :height="34" />
-          <NuxtImg src="/icons/x.svg" width="28" @click="() => expanded = !expanded" />
-        </header>
-        <section class="links">
-          <nav>
-            <NavLinks @link-clicked="() => expanded = false" />
-          </nav>
-          <address>
-            <a href="https://www.linkedin.com/company/moby-it" target="_blank">
-              <NuxtImg class="icon-link" src="/linkedin.svg" alt="linkedin-icon" :width="40" title="LinkedIn" />
-            </a>
-            <a href="https://github.com/moby-it" target="_blank">
-              <NuxtImg class="icon-link" src="/github-circle.svg" alt="github-icon" :width="40" title="Github" />
-            </a>
-            <a href="mailto:contact@moby-it.com" target="_blank">
-              <NuxtImg class="icon-link" src="/mail.svg" alt="email" :width="40" title="Email" />
-            </a>
-          </address>
-        </section>
-      </nav>
+    <nav class="mobile" v-if="expanded">
+      <header>
+        <NuxtImg src="/logo.png" alt="moby-it logo" :width="150" :height="34" />
+        <NuxtImg src="/icons/x.svg" width="28" @click="() => expanded = !expanded" />
+      </header>
+      <section class="links">
+        <nav>
+          <NavLinks @link-clicked="() => expanded = false" />
+        </nav>
+        <address>
+          <a href="https://www.linkedin.com/company/moby-it" target="_blank">
+            <NuxtImg class="icon-link" src="/linkedin.svg" alt="linkedin-icon" :width="40" title="LinkedIn" />
+          </a>
+          <a href="https://github.com/moby-it" target="_blank">
+            <NuxtImg class="icon-link" src="/github-circle.svg" alt="github-icon" :width="40" title="Github" />
+          </a>
+          <a href="mailto:contact@moby-it.com" target="_blank">
+            <NuxtImg class="icon-link" src="/mail.svg" alt="email" :width="40" title="Email" />
+          </a>
+        </address>
+      </section>
+    </nav>
   </Teleport>
 </template>
 <style scoped>
