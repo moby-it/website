@@ -37,14 +37,13 @@ const model = defineModel<boolean>();
 </script>
 <template>
   <article>
-    <Banner title="Services at Predictable Prices">
+    <Banner title="No Hidden Costs">
       <template #subtitle>
-        <h4>
-          In our efforts to simplify communication and boilerplate, we provide each of our services at a
-          <NuxtLink to="#services"> fixed montly price, regardless of scope </NuxtLink>.
-          We communicate exclusively through timeboxed deliverables and deadlines, focusing on what's immidiate and of
-          value.
-        </h4>
+        <h5>
+          We provide each of our services at a <NuxtLink to="#services"> fixed montly price</NuxtLink>. Every contract is
+          tailored to time-bound deliverables and clear deadlines, ensuring no hidden costs. We shoulder any unforeseen
+          expenses, guaranteeing you peace of mind and financial predictability from start to finish.
+        </h5>
       </template>
     </Banner>
     <section class="services" id="services">

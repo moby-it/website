@@ -9,10 +9,10 @@ useSeoMobyHead(
   <main>
     <Banner title="Tailor-made <br> Software Solutions">
       <template #subtitle>
-        <h4>Digitizing workflows for <abbr title="Small and Medium Enterprises"> SMEs</abbr>
+        <h5>Digitizing workflows for <abbr title="Small and Medium Enterprises"> SMEs</abbr>
           at <NuxtLink to="/services-and-pricing"> predictable prices.</NuxtLink>
-        </h4>
-        <h4>Your tech ally in a digital era.</h4>
+        </h5>
+        <h5>Your tech ally in a digital era.</h5>
       </template>
       <Button @clicked="() => navigateTo('/contact')">
         Contact Us
@@ -22,7 +22,7 @@ useSeoMobyHead(
       <article id="what-we-do" class="what-we-do" aria-hidden="true">
         <h2>We provide</h2>
         <div>
-          <Card minHeight="540px" max-width="390px">
+          <Card minHeight="565px" max-width="390px">
             <template #header>
               <NuxtImg src="/icons/consulting.svg" alt="communication" aria-hidden="true" :width="80" />
               <h4>Consulting & Analysis</h4>
@@ -43,7 +43,7 @@ useSeoMobyHead(
               </ul>
             </template>
           </Card>
-          <Card max-width="390px" min-height="580px">
+          <Card max-width="390px" min-height="600px">
             <template #header>
               <NuxtImg src="/icons/design-and-development.svg" alt="light bulb on" aria-hidden="true" :width="80" />
               <h4 class="title">Design & Development</h4>
@@ -60,7 +60,7 @@ useSeoMobyHead(
               </ul>
             </template>
           </Card>
-          <Card minHeight="540px" max-width="390px">
+          <Card minHeight="565px" max-width="390px">
             <template #header>
               <NuxtImg src="/icons/staffing.svg" alt="code-brackets" aria-hidden="true" :width="80" />
               <h4 class="title">Development Support</h4>

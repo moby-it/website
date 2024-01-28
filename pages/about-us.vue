@@ -13,7 +13,8 @@ const isMobile = inject<ComputedRef<Boolean>>('isMobile');
           </p>
           <p class="italic">
             Programming is my hobby, and I feel blessed doing that for a job. Having studied Math, I'm a teacher at heart.
-            Constantly learning new technologies and trying to make the community better and more inclusive.
+            Constantly learning new technologies and, through Moby IT, trying to cultivate a healthier and more inclusive
+            work environment.
           </p>
         </span>
       </section>
@@ -35,7 +36,7 @@ const isMobile = inject<ComputedRef<Boolean>>('isMobile');
           issues can be foreseen</em>.
       </p>
       <p>
-        Moby IT works with <em> an extensive network of experts</em>, which I have acquired through my career. Most of
+        Moby IT works with <em> a network of experts</em>, which I have acquired through my career. Most of
         these people have over 13 years of experience in their respective fields. Through focus, discipline and
         dedication, we're able to provide quality services with predictable costs. We trust in our ability and experience
         to anticipate change enough, so that we can reflect it in our <NuxtLink to="/services-and-pricing">pricing
@@ -50,13 +51,13 @@ const isMobile = inject<ComputedRef<Boolean>>('isMobile');
           collaboration.
         </li>
         <li>
-          <em>Predictability</em>: No one wants to wake up to unexpected costs and side effects. For this, we:
+          <em>Predictability</em>: No one wants to wake up to unexpected costs and side effects. For this:
           <ol>
             <li>
-              Provide our services at fixed monthly prices, and
+              We provide our services at fixed monthly prices, aligned with clearly defined, time-bound deliverables.
             </li>
             <li>
-              We take full responsibility for any unforeseen challenges.
+              We take full responsibility for any unforeseen challenges, ensuring our clients bear no unexpected burdens.
             </li>
           </ol>
         </li>
@@ -106,6 +107,7 @@ h4 {
   justify-content: center;
   gap: var(--gap-2);
 }
+
 .member {
   display: flex;
   flex-direction: column;

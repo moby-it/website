@@ -73,21 +73,18 @@ async function submitForm() {
         </Button>
       </template>
       <template v-else #content>
-        <h4 style="text-align:center;">We got your message and we'll reach out to you shortly!</h4>
+        <h4 style="text-align:center; margin-bottom: var(--gap-2);"> We got your message and we'll reach out to you shortly!</h4>
         <NuxtLink to="/">Back to Home</NuxtLink>
       </template>
     </Card>
   </form>
 </template>
 <style scoped>
-h1,
-h4,
 header,
 .contact-body,
 .services {
   margin-bottom: var(--gap-3);
 }
-
 header {
   display: flex;
   justify-content: space-between;
@@ -108,7 +105,7 @@ header div {
 }
 
 .contact-body {
-  font-size: larger;
+  font-size: 1.2rem;
   font-weight: 500;
 }
 
@@ -146,7 +143,6 @@ textarea {
 
 input,
 textarea {
-  font-size: 1rem;
   border: none;
   border-bottom: 2px solid var(--gray);
   vertical-align: baseline;
