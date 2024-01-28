@@ -1,5 +1,7 @@
 <template>
-  <h1>about us</h1>
+  <article>
+    <Banner title="z"></Banner>
+  </article>
 </template>
 <style>
 </style>

@@ -40,6 +40,15 @@ useHead({
     }
   ]
 });
+const width = ref(1440); // something bigger than 768 so that the server renders the desktop
+const isMobile = computed(() => width.value <= 768);
+provide('isMobile', isMobile);
+onMounted(() => {
+  width.value = window.innerWidth;
+  window.addEventListener('resize', () => {
+    width.value = window.innerWidth;
+  });
+});
 </script>
 <template>
   <Header />

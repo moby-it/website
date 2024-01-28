@@ -4,15 +4,17 @@ defineProps({
   title: { type: String, required: true },
   imageUrl: { type: String, default: 'https://placehold.co/1920x700' }
 });
+const isMobile = inject('isMobile');
 </script>
 <template>
-  <section class="banner" :style="{ backgroundImage: `url(${$props.imageUrl})` }">
+  <section class="banner" :style="{ backgroundImage: isMobile ? 'none' : `url(${$props.imageUrl})` }">
     <hgroup>
       <h1 v-html="$props.title">
       </h1>
       <slot name="subtitle"></slot>
     </hgroup>
-    <slot></slot>
+    <NuxtImg v-if="isMobile" :src="$props.imageUrl" style="background-position: center ;object-fit: cover;" height="300" />
+      <slot></slot>
   </section>
 </template>
 
