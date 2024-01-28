@@ -31,5 +31,11 @@ export default defineNuxtConfig({
       },
     }
   },
+  runtimeConfig: {
+    apiKey: process.env.API_KEY,
+    public: {
+      automailerUrl: ''
+    }
+  },
   devtools: { enabled: true }
 });

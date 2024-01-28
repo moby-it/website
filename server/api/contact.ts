@@ -1,8 +1,9 @@
 import { ContractSchema } from "~/utils/contact-form";
 
 export default defineEventHandler(async event => {
-  const apiKey = process.env.API_KEY;
-  const automailerUrl = process.env.AUTOMAILER_URL;
+  const config = useRuntimeConfig(event);
+  const apiKey = config.apiKey;
+  const automailerUrl = config.public.automailerUrl;
   if (!apiKey) return createError('api key not found');
   if (!automailerUrl) return createError('automailer url not found');
   console.log(automailerUrl);
@@ -15,8 +16,8 @@ export default defineEventHandler(async event => {
     Services: ${body.services}
     Details: ${body.moreInfo}
     `,
-    htmlContent: 
-    `
+    htmlContent:
+      `
     <h3>Email from ${body.email}</h3>
     <br>
     <p>Services Picked: ${body.services}</p>
