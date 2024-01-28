@@ -33,20 +33,31 @@ const model = defineModel<boolean>();
     <Banner title="Services at Predicable Prices">
       <template #subtitle>
         <h4>
-          In our efforts to simplify communication and boilerplate, we provide each of our services at a <em> fixed
-            montly price, regardless of scope</em>.
-          <br>
+          In our efforts to simplify communication and boilerplate, we provide each of our services at a
+          <NuxtLink to="#services"> fixed montly price, regardless of scope </NuxtLink>.
           We communicate exclusively through timeboxed deliverables and deadlines, focusing on what's immidiate and of
           value.
         </h4>
       </template>
     </Banner>
-    <section class="services">
+    <section class="services" id="services">
       <h2>Our Services</h2>
-      <!-- <aside>
-        <p>We also support regional pricing. Toggle on to check if your region supports regional pricing</p>
-        <Toggle v-model="model"></Toggle>
-      </aside> -->
+      <Card>
+        <template #header>
+          <h4>Purchasing Power Parity discounts</h4>
+        </template>
+        <template #content>
+          <aside>
+            <p>We noticed you're coming from Country. We want to help make our services accessible to everyone business
+              around
+              the world and we provide Purchasing Power Parity discounts.</p>
+            <section class="regional-pricing">
+              <label for="regional-pricing">Activate regional pricing</label>
+              <Toggle v-model="model" id="regional-pricing"></Toggle>
+            </section>
+          </aside>
+        </template>
+      </Card>
 
       <section class="service-badges">
         <ServiceBadge v-for="service of services" :service="service">
@@ -99,7 +110,7 @@ const model = defineModel<boolean>();
                 postpone it until the investment makes sense.
                 At the end of the day, you get Tech Consulting at affordable prices, while still having the option to
                 immidiately proceed with any action.</p>
-              <em>Price: 2.000 € / per month (min 1 month)</em>
+              <em>Price: {{ services[0].price }} € / per month (min 1 month)</em>
             </section>
           </section>
           <div></div>
@@ -119,7 +130,7 @@ const model = defineModel<boolean>();
             <section>
               <h4>Outcome</h4>
               <p></p>
-              <em>Price: 8.000 € / per month</em>
+              <em>Price: {{ services[1].price }} € / per month</em>
             </section>
           </section>
           <div></div>
@@ -139,7 +150,7 @@ const model = defineModel<boolean>();
             <section>
               <h4>Outcome</h4>
               <p></p>
-              <em>Price: 6.000 € / per month</em>
+              <em>Price: {{ services[2].price }} € / per month</em>
             </section>
           </section>
           <div></div>
@@ -160,6 +171,10 @@ const model = defineModel<boolean>();
 
 .services aside {
   text-align: center;
+}
+
+.services .card {
+  align-self: center;
 }
 
 .services aside p {
@@ -222,7 +237,14 @@ const model = defineModel<boolean>();
   background-color: lightcoral;
 }
 
-.services>h2 {
+h2 {
   text-align: center;
+}
+
+.regional-pricing {
+  display: flex;
+  gap: var(--gap-1);
+  align-items: center;
+  justify-content: center;
 }
 </style>

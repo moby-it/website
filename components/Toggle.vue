@@ -1,9 +1,10 @@
 <script setup lang="ts">
 const model = defineModel();
+defineProps<{ id: string; }>();
 </script>
 <template>
   <label class="switch">
-    <input type="checkbox" v-model="model">
+    <input type="checkbox" :id="$props.id" v-model="model">
     <span class="slider round"></span>
   </label>
 </template>

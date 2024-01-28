@@ -2,11 +2,15 @@
 defineProps({
   minHeight: {
     type: String,
+  },
+  minWidth: {
+    type: String,
+    default: '390px'
   }
 });
 </script>
 <template>
-  <article class="card" :style="{ minHeight }">
+  <article class="card" :style="{ minHeight, minWidth }">
     <header>
       <slot name="header"></slot>
     </header>
@@ -18,7 +22,6 @@ defineProps({
 <style scoped>
 .card {
   box-sizing: border-box;
-  width: 390px;
   background: var(--light--bg);
   display: flex;
   flex-direction: column;
@@ -37,11 +40,13 @@ defineProps({
   margin-bottom: var(--gap-1);
   text-align: center;
   align-items: center;
+  justify-content: center;
 }
 
 .card header img {
   width: 96px;
 }
+
 .content {
   color: var(--gray);
 }
