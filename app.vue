@@ -11,6 +11,10 @@ useHead({
     },
     {
       rel: 'stylesheet',
+      href: 'https://unpkg.com/vue-multiselect@2.1.6/dist/vue-multiselect.min.css'
+    },
+    {
+      rel: 'stylesheet',
       href: '/style.css'
     },
     {
@@ -57,3 +61,4 @@ onMounted(() => {
   </section>
   <Footer />
 </template>
+

@@ -4,8 +4,17 @@ body {
   min-height: 100vh;
 }
 
+#__nuxt {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
-ul:not(.nav-links),
+.page {
+  flex: 1;
+}
+
+ul:not(.nav-links, .multiselect__content),
 ol {
   padding-inline-start: var(--gap-3);
 }
@@ -34,13 +43,32 @@ abbr {
 nav a {
   color: var(--primary--opacity--weak)
 }
-footer nav a,footer nav a.active {
+
+footer nav a,
+footer nav a.active {
   color: white;
 }
 
 
 a.active {
   color: var(--primary--opacity--strong);
+}
+
+.multiselect__tag,
+.multiselect__option--highlight {
+  background-color: var(--secondary);
+  color: black;
+}
+.multiselect__tag-icon:hover,.multiselect__tag-icon:focus {
+  background: var(--primary);
+}
+
+.multiselect__option--highlight::after {
+  background-color: var(--primary);
+}
+
+.multiselect__element li span :hover {
+  background-color: var(--secondary);
 }
 
 .page-enter-active,
@@ -52,4 +80,9 @@ a.active {
 .page-leave-to {
   opacity: 0;
   filter: blur(1rem);
+}
+@media (width < 426px) {
+  .multiselect__option--highlight::after {
+    display: none;
+  }
 }
