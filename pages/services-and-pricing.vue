@@ -31,6 +31,7 @@ const discountPrices: string[] = [
   '6.000',
   '5.000'
 ];
+const country = ref('Greece');
 const prices = services.map(s => s.price);
 const model = defineModel<boolean>();
 </script>
@@ -54,9 +55,9 @@ const model = defineModel<boolean>();
         </template>
         <template #content>
           <aside>
-            <p>We noticed you're coming from Country. We want to help make our services accessible to everyone business
-              around
-              the world and we provide Purchasing Power Parity discounts.</p>
+            <p>We noticed you're coming from {{ country }}. We want to help make our services accessible to everyone
+              business
+              around the world and we provide Purchasing Power Parity discounts.</p>
             <section class="regional-pricing">
               <label for="regional-pricing">Activate regional pricing</label>
               <Toggle v-model="model" id="regional-pricing"></Toggle>

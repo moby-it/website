@@ -5,10 +5,11 @@ body {
 }
 
 
-nav:not(:has(ul)) ul,
-nav:not(:has(ul)) ol {
+ul,
+ol {
   padding-inline-start: var(--gap-3);
 }
+
 abbr {
   cursor: help;
 }
