@@ -73,10 +73,18 @@ header nav ul {
   justify-content: center;
   gap: var(--gap-3);
   list-style: none;
+  flex-wrap: wrap;
+  row-gap: var(--gap-1);
 }
 
 nav a:hover {
   color: black;
   transition: color 0.5s ease;
+}
+
+@media (width <= 701px) {
+  header:has(nav) {
+    justify-content: center;
+  }
 }
 </style>

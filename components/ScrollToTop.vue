@@ -31,10 +31,9 @@ img {
   cursor: pointer;
   background-color: var(--primary--opacity--weak);
   position: fixed;
-  right: var(--gap-2);
-  bottom: var(--gap-2);
+  right: var(--gap-3);
+  bottom: var(--gap-3);
   border-radius: 50%;
-  border: 2px solid var(--primary--opacity--weak);
   padding: var(--gap-1);
 }
 img:hover {

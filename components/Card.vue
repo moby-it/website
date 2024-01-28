@@ -9,12 +9,12 @@ defineProps({
   },
   maxWidth: {
     type: String,
-    default: 'auto'
+    default: 'fit-content'
   },
 });
 </script>
 <template>
-  <article class="card" :style="{ minHeight, minWidth,maxWidth }">
+  <article class="card" :style="{ minHeight, minWidth, maxWidth }">
     <header>
       <slot name="header"></slot>
     </header>
@@ -53,11 +53,5 @@ defineProps({
 
 .content {
   color: var(--gray);
-}
-
-@media (width <=425px) {
-  .card {
-    width: 300px !important;
-  }
 }
 </style>

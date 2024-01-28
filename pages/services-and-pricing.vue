@@ -222,10 +222,11 @@ const model = defineModel<boolean>();
   gap: var(--gap-3);
   justify-content: center;
   text-align: center;
+  flex-wrap: wrap;
 }
 
 .services>section {
-  padding-left: var(--gap-3);
+  padding: 0 var(--gap-3);
 }
 
 .service-descriptions {
@@ -287,5 +288,20 @@ h2 {
   gap: var(--gap-1);
   align-items: center;
   justify-content: center;
+}
+
+@media (width <=768px) {
+
+  .service-descriptions>section,
+  .service-descriptions #design-and-development {
+    grid-template-areas:
+      "title"
+      "description"
+      "image"
+    ;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    justify-content: center;
+  }
 }
 </style>
