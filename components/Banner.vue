@@ -37,10 +37,14 @@ hgroup h1 {
   margin-bottom: var(--gap-3);
 }
 
-@media (width<=425px) {
+@media (width<=768px) {
   .banner {
     padding: var(--gap-2);
     padding-top: var(--gap-1);
+  }
+
+  .banner hgroup {
+    max-width: 100%;
   }
 }
 </style>

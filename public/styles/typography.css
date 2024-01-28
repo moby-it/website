@@ -94,14 +94,32 @@ em {
 small {
   font-size: small;
 }
+
 p {
   margin-bottom: var(--gap-1);
 }
+
 .italic {
   font-style: italic;
 }
 
 @media (width < 426px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+
   body {
     font-size: 14px;
   }

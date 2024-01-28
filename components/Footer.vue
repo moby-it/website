@@ -32,7 +32,7 @@ p {
   display: flex;
   align-items: flex-start;
   gap: var(--gap-1);
-
+  margin-bottom: 0;
   height: 30px;
 }
 
