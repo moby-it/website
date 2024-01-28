@@ -49,7 +49,7 @@ const model = defineModel<boolean>();
     </Banner>
     <section class="services" id="services">
       <h2>Our Services</h2>
-      <Card>
+      <Card max-width="65vw">
         <template #header>
           <h4>Purchasing Power Parity discounts</h4>
         </template>
@@ -235,7 +235,7 @@ const model = defineModel<boolean>();
 .services {
   display: flex;
   flex-direction: column;
-  gap: var(--gap-2);
+  gap: var(--gap-3);
 }
 
 .services aside {

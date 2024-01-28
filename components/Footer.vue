@@ -41,6 +41,7 @@ footer {
   ;
   background-image: url("/footer.png");
   background-size: cover;
+  margin-top: var(--gap-3);
   padding: var(--gap-3) var(--gap-2);
   gap: var(--gap-1);
 }

@@ -102,7 +102,7 @@ useSeoMobyHead(
 .what-we-do>div {
   display: flex;
   flex: 1;
-  gap: var(--gap-1);
+  gap: var(--gap-2);
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -115,5 +115,8 @@ useSeoMobyHead(
 .customers h4 {
   text-align: center;
   margin-bottom: var(--gap-2);
+}
+.what-we-do h4 {
+  margin-bottom: var(--gap-3);
 }
 </style>

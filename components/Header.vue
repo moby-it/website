@@ -5,7 +5,7 @@ const isMobile = inject<ComputedRef<boolean>>('isMobile');
 <template>
   <header>
     <NuxtLink id="site-id" to="/">
-      <NuxtImg src="/logo.png" alt="moby-it logo" quality="100" width="150" height="34" />
+      <img src="/logo.png" alt="moby-it logo"  width="150" height="34" />
     </NuxtLink>
     <BurgerMenu v-if="isMobile" />
     <nav class="links" v-if="!isMobile">
