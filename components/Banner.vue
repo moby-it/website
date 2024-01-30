@@ -2,7 +2,7 @@
 <script setup lang="ts">
 defineProps({
   title: { type: String, required: true },
-  imageUrl: { type: String, default: 'https://placehold.co/1920x700' }
+  imageUrl: { type: String, default: 'https://placehold.co/1920x500' }
 });
 const isMobile = inject('isMobile');
 </script>
