@@ -23,7 +23,7 @@ defineEmits(['clicked']);
   background-color: var(--primary--opacity--strong);
   border-radius: var(--radius);
   border: none;
-  padding: 1rem;
+  padding: 0.75rem 1rem;
   color: white;
   cursor: pointer;
 }
