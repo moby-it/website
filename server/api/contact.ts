@@ -2,7 +2,7 @@ import { ContractSchema } from "~/utils/contact-form";
 
 export default defineEventHandler(async event => {
   const config = useRuntimeConfig(event);
-  const apiKey = config.apiKey;
+  const apiKey = config.automailerApiKey;
   const automailerUrl = config.public.automailerUrl;
   if (!apiKey) return createError('api key not found');
   if (!automailerUrl) return createError('automailer url not found');
