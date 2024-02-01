@@ -56,7 +56,8 @@ onMounted(() => {
 </script>
 <template>
   <Header />
-  <section class="page">
+  <NuxtLoadingIndicator   />
+  <section class="page">    
     <NuxtPage />
   </section>
   <Footer />
