@@ -13,9 +13,10 @@ defineProps<{
 <style>
 .original-price {
   text-decoration: line-through;
+  & +.price {
+    color: red;
+    margin-left: 4px;
+  }
 }
 
-.original-price+.price {
-  color: red
-}
 </style>
