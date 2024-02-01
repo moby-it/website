@@ -1,8 +1,8 @@
 <script setup lang="ts">
 defineProps<{
   hasDiscount: boolean;
-  originalPrice: string;
-  discountedPrice?: string;
+  originalPrice: number;
+  discountedPrice?: number;
 }>();
 </script>
 <template>

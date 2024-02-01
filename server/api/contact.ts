@@ -6,7 +6,6 @@ export default defineEventHandler(async event => {
   const automailerUrl = config.public.automailerUrl;
   if (!apiKey) return createError('api key not found');
   if (!automailerUrl) return createError('automailer url not found');
-  console.log(automailerUrl);
   const body: ContractSchema = await readBody(event);
   const payload = {
     subject: `[Contact Form] - ${body.name}`,
@@ -34,7 +33,6 @@ export default defineEventHandler(async event => {
   });
   if (response.ok) {
     const res = await response.json();
-    console.log(res);
     setResponseStatus(event, 200);
     return 'mail sent';
   }

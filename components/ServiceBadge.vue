@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import type { Service } from '~/pages/services-and-pricing.vue';
-defineProps<{ service: Service; discount: boolean; discountPrice?: string; }>();
+
+
+defineProps<{ service: Service; discount: boolean; discountPrice?: number; }>();
 </script>
 <template>
   <NuxtLink :to="'#' + $props.service.id">
@@ -8,7 +10,7 @@ defineProps<{ service: Service; discount: boolean; discountPrice?: string; }>();
       <NuxtImg :src="$props.service.imgUrl" alt="Consulting & Analysis" :width="150"></NuxtImg>
       <h4>{{ $props.service.title }}</h4>
       <p>
-        <Price :has-discount="$props.discount" :original-price="$props.service.price"
+        <Price :has-discount="$props.discount" :original-price="$props.service.cost"
           :discounted-price="$props.discountPrice"></Price>
       </p>
     </section>

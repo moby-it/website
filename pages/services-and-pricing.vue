@@ -1,39 +1,43 @@
 <script setup lang="ts">
+import { type Service as Svc } from '~/utils/prices';
 export type Service = {
   title: string;
   imgUrl: string;
   id: string;
-  price: string;
+  cost: number;
 };
-const services: Service[] = [
-  {
-    title: 'Consulting & Analysis',
-    imgUrl: 'https://placehold.co/150x150',
-    id: 'consulting-and-analysis',
-    price: '2.000'
-  },
-  {
-    title: 'Design & Development',
-    imgUrl: 'https://placehold.co/150x150',
-    id: 'design-and-development',
-    price: '8.500'
+const { data: priceData } = await useFetch('/api/prices', {
+  pick: ['defaultPrices', 'country', 'regionalPrices']
+});
+const defaultPrices: ComputedRef<Service[]> = computed(() =>
+  (priceData.value?.defaultPrices as Svc[])?.map(transformSvcToService) || []);
+const regionalPrices: ComputedRef<Service[]> = computed(() =>
+  (priceData.value?.regionalPrices as Svc[])?.map(transformSvcToService) || []);
 
-  },
-  {
-    title: 'Development Support',
-    imgUrl: 'https://placehold.co/150x150',
-    id: 'development-support',
-    price: '6.200'
-  },
-];
-const discountPrices: string[] = [
-  '1.500',
-  '6.000',
-  '5.000'
-];
-const country = ref('Greece');
-const prices = services.map(s => s.price);
+const country = computed(() => priceData.value?.country);
 const model = defineModel<boolean>();
+
+function transformSvcToService(scv: Svc, idx: number): Service {
+  return {
+    title: scv.Service_Name,
+    cost: scv.Cost,
+    id: getIdFromIdx(idx),
+    imgUrl: getImgFromIdx(idx),
+  };
+};
+
+function getIdFromIdx(idx: number): string {
+  if (idx === 0) return 'consulting-and-analysis';
+  if (idx === 1) return 'design-and-development';
+  if (idx === 2) return 'development-support';
+  return '';
+}
+function getImgFromIdx(idx: number): string {
+  if (idx === 0) return 'https://placehold.co/150x150';
+  if (idx === 1) return 'https://placehold.co/150x150';
+  if (idx === 2) return 'https://placehold.co/150x150';
+  return '';
+}
 </script>
 <template>
   <article>
@@ -48,7 +52,7 @@ const model = defineModel<boolean>();
     </Banner>
     <section class="services" id="services">
       <h2>Our Services</h2>
-      <Card max-width="65vw">
+      <Card max-width="65vw" v-if="regionalPrices.length">
         <template #header>
           <h4>Purchasing Power Parity discounts</h4>
         </template>
@@ -66,8 +70,8 @@ const model = defineModel<boolean>();
       </Card>
 
       <section class="service-badges">
-        <ServiceBadge v-for="(service, index) of services" :service="service" :discount="!!model"
-          :discount-price="discountPrices[index]">
+        <ServiceBadge v-for="(service, index) of defaultPrices" :service="service" :discount="!!model"
+          :discount-price="regionalPrices[index]?.cost">
         </ServiceBadge>
       </section>
       <section class="service-descriptions">
@@ -133,7 +137,8 @@ const model = defineModel<boolean>();
               </p>
               <em>
                 Price:
-                <Price :has-discount="!!model" :original-price="prices[0]" :discounted-price="discountPrices[0]" />
+                <Price :has-discount="!!model" :original-price="defaultPrices[0].cost"
+                  :discounted-price="regionalPrices[0]?.cost" />
               </em>
             </section>
           </section>
@@ -177,7 +182,8 @@ const model = defineModel<boolean>();
                 insights into maintenance and future scalability of the software, equipping you with knowledge for
                 long-term success.</p>
               <em>Price:
-                <Price :has-discount="!!model" :original-price="prices[1]" :discounted-price="discountPrices[1]" />
+                <Price :has-discount="!!model" :original-price="defaultPrices[1].cost"
+                  :discounted-price="regionalPrices[1]?.cost" />
               </em>
             </section>
           </section>
@@ -222,7 +228,8 @@ const model = defineModel<boolean>();
                 <em> Featured Testimonials:</em>
               </p>
               <em>Price:
-                <Price :has-discount="!!model" :original-price="prices[2]" :discounted-price="discountPrices[2]" />
+                <Price :has-discount="!!model" :original-price="defaultPrices[2].cost"
+                  :discounted-price="regionalPrices[2]?.cost" />
               </em>
             </section>
           </section>
