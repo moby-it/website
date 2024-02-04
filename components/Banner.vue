@@ -2,7 +2,7 @@
 <script setup lang="ts">
 defineProps({
   title: { type: String, required: true },
-  imageUrl: { type: String, default: 'https://placehold.co/1920x500' }
+  imageUrl: { type: String, default: 'https://placehold.co/1440x500' }
 });
 const isMobile = inject('isMobile');
 </script>
@@ -29,10 +29,6 @@ const isMobile = inject('isMobile');
   padding: var(--gap-4);
   gap: var(--gap-1);
   margin-bottom: var(--gap-4);
-}
-
-.title {
-  font-size: 2.75rem;
 }
 
 .banner hgroup {

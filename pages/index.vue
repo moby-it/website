@@ -9,10 +9,10 @@ useSeoMobyHead(
   <main>
     <Banner title="Tailor-made <br> Software Solutions">
       <template #subtitle>
-        <h5>Digitizing workflows for <abbr title="Small and Medium Enterprises"> SMEs</abbr>
+        <h4>Digitizing workflows for <abbr title="Small and Medium Enterprises"> SMEs</abbr>
           at <NuxtLink to="/services-and-pricing"> predictable prices.</NuxtLink>
-        </h5>
-        <h5>Your tech ally in a digital era.</h5>
+        </h4>
+        <h4>Your tech ally in a digital era.</h4>
       </template>
       <Button @clicked="() => navigateTo('/contact')">
         Contact Us
