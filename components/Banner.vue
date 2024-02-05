@@ -32,7 +32,7 @@ const isMobile = inject('isMobile');
 }
 
 .banner hgroup {
-  max-width: 40%;
+  max-width: 45%;
   margin-bottom: var(--gap-2);
 }
 hgroup h1:not(:only-child) {

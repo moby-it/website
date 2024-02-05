@@ -45,8 +45,6 @@ watchEffect(() => {
 .mobile {
   position: absolute;
   z-index: 10;
-  top: 0;
-  left: 0;
   width: calc(100vw - var(--gap-2) - var(--gap-2));
   height: calc(100vh - var(--gap-2) - var(--gap-2));
   background-color: rgba(255, 255, 255, 0.98);
