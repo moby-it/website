@@ -27,7 +27,7 @@ const isMobile = inject<ComputedRef<Boolean>>('isMobile');
       <p>At the start of my career, I was blessed with incredibly insightful mentors and colleagues. They taught me how to
         work efficiently, while keeping a positive attitude about it. I believe it's my turn to do the same.</p>
 
-      <h4>After experiencing how a well-oiled machine works, it's tough to go back.</h4>
+      <h4 class="italic">&ldquo;After experiencing how a well-oiled machine works, it's tough to go back.&bdquo;</h4>
 
       <p>With a decade of experience in digitizing workflows for Enterprises of all scales, I believe I know how to
         cultivate an environment in which teams can provide high-value software without paying a high price. There
