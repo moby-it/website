@@ -43,11 +43,11 @@ function getImgFromIdx(idx: number): string {
   <article>
     <Banner title="No Hidden Costs">
       <template #subtitle>
-        <h4>
-          We provide each of our services at a <NuxtLink to="#services"> fixed montly price</NuxtLink>. Every contract is
-          tailored to time-bound deliverables and clear deadlines, ensuring no hidden costs. We shoulder any unforeseen
-          expenses, guaranteeing you peace of mind and financial predictability from start to finish.
-        </h4>
+        <h4 style="margin-bottom: var(--gap-2);">We provide each of our services at a <NuxtLink to="#services"> fixed montly price</NuxtLink>.</h4>
+        <h4>Every contract is tailored to time-bound deliverables and clear deadlines, ensuring no hidden costs. We
+          shoulder any unforeseen expenses, guaranteeing you peace of mind and financial predictability from start to
+          finish.</h4>Every contract is tailored to time-bound deliverables and clear deadlines, ensuring no hidden costs. We shoulder
+          any unforeseen expenses, guaranteeing you peace of mind and financial predictability from start to finish.
       </template>
     </Banner>
     <section class="services" id="services">
@@ -146,7 +146,6 @@ function getImgFromIdx(idx: number): string {
         </section>
         <section id="design-and-development">
           <section class="description">
-
             <h2>Design & Development</h2>
             <section>
               <h4>Problem Space</h4>

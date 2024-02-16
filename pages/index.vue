@@ -114,7 +114,6 @@ h2 {
   gap: var(--gap-2);
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
   margin-bottom: var(--gap-4);
 }
 
@@ -127,5 +126,8 @@ h2 {
 .what-we-do>h4 {
   text-align: center;
   margin-bottom: var(--gap-4);
+}
+.what-we-do ul {
+ padding-inline-start: var(--gap-1);
 }
 </style>
