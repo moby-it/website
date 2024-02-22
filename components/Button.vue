@@ -42,4 +42,7 @@ button:disabled {
 button:disabled:hover {
   background-color: var(--primary--opacity--weak);
 }
+button {
+  font-weight: 500;
+}
 </style>

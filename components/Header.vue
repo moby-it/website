@@ -31,7 +31,6 @@ const isMobile = inject<ComputedRef<boolean>>('isMobile');
 
 header:has(nav),
 header:has(#menu) {
-  min-height: 6vh;
   display: flex;
   justify-content: space-between;
   align-items: center;

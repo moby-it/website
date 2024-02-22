@@ -54,13 +54,12 @@ function getImgFromIdx(idx: number): string {
       <h2>Our Services</h2>
       <Card max-width="65vw" v-if="regionalPrices.length">
         <template #header>
-          <h4>Purchasing Power Parity discounts</h4>
+          <h4>We noticed you're coming from {{ country }}.</h4>
         </template>
         <template #content>
           <aside>
-            <p>We noticed you're coming from {{ country }}. We want to help make our services accessible to everyone
-              business
-              around the world and we provide Purchasing Power Parity discounts.</p>
+            <p> In our efforts to make our services accessible to every business around the world, we provide <em>
+                Purchasing Power Parity discounts</em>.</p>
             <section class="regional-pricing">
               <label for="regional-pricing"><em> Activate regional pricing</em></label>
               <Toggle v-model="model" id="regional-pricing"></Toggle>
@@ -74,6 +73,9 @@ function getImgFromIdx(idx: number): string {
           :discount-price="regionalPrices[index]?.cost">
         </ServiceBadge>
       </section>
+      <Button @clicked="() => navigateTo('/contact')">
+        Contact Us
+      </Button>
       <section class="service-descriptions">
         <section id="consulting-and-analysis">
           <hgroup>
@@ -85,7 +87,7 @@ function getImgFromIdx(idx: number): string {
             <section>
               <h4>Problem Space</h4>
               <p>Are you a <em>business owner</em> or <em>operations manager</em> navigating complexities in a digital
-                ear? If you've <em> identified bottlenecks in your operations</em> or are contemplating the next
+                era? If you've <em> identified bottlenecks in your operations</em> or are contemplating the next
                 steps for scaling your business, Moby IT is here to guide you. In a digital era, every business manager
                 has wondered whether a "program" will help them <em> cut costs and/or scale </em> at some point.</p>
             </section>
@@ -258,6 +260,10 @@ function getImgFromIdx(idx: number): string {
 
 .services aside p {
   margin-bottom: var(--gap-1);
+}
+
+.services>button {
+  align-self: center;
 }
 
 .service-badges {

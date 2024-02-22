@@ -19,7 +19,7 @@ watchEffect(() => {
   <Teleport to="body">
     <nav class="mobile" v-if="expanded">
       <header>
-        <img src="/logo.png" alt="moby-it logo" width="150" height="34" />
+        <img src="/logo.png" alt="moby-it logo" width="150" height="33" />
         <NuxtImg src="/icons/x.svg" width="28" @click="() => expanded = !expanded" />
       </header>
       <section class="links">
