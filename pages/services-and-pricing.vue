@@ -259,7 +259,7 @@ function getImgFromIdx(idx: number): string {
   margin-bottom: var(--gap-1);
 }
 
-.services>button {
+.services > button {
   align-self: center;
 }
 
