@@ -14,7 +14,7 @@ const isMobile = inject<ComputedRef<Boolean>>('isMobile');
           <p class="italic">
             Programming is my hobby, and I feel blessed doing that for a job. Having studied Math, I'm a teacher at heart.
             Constantly learning new technologies and, through Moby IT, trying to cultivate a healthier and more inclusive
-            work environment.
+            work environment while providing top-notch software services.
           </p>
         </span>
       </section>
@@ -25,7 +25,8 @@ const isMobile = inject<ComputedRef<Boolean>>('isMobile');
         than bumping up the quantity.
       </p>
       <p>At the start of my career, I was blessed with incredibly insightful mentors and colleagues. They taught me how to
-        work efficiently, while keeping a positive attitude about it. I believe it's my turn to do the same.</p>
+        work efficiently, while keeping a positive attitude about it. I believe it's my turn to do the same. You can read
+        more about me over <a href="https://gspanos.tech" target="_parent">gspanos.tech</a>. </p>
 
       <h4 class="italic">&ldquo;After experiencing how a well-oiled machine works, it's tough to go back.&bdquo;</h4>
 
@@ -39,7 +40,8 @@ const isMobile = inject<ComputedRef<Boolean>>('isMobile');
         Moby IT works with <em> a network of experts</em>, which I have acquired through my career. Most of
         these people have over 13 years of experience in their respective fields. Through focus, discipline and
         dedication, we're able to provide quality services with predictable costs. We trust in our ability and experience
-        to anticipate change enough, so that we can reflect it in our <NuxtLink to="/services-and-pricing#services">pricing
+        to anticipate change enough, so that we can reflect it in our <NuxtLink to="/services-and-pricing#services">
+          pricing
           model </NuxtLink>.
       </p>
     </section>
@@ -106,8 +108,11 @@ h4 {
 }
 
 @media (width >=1024px) {
-  .about-us, .values {
+
+  .about-us,
+  .values {
     max-width: 60%;
     margin: 0 auto var(--gap-1) auto;
   }
-}</style>
+}
+</style>

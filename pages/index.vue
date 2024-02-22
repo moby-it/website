@@ -36,10 +36,9 @@ useSeoMobyHead(
                 </li>
                 <li><em>We bring </em>our analytical skills and and years of experience in digitizing business
                   workflows. We verify that there <span class="italic">is</span> space for a digital solution. If that's
-                  the case, we structure a well-rounded, cost-efficient solution in the form of a <em>Functional
-                    Specification Document </em>.</li>
+                  the case, we structure a well-rounded, cost-efficient solution.</li>
                 <li><em>You get </em> a documented strategic technical evaluation of your problems and its cost-to-benefit
-                  ratio</li>
+                  ratio.</li>
               </ul>
             </template>
           </Card>
@@ -50,13 +49,13 @@ useSeoMobyHead(
             </template>
             <template #content>
               <ul style="margin-bottom: var(--gap-1);">
-                <li><em>You bring</em> a Functional Specification Document of a specific business problem.
+                <li><em>You bring</em> a specific business problem that can be solved digitally.
                 </li>
-                <li><em>We bring</em> our hands and minds in order to bring the above specification to life. Leveraging
-                  our strong in-house design team and experience in working closely with SMEs, we deliver a hand-crafted
+                <li><em>We bring</em> our hands and minds in order to bring the above solution to life. Leveraging
+                  our in-house design team and experience in working closely with SMEs, we deliver a hand-crafted
                   solution that exactly matches your needs and business model.</li>
-                <li><em>You get</em> a digital product that addresses the problems described in the functional
-                  specification document.</li>
+                <li><em>You get</em> a digital product that addresses the problems, helps your company cut costs/scale and
+                  reach its next milestones.</li>
               </ul>
             </template>
           </Card>
@@ -127,7 +126,8 @@ h2 {
   text-align: center;
   margin-bottom: var(--gap-4);
 }
+
 .what-we-do ul {
- padding-inline-start: var(--gap-1);
+  padding-inline-start: var(--gap-1);
 }
 </style>

@@ -115,27 +115,18 @@ function getImgFromIdx(idx: number): string {
             </section>
             <section>
               <h4>Outcome</h4>
-              <p>At the conclusion of our analysis, you receive a documented strategic analysis of your addressed business
-                problem. Should we identify software as a viable solution for cost-saving or scaling, you will also
-                receive:</p>
-              <ul>
-                <li>
-                  <em> Functional Specification Document (FSD)</em>: This document provides a detailed description of the
-                  proposed solution(s) from a business perspective, tailored specifically to your needs.
-                </li>
-                <li>
-                  <em>Timeframe for Delivery</em>: Alongside the FSD, we offer a clear timeline for when we could
-                  implement the solution, should you choose to proceed with us.
-                </li>
-              </ul>
+              <p>At the conclusion of our analysis, you receive a <em> documented strategic analysis</em> of your
+                addressed business problem. Should we identify software as a viable solution, you will also receive a
+                timeline within which we could implement the given solution, should you choose to proceed
+                with us.
+              </p>
               <p>This package is grounded in our values of <span class="italic">open-ended relationships</span>, <span
                   class="italic">transparency</span> and
                 <span class="italic">value-driven partnerships</span>.<em> We understand that not all problems require a
                   software solution.</em>. Our role is to offer data-driven insights, empowering you to make informed
                 decisions about what's best for your business at any given time. If a software solution is indeed the
-                right fit, you retain the freedom to choose your technical partner, whether it's Moby IT or another
-                provider. The outcome of this package is a strategic asset for your company, offering more than just
-                technical advice.
+                right fit, you retain the freedom to choose your technical partner. The outcome of this package is a
+                strategic asset for your company, offering more than just technical advice.
               </p>
               <em>
                 Price:
@@ -167,9 +158,7 @@ function getImgFromIdx(idx: number): string {
               <p>When purchasing this package, you get a unit of <em> 3 people dedicated to your project </em>- an
                 analyst, a designer and a developer. This unit operates autonomously within Moby IT and is responsible of
                 addressing any possible need that might arise during the Product Development Cycle. Picture it as your own
-                compact, high-functioning company. Every member <em> leverages modern technology stacks, Cloud
-                  infrastructure and efficient communcation methodologies</em>, in order to deliver effective products at
-                an impressive pace.</p>
+                compact, high-functioning company.</p>
 
               <p class="italic">As mentioned above, the unit is dedicated to you for a specific duration. This duration is
                 agreed upon signing, impling any cost thereof, since each month has a fixed price. This makes sure that
@@ -208,12 +197,14 @@ function getImgFromIdx(idx: number): string {
               <p>Choosing our service means adding dedicated and skilled software craftsmanship to your projects. Our
                 engineers have a deep understanding of the web platform and its components, and they typically specialize
                 in one or two key tools. Our areas of technical expertise include:</p>
+              <p>
               <ul>
                 <li><em>Programming Languages:</em> JavaScript, TypeScript, Golang</li>
                 <li><em>Front End: </em>Angular, React, VueJS and VanillaJS</li>
-                <li><em>Backend End: </em>Node, Deno, Echo, Chi and Gin</li>
+                <li><em>Backend End: </em>Node, Deno and Golang</li>
                 <li><em>Databases: </em>Postgres, MySQL, SQL Server, MongoDB</li>
               </ul>
+              </p>
               <p>We understand that much of software out there is primarily idiosyncratic and usually a matter of taste.
                 Our team takes pride in being maliable enough to match any idiosyncracies inside your team and speak out
                 when necessary. We've learnt to work based on extensive code reviews, testing and documentation as part of
@@ -290,7 +281,7 @@ function getImgFromIdx(idx: number): string {
   grid-template-rows: auto 1fr;
   row-gap: var(--gap-2);
   grid-template-columns: 1fr 1fr;
-  column-gap: var(--gap-4);
+  column-gap: var(--gap-6);
   grid-template-areas:
     "title image"
     "description image"
