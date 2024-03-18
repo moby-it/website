@@ -48,7 +48,7 @@ async function submitForm() {
       <template v-if="status !== 'success'" #content>
         <header>
           <div>
-            <label for="email">Email:</label>
+            <label for="email">From:</label>
             <input v-model="form.email" type="email" id="email" name="email" placeholder="example@company.com">
           </div>
           <p>Date: {{ new Date().toLocaleDateString() }}</p>

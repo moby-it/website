@@ -1,12 +1,12 @@
 <script setup lang="ts">
-const isMobile = inject<ComputedRef<Boolean>>('isMobile');
+const isMobile = inject<ComputedRef<boolean>>('isMobile');
 </script>
 <template>
   <article>
     <Banner title="It always starts with a story"></Banner>
     <section class="about-us">
       <section class="quote">
-        <NuxtImg src="https://placehold.co/300x300" width="300" />
+        <NuxtImg src="/team/george.jpg" width="300" />
         <span>
           <p class="italic">
             Hello, my name is George Spanos, and I'm the driving force behind Moby IT.
