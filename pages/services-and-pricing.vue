@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { type Service as Svc } from '~/utils/prices';
+import type { Service as Svc } from '~/utils/prices';
 export type Service = {
   title: string;
   imgUrl: string;
@@ -107,7 +107,8 @@ function getImgFromIdx(idx: number): string {
                   comprehend the nuances of your operations.
                 </li>
                 <li>
-                  <em> In-Depth Analysis</em>: Armed with this knowledge, our team engages in a deep analysis. We consider
+                  <em> In-Depth Analysis</em>: Armed with this knowledge, our team engages in a deep analysis. We
+                  consider
                   various digital solutions, weighing their potential to streamline your processes, cut costs, or drive
                   your business towards its next strategic goal.
                 </li>
@@ -123,7 +124,7 @@ function getImgFromIdx(idx: number): string {
               <p>This package is grounded in our values of <span class="italic">open-ended relationships</span>, <span
                   class="italic">transparency</span> and
                 <span class="italic">value-driven partnerships</span>.<em> We understand that not all problems require a
-                  software solution.</em>. Our role is to offer data-driven insights, empowering you to make informed
+                  software solution.</em> Our role is to offer data-driven insights, empowering you to make informed
                 decisions about what's best for your business at any given time. If a software solution is indeed the
                 right fit, you retain the freedom to choose your technical partner. The outcome of this package is a
                 strategic asset for your company, offering more than just technical advice.
@@ -156,11 +157,14 @@ function getImgFromIdx(idx: number): string {
             <section>
               <h4>The process</h4>
               <p>When purchasing this package, you get a unit of <em> 3 people dedicated to your project </em>- an
-                analyst, a designer and a developer. This unit operates autonomously within Moby IT and is responsible of
-                addressing any possible need that might arise during the Product Development Cycle. Picture it as your own
+                analyst, a designer and a developer. This unit operates autonomously within Moby IT and is responsible
+                of
+                addressing any possible need that might arise during the Product Development Cycle. Picture it as your
+                own
                 compact, high-functioning company.</p>
 
-              <p class="italic">As mentioned above, the unit is dedicated to you for a specific duration. This duration is
+              <p class="italic">As mentioned above, the unit is dedicated to you for a specific duration. This duration
+                is
                 agreed upon signing, impling any cost thereof, since each month has a fixed price. This makes sure that
                 you know what you'll be billed ahead of time, eliminating unexpected costs that are typically associated
                 with software projects. In Moby IT, <em> we take full responsibility for any unforeseen challenges</em>.
@@ -187,7 +191,8 @@ function getImgFromIdx(idx: number): string {
             </hgroup>
             <section>
               <h4>Problem Space</h4>
-              <p>Are you an applications director facing tough deadlines? Or a Project Manager that is constantly feeling
+              <p>Are you an applications director facing tough deadlines? Or a Project Manager that is constantly
+                feeling
                 pressure by the Product's Department pace. In either of those cases, we have the experience to help you.
                 Our team, with an average of 10 years in the field, is well-versed in collaborating with Enterprise
                 Software Teams.</p>
@@ -195,7 +200,8 @@ function getImgFromIdx(idx: number): string {
             <section>
               <h4>The process</h4>
               <p>Choosing our service means adding dedicated and skilled software craftsmanship to your projects. Our
-                engineers have a deep understanding of the web platform and its components, and they typically specialize
+                engineers have a deep understanding of the web platform and its components, and they typically
+                specialize
                 in one or two key tools. Our areas of technical expertise include:</p>
               <p>
               <ul>
@@ -207,14 +213,14 @@ function getImgFromIdx(idx: number): string {
               </p>
               <p>We understand that much of software out there is primarily idiosyncratic and usually a matter of taste.
                 Our team takes pride in being maliable enough to match any idiosyncracies inside your team and speak out
-                when necessary. We've learnt to work based on extensive code reviews, testing and documentation as part of
+                when necessary. We've learnt to work based on extensive code reviews, testing and documentation as part
+                of
                 our daily routine as engineers. Our goal here is to blend in rather than stand out.</p>
             </section>
             <section>
               <h4>Outcome</h4>
               <p>By integrating Moby IT's expertise into your team, you'll see immediate improvements in meeting project
-                timelines and enhancing overall project quality. Our engineers are quite fast on onboardings - usually
-                ~one month in really big projects - and, by our metrics, we generally work at a relatively fast pace.
+                timelines and enhancing overall project quality.
               </p>
               <p>
                 <em> Featured Testimonials:</em>
