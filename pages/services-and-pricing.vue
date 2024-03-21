@@ -222,9 +222,9 @@ function getImgFromIdx(idx: number): string {
               <p>By integrating Moby IT's expertise into your team, you'll see immediate improvements in meeting project
                 timelines and enhancing overall project quality.
               </p>
-              <p>
+              <!-- <p>
                 <em> Featured Testimonials:</em>
-              </p>
+              </p> -->
               <em>Price:
                 <Price :has-discount="!!model" :original-price="defaultPrices[2].cost"
                   :discounted-price="regionalPrices[2]?.cost" />
