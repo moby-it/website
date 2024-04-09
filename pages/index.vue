@@ -7,7 +7,7 @@ useSeoMobyHead(
 </script>
 <template>
   <main>
-    <Banner title="Tailor-made <br> Software Solutions">
+    <Banner title="Tailor-made <br> Software Solutions" image-url="/img/fofos.jpg">
       <template #subtitle>
         <h4>Digitizing workflows for <abbr title="Small and Medium Enterprises"> SMEs</abbr>
           at <NuxtLink to="/services-and-pricing"> predictable prices.</NuxtLink>
@@ -24,7 +24,7 @@ useSeoMobyHead(
         <div>
           <Card minHeight="565px" max-width="390px">
             <template #header>
-              <NuxtImg src="/icons/consulting.svg" alt="communication" aria-hidden="true" :width="80" />
+              <NuxtImg src="/icons/consulting_and_analysis.png" alt="communication" aria-hidden="true" :width="80" />
               <h4>Consulting & Analysis</h4>
             </template>
             <template #content>
@@ -44,7 +44,7 @@ useSeoMobyHead(
           </Card>
           <Card max-width="390px" min-height="600px">
             <template #header>
-              <NuxtImg src="/icons/design-and-development.svg" alt="light bulb on" aria-hidden="true" :width="80" />
+              <NuxtImg src="/icons/design_and_development.png" alt="light bulb on" aria-hidden="true" :width="80" />
               <h4 class="title">Design & Development</h4>
             </template>
             <template #content>
@@ -61,7 +61,7 @@ useSeoMobyHead(
           </Card>
           <Card minHeight="565px" max-width="390px">
             <template #header>
-              <NuxtImg src="/icons/staffing.svg" alt="code-brackets" aria-hidden="true" :width="80" />
+              <NuxtImg src="/icons/development_support.png" alt="code-brackets" aria-hidden="true" :width="80" />
               <h4 class="title">Development Support</h4>
             </template>
             <template #content>

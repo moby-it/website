@@ -1,4 +1,3 @@
-
 <script setup lang="ts">
 defineProps({
   title: { type: String, required: true },
@@ -34,7 +33,11 @@ const isMobile = inject('isMobile');
 .banner hgroup {
   max-width: 45%;
   margin-bottom: var(--gap-2);
+  background-color: hsl(from var(--light--bg) h s l / 80%);
+  border-radius: var(--radius);
+  padding: var(--gap-2)
 }
+
 hgroup h1:not(:only-child) {
   margin-bottom: var(--gap-2);
 }
@@ -50,7 +53,7 @@ hgroup h1:not(:only-child) {
   }
 }
 
-@media (width <=1024px) and (width >= 769px) {
+@media (width <=1024px) and (width >=769px) {
   .banner hgroup {
     max-width: 50%;
   }

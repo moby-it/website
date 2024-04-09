@@ -3,6 +3,7 @@ import type { Service as Svc } from '~/utils/prices';
 export type Service = {
   title: string;
   imgUrl: string;
+  imgAlt: string;
   id: string;
   cost: number;
 };
@@ -22,6 +23,7 @@ function transformSvcToService(scv: Svc, idx: number): Service {
     title: scv.Service_Name,
     cost: scv.Cost,
     id: getIdFromIdx(idx),
+    imgAlt: getImgAltFromIdx(idx),
     imgUrl: getImgFromIdx(idx),
   };
 };
@@ -33,15 +35,21 @@ function getIdFromIdx(idx: number): string {
   return '';
 }
 function getImgFromIdx(idx: number): string {
-  if (idx === 0) return 'https://placehold.co/150x150';
-  if (idx === 1) return 'https://placehold.co/150x150';
-  if (idx === 2) return 'https://placehold.co/150x150';
+  if (idx === 0) return '/icons/consulting_and_analysis.png';
+  if (idx === 1) return '/icons/design_and_development.png';
+  if (idx === 2) return '/icons/development_support.png';
+  return '';
+}
+function getImgAltFromIdx(idx: number): string {
+  if (idx === 0) return 'Consulting and Analysis Icon';
+  if (idx === 1) return 'Design and Development Icon';
+  if (idx === 2) return 'Development Support Icons';
   return '';
 }
 </script>
 <template>
   <article>
-    <Banner title="No Hidden Costs">
+    <Banner title="No Hidden Costs" image-url="/img/krufoalepu.jpg">
       <template #subtitle>
         <h4 style="margin-bottom: var(--gap-2);">We provide each of our services at a <NuxtLink to="#services"> fixed
             montly price</NuxtLink>.</h4>
