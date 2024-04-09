@@ -84,7 +84,7 @@ useSeoMobyHead(
         <h2>Customers</h2>
         <div>
           <NuxtLink target="_blank" to="https://www.nrb.be/en/">
-            <NuxtImg :width="200" :src="'/nrb.svg'" style="filter: grayscale(1);"></NuxtImg>
+            <NuxtImg :width="200" :src="'/icons/nrb.svg'" style="filter: grayscale(1);"></NuxtImg>
           </NuxtLink>
         </div>
       </article>

@@ -28,13 +28,13 @@ watchEffect(() => {
         </nav>
         <address>
           <a href="https://www.linkedin.com/company/moby-it" target="_blank">
-            <NuxtImg class="icon-link" src="/linkedin.svg" alt="linkedin-icon" :width="40" title="LinkedIn" />
+            <NuxtImg class="icon-link" src="/icons/linkedin.svg" alt="linkedin-icon" :width="40" title="LinkedIn" />
           </a>
           <a href="https://github.com/moby-it" target="_blank">
-            <NuxtImg class="icon-link" src="/github-circle.svg" alt="github-icon" :width="40" title="Github" />
+            <NuxtImg class="icon-link" src="/icons/github-circle.svg" alt="github-icon" :width="40" title="Github" />
           </a>
           <a href="mailto:contact@moby-it.com" target="_blank">
-            <NuxtImg class="icon-link" src="/mail.svg" alt="email" :width="40" title="Email" />
+            <NuxtImg class="icon-link" src="/icons/mail.svg" alt="email" :width="40" title="Email" />
           </a>
         </address>
       </section>
