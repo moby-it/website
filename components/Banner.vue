@@ -6,16 +6,22 @@ defineProps({
 const isMobile = inject('isMobile');
 </script>
 <template>
-  <section class="banner" :style="{ backgroundImage: isMobile ? 'none' : `url(${$props.imageUrl})` }">
-    <hgroup>
-      <h1 class="title" v-html="$props.title">
-      </h1>
-      <slot name="subtitle"></slot>
-    </hgroup>
-    <NuxtImg v-if="isMobile" :src="$props.imageUrl" style="background-position: center ;object-fit: cover;"
-      height="300" />
-    <slot></slot>
-  </section>
+  <picture>
+    <section class="banner" :style="{ backgroundImage: isMobile ? 'none' : `url(${$props.imageUrl})` }">
+      <hgroup>
+        <h1 class="title" v-html="$props.title">
+        </h1>
+        <div class="content">
+          <slot name="subtitle"></slot>
+        </div>
+      </hgroup>
+      <NuxtImg v-if="isMobile" :src="$props.imageUrl" style="background-position: center ;object-fit: cover;"
+        height="300" />
+      <div style="padding:var(--gap-2)">
+        <slot></slot>
+      </div>
+    </section>
+  </picture>
 </template>
 
 <style scoped>
@@ -31,9 +37,8 @@ const isMobile = inject('isMobile');
 }
 
 .banner hgroup {
+  width: fit-content;
   max-width: 45%;
-  margin-bottom: var(--gap-2);
-  background-color: hsl(from var(--light--bg) h s l / 80%);
   border-radius: var(--radius);
   padding: var(--gap-2)
 }

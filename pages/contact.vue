@@ -1,4 +1,11 @@
 <script setup lang="ts">
+
+useSeoMobyHead(
+  {
+    title: 'Moby IT - Contact',
+    description: 'Don\'t be a stranger, let\'s talk!'
+  });
+
 import VueMultiselect from 'vue-multiselect';
 import * as v from 'valibot';
 import { ContractSchema } from '~/utils/contact-form';
@@ -73,7 +80,8 @@ async function submitForm() {
         </Button>
       </template>
       <template v-else #content>
-        <h4 style="text-align:center; margin-bottom: var(--gap-2);"> We got your message and we'll reach out to you shortly!</h4>
+        <h4 style="text-align:center; margin-bottom: var(--gap-2);"> We got your message and we'll reach out to you
+          shortly!</h4>
         <NuxtLink to="/">Back to Home</NuxtLink>
       </template>
     </Card>
@@ -85,6 +93,7 @@ header,
 .services {
   margin-bottom: var(--gap-3);
 }
+
 header {
   display: flex;
   justify-content: space-between;

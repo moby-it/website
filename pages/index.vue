@@ -95,6 +95,9 @@ useSeoMobyHead(
   </main>
 </template>
 <style scoped>
+::root {
+  margin: 0 var(--gap-1); 
+}
 h2 {
   text-align: center;
   margin-bottom: var(--gap-2);

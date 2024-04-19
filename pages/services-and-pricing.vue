@@ -1,4 +1,10 @@
 <script setup lang="ts">
+useSeoMobyHead(
+  {
+    title: 'Moby IT - Services and Pricing',
+    description: 'Moby IT\'s contracts are always tailored to time-bound deliverables and clear deadlines, ensuring no hidden costs.'
+  });
+
 import type { Service as Svc } from '~/utils/prices';
 export type Service = {
   title: string;
@@ -144,7 +150,7 @@ function getImgAltFromIdx(idx: number): string {
               </em>
             </section>
           </section>
-          <div></div>
+          <NuxtImg src="/img/consulting_and_analysis.jpg" />
         </section>
         <section id="design-and-development">
           <section class="description">
@@ -189,7 +195,7 @@ function getImgAltFromIdx(idx: number): string {
               </em>
             </section>
           </section>
-          <div></div>
+          <NuxtImg src="/img/design_and_development.jpg" />
         </section>
         <section id="development-support">
           <section class="description">
@@ -239,7 +245,7 @@ function getImgAltFromIdx(idx: number): string {
               </em>
             </section>
           </section>
-          <div></div>
+          <NuxtImg src="/img/development_support.jpg" />
         </section>
       </section>
     </section>
@@ -267,7 +273,7 @@ function getImgAltFromIdx(idx: number): string {
   margin-bottom: var(--gap-1);
 }
 
-.services > button {
+.services>button {
   align-self: center;
 }
 
@@ -331,11 +337,12 @@ hgroup {
   grid-area: title;
 }
 
-.service-descriptions>section>div {
+.service-descriptions>section>img {
   grid-area: image;
-  background-image: url('https://placehold.co/550x1000');
-  background-position: center;
   background-size: cover;
+  justify-self: center;
+  width: 550px;
+  height: 1000px;
 }
 
 h2 {
