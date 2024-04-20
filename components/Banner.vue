@@ -17,9 +17,7 @@ const isMobile = inject('isMobile');
       </hgroup>
       <NuxtImg v-if="isMobile" :src="$props.imageUrl" style="background-position: center ;object-fit: cover;"
         height="300" />
-      <div style="padding:var(--gap-2)">
         <slot></slot>
-      </div>
     </section>
   </picture>
 </template>
