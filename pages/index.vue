@@ -9,8 +9,8 @@ useSeoMobyHead(
   <main>
     <Banner title="Tailor-made <br> Software Solutions" image-url="/img/fofos.jpg">
       <template #subtitle>
-        <h4>Digitizing workflows for <abbr title="Small and Medium Enterprises"> SMEs</abbr>
-          at <NuxtLink to="/services-and-pricing"> predictable prices.</NuxtLink>
+        <h4>Enhancing <abbr title="Small and Medium Enterprises"> SMEs</abbr>
+          through Software provided at <NuxtLink to="/services-and-pricing"> predictable prices.</NuxtLink>
         </h4>
         <h4>Your tech ally in a digital era.</h4>
       </template>
@@ -31,13 +31,13 @@ useSeoMobyHead(
               <ul>
                 <li>
                   <em>You bring </em>an intricate business problem that could be digitized for cost-savings and/or
-                  scaling
-                  profits.
+                  scaling profits.
                 </li>
                 <li><em>We bring </em>our analytical skills and and years of experience in digitizing business
                   workflows. We verify that there <span class="italic">is</span> space for a digital solution. If that's
                   the case, we structure a well-rounded, cost-efficient solution.</li>
-                <li><em>You get </em> a documented strategic technical evaluation of your problems and its cost-to-benefit
+                <li><em>You get </em> a documented strategic technical evaluation of your problems and its
+                  cost-to-benefit
                   ratio.</li>
               </ul>
             </template>
@@ -54,8 +54,8 @@ useSeoMobyHead(
                 <li><em>We bring</em> our hands and minds in order to bring the above solution to life. Leveraging
                   our in-house design team and experience in working closely with SMEs, we deliver a hand-crafted
                   solution that exactly matches your needs and business model.</li>
-                <li><em>You get</em> a digital product that addresses the problems, helps your company cut costs/scale and
-                  reach its next milestones.</li>
+                <li><em>You get</em> a digital product that addresses the problems, helps your company cut costs/scale
+                  and reach its next milestones.</li>
               </ul>
             </template>
           </Card>
@@ -96,8 +96,9 @@ useSeoMobyHead(
 </template>
 <style scoped>
 ::root {
-  margin: 0 var(--gap-1); 
+  margin: 0 var(--gap-1);
 }
+
 h2 {
   text-align: center;
   margin-bottom: var(--gap-2);

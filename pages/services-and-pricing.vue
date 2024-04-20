@@ -1,10 +1,4 @@
 <script setup lang="ts">
-useSeoMobyHead(
-  {
-    title: 'Moby IT - Services and Pricing',
-    description: 'Moby IT\'s contracts are always tailored to time-bound deliverables and clear deadlines, ensuring no hidden costs.'
-  });
-
 import type { Service as Svc } from '~/utils/prices';
 export type Service = {
   title: string;
@@ -13,6 +7,13 @@ export type Service = {
   id: string;
   cost: number;
 };
+
+useSeoMobyHead(
+  {
+    title: 'Moby IT - Services and Pricing',
+    description: 'Moby IT\'s contracts are always tailored to time-bound deliverables and clear deadlines, ensuring no hidden costs.'
+  });
+
 const { data: priceData } = await useFetch('/api/prices', {
   pick: ['defaultPrices', 'country', 'regionalPrices']
 });
@@ -57,11 +58,12 @@ function getImgAltFromIdx(idx: number): string {
   <article>
     <Banner title="No Hidden Costs" image-url="/img/krufoalepu.jpg">
       <template #subtitle>
-        <h4 style="margin-bottom: var(--gap-2);">We provide each of our services at a <NuxtLink to="#services"> fixed
-            montly price</NuxtLink>.</h4>
-        <h4>Every contract is tailored to time-bound deliverables and clear deadlines, ensuring no hidden costs. We
-          shoulder any unforeseen expenses, guaranteeing you peace of mind and financial predictability from start to
-          finish.</h4>
+        <h4>
+          <NuxtLink to="#services"> Fixed montly prices,</NuxtLink>
+          time-bound deliverables and clear deadlines, ensuring no hidden costs.
+        </h4>
+        <h4>We shoulder any unforeseen expenses, guaranteeing you peace of mind and financial predictability from start
+          to finish.</h4>
       </template>
     </Banner>
     <section class="services" id="services">
@@ -100,15 +102,16 @@ function getImgAltFromIdx(idx: number): string {
           <section class="description">
             <section>
               <h4>Problem Space</h4>
-              <p>Are you a <em>business owner</em> or <em>operations manager</em> navigating complexities in a digital
-                era? If you've <em> identified bottlenecks in your operations</em> or are contemplating the next
-                steps for scaling your business, Moby IT is here to guide you. In a digital era, every business manager
-                has wondered whether a "program" will help them <em> cut costs and/or scale </em> at some point.</p>
+              <p>Are you a <em>business owner</em> navigating complexities in a digital
+                era? Do you have <em> identified bottlenecks in your operations</em> or contemplating the next
+                steps for scaling your business? Moby IT is here to guide you. In a digital era, every business manager
+                has wondered whether a piece of software will help them <em> cut costs and/or scale </em> at some point.
+              </p>
             </section>
             <section>
               <h4>The process</h4>
               <p>
-                With this <em> low-cost package</em> you have the ability to explore any possible digital solutions
+                With this package you have the ability to explore any possible digital solutions
                 with us, leveraging our multi-year experience in digitizing business workflows. Our approach is
                 straightforward yet thorough, ensuring we fully understand your needs:
               </p>
@@ -158,7 +161,7 @@ function getImgAltFromIdx(idx: number): string {
             <section>
               <h4>Problem Space</h4>
               <p>Are you an <em> entrepreneur searching for ways to launch/improve their MVP?</em>? Or you're already in
-                possession of it, now seeking technical advicsory and ownership? Maybe you're just facing a business
+                possession of it, now seeking technical advisory and ownership? Maybe you're just facing a business
                 challenge that requires a <em> well-defined digital solution?</em>
               </p>
               <p>Our Design & Development package is tailored specifically for you.</p>
@@ -366,8 +369,16 @@ h2 {
       "image"
     ;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr 300px;
+    grid-template-rows: auto 1fr;
     justify-content: center;
+  }
+
+  .service-descriptions>section>img {
+    grid-area: image;
+    background-size: cover;
+    justify-self: center;
+    width: 325px;
+    height: 500px;
   }
 }
 </style>
