@@ -34,8 +34,7 @@ defineProps<{ id: string; }>();
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+  transition: transform .4s;
 }
 
 .slider:before {
@@ -45,9 +44,9 @@ defineProps<{ id: string; }>();
   width: 26px;
   left: 4px;
   bottom: 4px;
+  scale: 0.9;
   background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+  transition: transform .4s;
 }
 
 input:checked+.slider {
@@ -55,12 +54,10 @@ input:checked+.slider {
 }
 
 input:focus+.slider {
-  box-shadow: 0 0 1px #2196F3;
+  outline: 4px solid black;
 }
 
 input:checked+.slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
 

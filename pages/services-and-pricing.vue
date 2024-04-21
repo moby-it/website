@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Service as Svc } from '~/utils/prices';
+import type { PricesResponse, Service as Svc } from '~/utils/prices';
 export type Service = {
   title: string;
   imgUrl: string;
@@ -14,13 +14,13 @@ useSeoMobyHead(
     description: 'Moby IT\'s contracts are always tailored to time-bound deliverables and clear deadlines, ensuring no hidden costs.'
   });
 
-const { data: priceData } = await useFetch('/api/prices', {
+const { data: priceData } = await useFetch<PricesResponse>('/api/prices', {
   pick: ['defaultPrices', 'country', 'regionalPrices']
 });
-const defaultPrices: ComputedRef<Service[]> = computed(() =>
-  (priceData.value?.defaultPrices as Svc[])?.map(transformSvcToService) || []);
-const regionalPrices: ComputedRef<Service[]> = computed(() =>
-  (priceData.value?.regionalPrices as Svc[])?.map(transformSvcToService) || []);
+const defaultPrices = computed(() =>
+  (priceData.value?.defaultPrices)?.map(transformSvcToService) || []);
+const regionalPrices = computed(() =>
+  (priceData.value?.regionalPrices)?.map(transformSvcToService) || []);
 
 const country = computed(() => priceData.value?.country);
 const model = defineModel<boolean>();
