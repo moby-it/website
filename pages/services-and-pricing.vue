@@ -154,7 +154,7 @@ function getImgAltFromIdx(idx: number): string {
               </em>
             </section>
           </section>
-          <NuxtImg src="/img/consulting_and_analysis.jpg" />
+          <NuxtImg v-if="!isMobile" src="/img/consulting_and_analysis.jpg" />
         </section>
         <section id="design-and-development">
           <section class="description">
@@ -199,7 +199,7 @@ function getImgAltFromIdx(idx: number): string {
               </em>
             </section>
           </section>
-          <NuxtImg src="/img/design_and_development.jpg" />
+          <NuxtImg v-if="!isMobile" src="/img/design_and_development.jpg" />
         </section>
         <section id="development-support">
           <section class="description">
@@ -249,7 +249,7 @@ function getImgAltFromIdx(idx: number): string {
               </em>
             </section>
           </section>
-          <NuxtImg src="/img/development_support.jpg" />
+          <NuxtImg v-if="!isMobile" src="/img/development_support.jpg" />
         </section>
       </section>
     </section>
@@ -367,7 +367,6 @@ h2 {
     grid-template-areas:
       "title"
       "description"
-      "image"
     ;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
