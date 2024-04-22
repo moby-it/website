@@ -14,9 +14,11 @@ useSeoMobyHead(
         </h4>
         <h4>Your tech ally in a digital era.</h4>
       </template>
-      <Button @clicked="() => navigateTo('/contact')">
-        Contact Us
-      </Button>
+      <div style="padding: var(--gap-2);">
+        <Button @clicked="() => navigateTo('/contact')">
+          Contact Us
+        </Button>
+      </div>
     </Banner>
     <section>
       <article id="what-we-do" class="what-we-do">
