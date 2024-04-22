@@ -89,6 +89,7 @@ function getImgAltFromIdx(idx: number): string {
           :discount-price="regionalPrices[index]?.cost">
         </ServiceBadge>
       </section>
+      <p class="italic" style="text-align: center; font-size: small;">plus VAT, if applicable</p>
       <Button @clicked="() => navigateTo('/contact')">
         Contact Us
       </Button>
@@ -160,7 +161,7 @@ function getImgAltFromIdx(idx: number): string {
             <h2>Design & Development</h2>
             <section>
               <h4>Problem Space</h4>
-              <p>Are you an <em> entrepreneur searching for ways to launch/improve their MVP?</em>? Or you're already in
+              <p>Are you an <em> entrepreneur searching for ways to launch/improve their MVP?</em> Or you're already in
                 possession of it, now seeking technical advisory and ownership? Maybe you're just facing a business
                 challenge that requires a <em> well-defined digital solution?</em>
               </p>
@@ -223,16 +224,16 @@ function getImgAltFromIdx(idx: number): string {
               <p>
               <ul>
                 <li><em>Programming Languages:</em> JavaScript, TypeScript, Golang</li>
-                <li><em>Front End: </em>Angular, React, VueJS and VanillaJS</li>
+                <li><em>Front End: </em>Angular, VueJS, VanillaJS</li>
                 <li><em>Backend End: </em>Node, Deno and Golang</li>
-                <li><em>Databases: </em>Postgres, MySQL, SQL Server, MongoDB</li>
+                <li><em>Full Stack: </em>Nuxt</li>
+                <li><em>Databases: </em>Postgres, SQL Server, MongoDB</li>
               </ul>
               </p>
               <p>We understand that much of software out there is primarily idiosyncratic and usually a matter of taste.
                 Our team takes pride in being maliable enough to match any idiosyncracies inside your team and speak out
                 when necessary. We've learnt to work based on extensive code reviews, testing and documentation as part
-                of
-                our daily routine as engineers. Our goal here is to blend in rather than stand out.</p>
+                of our daily routine as engineers. Our goal here is to blend in rather than stand out.</p>
             </section>
             <section>
               <h4>Outcome</h4>
