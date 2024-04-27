@@ -9,7 +9,10 @@ useSeoMobyHead(
 import VueMultiselect from 'vue-multiselect';
 import * as v from 'valibot';
 import { ContractSchema } from '~/utils/contact-form';
-
+import { Console, Effect, pipe } from 'effect';
+import { isFailure } from 'effect/Exit';
+import type { AsyncDataRequestStatus } from '#app';
+import type { WatchStopHandle } from 'vue';
 const options = ["Consulting & Analysis", "Design & Development", "Development Support"];
 const form = reactive({
   email: '',
@@ -18,31 +21,52 @@ const form = reactive({
   services: [options[0]],
   moreInfo: ''
 });
-const disabled = computed(() => !(form.email && form.name && form.services.length && form.company));
+// const disabled = computed(() => !(form.email && form.name && form.services.length && form.company));
+const disabled = computed(() => !(form.name && form.services.length && form.company));
 const formErrors = ref();
 const status = ref('idle');
 const buttonText = computed(() => status.value === 'pending' ? 'Sending' : 'Send');
 
 async function submitForm() {
-  formErrors.value = null;
-  const payload = { ...form };
+  const resetFormErrors = () => { formErrors.value = null; };
+  const validateForm = (f: typeof form) => v.safeParse(ContractSchema, f);
+  const program = pipe(
+    Effect.succeed(form),
+    Effect.tap(resetFormErrors),
+    Effect.map(validateForm),
+    Effect.flatMap(({ issues, success, output }) => {
+      return success ?
+        Effect.succeed(output) :
+        Effect.fail(issues).pipe(
+          Effect.tap(() => formErrors.value = issues.map(i => i.message))
+        );
+    }),
+    Effect.tryMapPromise({
+      try: (body) => $fetch('/api/contact', { method: 'post', body }), catch: (e) => e
+    }),
+    // Effect.map(() => true)
+  );
+  const exit = await Effect.runPromiseExit(program);
+  isFailure(exit) ? console.log(exit.cause) : console.log(exit.value);
+  // formErrors.value = null;
+  // const payload = { ...form };
 
-  const { success, issues, output } = v.safeParse(ContractSchema, payload);
-  if (!success) {
-    formErrors.value = issues.map(i => i.message);
-  } else {
-    const { status: localStatus } = useFetch('/api/contact', {
-      method: 'post',
-      body: output
-    });
-    const unwatch = watchEffect(() => {
-      status.value = localStatus.value;
-      if (localStatus.value === 'success')
-        unwatch();
-      if (localStatus.value === 'error')
-        formErrors.value = ['Failed to send email, please try again.'];
-    });
-  }
+  // const { success, issues, output } = v.safeParse(ContractSchema, payload);
+  // if (!success) {
+  //   formErrors.value = issues.map(i => i.message);
+  // } else {
+  //   const { status: localStatus } = useFetch('/api/contact', {
+  //     method: 'post',
+  //     body: output
+  //   });
+  //   const unwatch = watchEffect(() => {
+  //     status.value = localStatus.value;
+  //     if (localStatus.value === 'success')
+  //       unwatch();
+  //     if (localStatus.value === 'error')
+  //       formErrors.value = ['Failed to send email, please try again.'];
+  //   });
+  // }
 }
 
 </script>

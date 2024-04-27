@@ -11,6 +11,9 @@ importers:
       '@nuxt/image':
         specifier: ^1.1.0
         version: 1.5.0(ioredis@5.4.1)(rollup@4.15.0)
+      effect:
+        specifier: ^3.0.7
+        version: 3.0.7
       nuxt-vue-multiselect:
         specifier: ^1.0.4
         version: 1.0.4
@@ -1713,6 +1716,9 @@ packages:
 
   ee-first@1.1.1:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
+
+  effect@3.0.7:
+    resolution: {integrity: sha512-VlEpWUc3IBc7k9NUdsdbh7cnGFNIdMpIoUFbbiVkt304d40pSr6Zadnr5Tk8m1cniqOLo4SXSZLw0M6f7N17Hg==}
 
   electron-to-chromium@1.4.745:
     resolution: {integrity: sha512-tRbzkaRI5gbUn5DEvF0dV4TQbMZ5CLkWeTAXmpC9IrYT+GE+x76i9p+o3RJ5l9XmdQlI1pPhVtE9uNcJJ0G0EA==}
@@ -5874,6 +5880,8 @@ snapshots:
   eastasianwidth@0.2.0: {}
 
   ee-first@1.1.1: {}
+
+  effect@3.0.7: {}
 
   electron-to-chromium@1.4.745: {}
 
