@@ -11,6 +11,7 @@ primary_region = "ams"
 
 [env]
  NUXT_PUBLIC_AUTOMAILER_URL = "https://automailer.moby-it.com/send-email"
+ NUXT_PUBLIC_REGIONAL_PRICING_URL = "https://pricing.moby-it.com/regionalPrices"
 
 [http_service]
   internal_port = 3000
