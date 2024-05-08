@@ -26,7 +26,10 @@ export default defineNuxtConfig({
   },
   nitro: {
     routeRules: {
-      '*': {
+      '/': {
+        prerender: true
+      },
+      '/about-us': {
         prerender: true
       },
     }
