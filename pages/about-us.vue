@@ -9,10 +9,14 @@ useSeoMobyHead(
 </script>
 <template>
   <article>
-    <Banner title="It always starts with a story"></Banner>
+    <Banner title="It always starts with a story" image-url="/img/about.jpg" :header-styles="{
+      margin: 'auto',
+      color: 'var(--secondary)',
+      textAlign: 'center'
+    }"></Banner>
     <section class="about-us">
       <section class="quote">
-        <NuxtImg src="/team/george.jpg" width="300" />
+        <NuxtImg src="/img/george.jpg" width="300" />
         <span>
           <p class="italic">
             Hello, my name is George Spanos, and I'm the driving force behind Moby IT.

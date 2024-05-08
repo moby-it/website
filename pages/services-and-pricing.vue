@@ -56,14 +56,14 @@ function getImgAltFromIdx(idx: number): string {
 </script>
 <template>
   <article>
-    <Banner title="No Hidden Costs" image-url="/img/krufoalepu.jpg">
+    <Banner title="No Hidden Costs" image-url="/img/krufoalepu.jpg" :header-styles="{
+      marginLeft: 'auto'
+    }">
       <template #subtitle>
         <h4>
           <NuxtLink to="#services"> Fixed montly prices,</NuxtLink>
           time-bound deliverables and clear deadlines, ensuring no hidden costs.
         </h4>
-        <h4>We shoulder any unforeseen expenses, guaranteeing you peace of mind and financial predictability from start
-          to finish.</h4>
       </template>
     </Banner>
     <section class="services" id="services">
@@ -154,7 +154,7 @@ function getImgAltFromIdx(idx: number): string {
               </em>
             </section>
           </section>
-          <NuxtImg src="/img/consulting_and_analysis.jpg" />
+          <NuxtImg src="/img/consulting_and_analysis.png" />
         </section>
         <section id="design-and-development">
           <section class="description">

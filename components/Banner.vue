@@ -1,14 +1,17 @@
 <script setup lang="ts">
-defineProps({
+import type { StyleValue } from 'vue';
+
+const props = defineProps({
   title: { type: String, required: true },
-  imageUrl: { type: String, default: 'https://placehold.co/1440x500' }
+  imageUrl: { type: String, default: 'https://placehold.co/1440x500' },
+  headerStyles: { type: Object, default: {} },
 });
 const isMobile = inject('isMobile');
 </script>
 <template>
   <picture>
     <section class="banner" :style="{ backgroundImage: isMobile ? 'none' : `url(${$props.imageUrl})` }">
-      <hgroup>
+      <hgroup :style="headerStyles">
         <h1 class="title" v-html="$props.title">
         </h1>
         <div class="content">
@@ -17,7 +20,7 @@ const isMobile = inject('isMobile');
       </hgroup>
       <NuxtImg v-if="isMobile" :src="$props.imageUrl" style="background-position: center ;object-fit: cover;"
         height="300" />
-        <slot></slot>
+      <slot></slot>
     </section>
   </picture>
 </template>
@@ -36,7 +39,7 @@ const isMobile = inject('isMobile');
 
 .banner hgroup {
   width: fit-content;
-  max-width: 45%;
+  max-width: 40%;
   border-radius: var(--radius);
   padding: var(--gap-2)
 }
