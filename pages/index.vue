@@ -7,7 +7,7 @@ useSeoMobyHead(
 </script>
 <template>
   <main>
-    <Banner title="Accessible Software Solutions" image-url="/img/fofos.jpg">
+    <Banner title="Lean Software Solutions" image-url="/img/fofos.jpg">
       <template #subtitle>
         <h4>Enhancing <abbr title="Small and Medium Enterprises"> SMEs</abbr>
           at <NuxtLink to="/services-and-pricing"> predictable prices.</NuxtLink>
