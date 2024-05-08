@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   modules: [
     '@nuxt/image',
+    '@nuxtjs/i18n'
   ],
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
@@ -28,6 +29,14 @@ export default defineNuxtConfig({
       '*': {
         prerender: true
       },
+    }
+  },
+  runtimeConfig: {
+    regionalPricingApiKey: '',
+    automailerApiKey: '',
+    public: {
+      automailerUrl: '',
+      regionalPricingUrl: ''
     }
   },
   devtools: { enabled: true }

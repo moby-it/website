@@ -10,12 +10,17 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "nuxt": "^3.9.0",
+    "@nuxtjs/i18n": "^8.0.0",
+    "nuxt": "^3.11.2",
+    "typescript": "^5.4.5",
     "vue": "^3.4.5",
     "vue-router": "^4.2.5"
   },
   "dependencies": {
-    "@nuxt/image": "^1.1.0"
+    "@nuxt/image": "^1.1.0",
+    "nuxt-vue-multiselect": "^1.0.4",
+    "valibot": "^0.26.0",
+    "vue-multiselect": "3.0.0-beta.3"
   },
-  "packageManager": "pnpm@8.13.1"
+  "packageManager": "pnpm@9.0.4"
 }

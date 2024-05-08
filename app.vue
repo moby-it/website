@@ -11,6 +11,10 @@ useHead({
     },
     {
       rel: 'stylesheet',
+      href: 'https://unpkg.com/vue-multiselect@2.1.6/dist/vue-multiselect.min.css'
+    },
+    {
+      rel: 'stylesheet',
       href: '/style.css'
     },
     {
@@ -40,23 +44,22 @@ useHead({
     }
   ]
 });
+const width = ref(1440); // something bigger than 768 so that the server renders the desktop
+const isMobile = computed(() => width.value <= 768);
+provide('isMobile', isMobile);
+onMounted(() => {
+  width.value = window.innerWidth;
+  window.addEventListener('resize', () => {
+    width.value = window.innerWidth;
+  });
+});
 </script>
 <template>
   <Header />
-  <section class="page">
+  <NuxtLoadingIndicator   />
+  <section class="page">    
     <NuxtPage />
   </section>
   <Footer />
 </template>
-<style>
-.page-enter-active,
-.page-leave-active {
-  transition: all 0.2s;
-}
 
-.page-enter-from,
-.page-leave-to {
-  opacity: 0;
-  filter: blur(1rem);
-}
-</style>

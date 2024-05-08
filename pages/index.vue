@@ -2,155 +2,138 @@
 useSeoMobyHead(
   {
     title: 'Moby IT - Sofware Services',
-    description: 'Digitizing businesses workflows at predictable costs.'
+    description: 'Digitizing businesses workflows for small to medium enterprises at predictable prices.'
   });
 </script>
 <template>
   <main>
-    <section class="banner">
-      <hgroup>
-        <h1>
-          Tailor-made Software Solutions
-        </h1>
-        <h4>Materialize your ideas, staff your team - Your tech ally in a digital era.</h4>
-      </hgroup>
-    </section>
-    <section id="home-content">
-      <section class="what-we-do" aria-hidden="true">
+    <Banner title="Accessible Software Solutions" image-url="/img/fofos.jpg">
+      <template #subtitle>
+        <h4>Enhancing <abbr title="Small and Medium Enterprises"> SMEs</abbr>
+          at <NuxtLink to="/services-and-pricing"> predictable prices.</NuxtLink>
+        </h4>
+        <h4>Your tech ally in a digital era.</h4>
+      </template>
+      <div style="padding: var(--gap-2);">
+        <Button @clicked="() => navigateTo('/contact')">
+          Contact Us
+        </Button>
+      </div>
+    </Banner>
+    <section>
+      <article id="what-we-do" class="what-we-do">
         <h2>We provide</h2>
         <div>
-          <article class="card">
-            <header>
-              <NuxtImg src="/icons/community.svg" alt="communication" aria-hidden="true" />
+          <Card minHeight="565px" max-width="390px">
+            <template #header>
+              <NuxtImg src="/icons/consulting_and_analysis.png" alt="communication" aria-hidden="true" :width="80" />
               <h4>Consulting & Analysis</h4>
-            </header>
-            <p class="content">
-              Whether you're tackling intricate software challenges or just curious about
-              digitizing your business needs, we're here to help you <em>find smart, practical
-                solutions </em>that fit your business just right.
-            </p>
-          </article>
-          <article class="card">
-            <header>
-              <NuxtImg src="/icons/light-bulb-on.svg" alt="light bulb on" aria-hidden="true" />
+            </template>
+            <template #content>
+              <ul>
+                <li>
+                  <em>You bring </em>an intricate business problem that could be digitized for cost-savings and/or
+                  scaling profits.
+                </li>
+                <li><em>We bring </em>our analytical skills and and years of experience in digitizing business
+                  workflows. We verify that there <span class="italic">is</span> space for a digital solution. If that's
+                  the case, we structure a well-rounded, cost-efficient solution.</li>
+                <li><em>You get </em> a documented strategic technical evaluation of your problems and its
+                  cost-to-benefit
+                  ratio.</li>
+              </ul>
+            </template>
+          </Card>
+          <Card max-width="390px" min-height="600px">
+            <template #header>
+              <NuxtImg src="/icons/design_and_development.png" alt="light bulb on" aria-hidden="true" :width="80" />
               <h4 class="title">Design & Development</h4>
-            </header>
-            <p class="content">
-              From concept to code, we can help you empower your business in the digital
-              landscape. We provide strategic Business Analysis, functional UI Design and
-              meticulous Software Development in a <em>cost-efficient manner</em>.
-            </p>
-          </article>
-          <article class="card">
-            <header>
-              <NuxtImg src="/icons/code-brackets-square.svg" alt="code-brackets" aria-hidden="true" />
+            </template>
+            <template #content>
+              <ul style="margin-bottom: var(--gap-1);">
+                <li><em>You bring</em> a specific business problem that can be solved digitally.
+                </li>
+                <li><em>We bring</em> our hands and minds in order to bring the above solution to life. Leveraging
+                  our in-house design team and experience in working closely with SMEs, we deliver a hand-crafted
+                  solution that exactly matches your needs and business model.</li>
+                <li><em>You get</em> a digital product that addresses the problems, helps your company cut costs/scale
+                  and reach its next milestones.</li>
+              </ul>
+            </template>
+          </Card>
+          <Card minHeight="565px" max-width="390px">
+            <template #header>
+              <NuxtImg src="/icons/development_support.png" alt="code-brackets" aria-hidden="true" :width="80" />
               <h4 class="title">Development Support</h4>
-            </header>
-            <p class="content">
-              With over 8 years of experience staffing enterprise software development teams, we
-              have the skills and expertise to help you <em> accelerate your development process</em>.
-            </p>
-          </article>
+            </template>
+            <template #content>
+              <ul>
+                <li>
+                  <em>You bring </em> a developer team that's tackles a tough deadline.
+                </li>
+                <li><em>We bring </em>our years of experience in staffing enteprise software teams and delivering under
+                  pressure.</li>
+                <li><em>You get </em>competent software craftsmanship at affordable prices.</li>
+              </ul>
+            </template>
+          </Card>
         </div>
-      </section>
-      <section class="what-we-value">
-        <h2>We value</h2>
+        <h4>All of our services come at a <NuxtLink to="/services-and-pricing"> fixed montly price!
+          </NuxtLink>
+        </h4>
+      </article>
+      <article class="customers">
+        <h2>Customers</h2>
         <div>
-          <article class="card">
-            <header>
-              <NuxtImg src="/icons/user-scan.svg" alt="user-target" aria-hidden="true" />
-              <h4>User Centered Design</h4>
-            </header>
-            <p class="content">
-              We focus on identifying and solving problems that live in user-land. We try to avoid
-              assumptions while heavily relying on regular usability tests to refine your product.
-            </p>
-          </article>
-          <article class="card">
-            <header>
-              <NuxtImg src="/icons/multi-bubble.svg" alt="chat-bubbles" aria-hidden="true" />
-              <h4>Close Collaboration</h4>
-            </header>
-            <p class="content">
-              Regular and transparent communication is key for any project's success and
-              longevity.
-            </p>
-          </article>
-          <article class="card">
-            <header>
-              <NuxtImg src="/icons/packages.svg" alt="packaging" aria-hidden="true" />
-              <h4>Working Iteratively</h4>
-            </header>
-            <p class="content">
-              Splitting a project into small delivarable chunks is a crucial tool for getting
-              early feedback.
-            </p>
-          </article>
-          <article class="card">
-            <header>
-              <NuxtImg src="/icons/3d-bridge.svg" alt="bridge" aria-hidden="true" />
-              <h4>Open-ended</h4>
-            </header>
-            <p class="content">
-              We highly value independence. Any project deliverable will be in a state that is
-              easy to maintained and extended by any experienced software team.
-            </p>
-          </article>
+          <NuxtLink target="_blank" to="https://www.nrb.be/en/">
+            <NuxtImg :width="200" :src="'/icons/nrb.svg'" style="filter: grayscale(1);"></NuxtImg>
+          </NuxtLink>
         </div>
-      </section>
+      </article>
     </section>
+    <div>
+      <ScrollToTop selector="#what-we-do, footer, .customers" />
+    </div>
   </main>
 </template>
-<style >
-#home-content {
-  background-image: url("/background.png");
-  background-size: cover;
-  color: white;
-  width: 100%;
-  padding-top: 8rem;
-  padding-bottom: 4rem;
+<style scoped>
+::root {
+  margin: 0 var(--gap-1);
 }
 
-hgroup h1 {
-  max-width: 600px;
+h2 {
+  text-align: center;
+  margin-bottom: var(--gap-2);
 }
 
-#home-content>section:not(:first-child) {
-  padding-top: 8rem;
-}
-
-#home-content>section {
+.card ul {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: var(--gap-1);
 }
 
-.what-we-value>div,
+.customers>div,
 .what-we-do>div {
   display: flex;
   flex: 1;
-  gap: 12px;
+  gap: var(--gap-2);
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  margin-bottom: var(--gap-4);
 }
 
-.what-we-value {
-  max-width: 1056px;
-  margin: auto;
+.what-we-do header,
+.customers header {
+  text-align: center;
+  margin-bottom: var(--gap-2);
 }
 
-#home-content>section>h2 {
-  margin-bottom: 3rem;
+.what-we-do>h4 {
+  text-align: center;
+  margin-bottom: var(--gap-4);
 }
 
-@media (width >=425px) {
-  .what-we-do .card {
-    height: 390px;
-  }
-
-  .what-we-value .card {
-    height: 320px;
-  }
+.what-we-do ul {
+  padding-inline-start: var(--gap-1);
 }
 </style>

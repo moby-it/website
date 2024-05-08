@@ -4,7 +4,7 @@ export function useSeoMobyHead(props: { title: string, description: string; imag
     description: props.description,
     ogTitle: props.title,
     ogDescription: props.description,
-    ogImage: props.image || 'https://moby-it.com/logo.png',
+    ogImage: props.image || 'https://moby-it.com/ogImage.png',
     twitterCard: 'summary_large_image'
   });
 }

@@ -1,51 +1,123 @@
 
 <template>
   <footer>
-    <address>
-      <a href="https://www.linkedin.com/company/moby-it/" target="_blank">
-        <NuxtImg  src="/linkedin-white.svg" alt="linkedin icon" :width="30" />
-      </a>
-      <a href="https://github.com/moby-it" target="_blank">
-        <NuxtImg  src="/github-circle-white.svg" alt="github icon" :width="30" />
-      </a>
-      <a href="mailto:contact@moby-it.com">contact@moby-it.com</a>
-    </address>
+    <nav>
+      <h3>Company</h3>
+      <NavLinks></NavLinks>
+    </nav>
+    <section class="services">
+      <h3>Professional Services</h3>
+      <ul>
+        <li>
+          <NuxtLink to="/services-and-pricing#consulting-and-analysis">Consulting & Analysis</NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/services-and-pricing#design-and-development">Design & Development</NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/services-and-pricing#development-support">Development Support</NuxtLink>
+        </li>
+      </ul>
+    </section>
+    <section class="partners">
+      <h3>Partners</h3>
+      <ul>
+        <li>
+          <NuxtLink target="_blank" to="https://www.linkedin.com/in/evangelia-litsa-mitsopoulou-5765135/">Evangelia
+          </NuxtLink>
+        </li>
+      </ul>
+    </section>
+    <section class="social">
+      <h3>Links</h3>
+      <Address white />
+    </section>
     <p>© 2023 Moby IT. All rights reserved.</p>
   </footer>
 </template>
 
 <style scoped>
+ul {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
 footer {
+  display: grid;
+  grid-template-areas:
+    "nav services partners links"
+    "copyrights copyrights copyrights copyrights"
+  ;
   background-image: url("/footer.png");
   background-size: cover;
-  padding: 3rem 2rem;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  align-items: center;
+  margin-top: var(--gap-4);
+  padding: var(--gap-4) var(--gap-2);
+  gap: var(--gap-1);
 }
 
-address,
-address a,
+.services {
+  grid-area: services;
+  display: flex;
+  flex-direction: column;
+}
+
+.partners {
+  grid-area: partners;
+
+}
+
+.social {
+  grid-area: links;
+  display: flex;
+  flex-direction: column;
+}
+
+footer nav {
+  grid-area: nav;
+  display: flex;
+  flex-direction: column;
+}
+
+footer address {
+  display: flex;
+  gap: var(--gap-1);
+}
+
+footer h3 {
+  color: var(--secondary);
+  margin-bottom: var(--gap-1);
+}
+
 p {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.75rem;
-  height: 30px;
+  grid-area: copyrights;
+  color: white;
+  text-align: center;
 }
 
-footer,
-footer img,
-footer a {
+a {
   color: white;
 }
 
-@media (width<=425px) {
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-1);
+}
+
+@media (width <=500px) {
   footer {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+    grid-template-areas:
+      "nav services"
+      "partners links"
+      "copyrights copyrights"
+    ;
+    gap: var(--gap-4);
+  }
+
+  .social,
+  .services {
+    text-align: right;
+    align-items: flex-end;
   }
 }
 </style>
