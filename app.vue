@@ -37,11 +37,11 @@ useHead({
     }
   ],
   script: [
-    {
-      src: 'https://moby-it.com/js/script.js',
-      defer: true,
-      "data-domain": 'moby-it.com'
-    }
+    // {
+    //   src: 'https://moby-it.com/js/script.js',
+    //   defer: true,
+    //   "data-domain": 'moby-it.com'
+    // }
   ]
 });
 const width = ref(1440); // something bigger than 768 so that the server renders the desktop
