@@ -37,7 +37,7 @@ defineProps({
     var(--secondary--opacity--strong) 0px 6px 6px;
 }
 
-.card > header {
+.card>header {
   display: flex;
   gap: var(--gap-1);
   color: var(--dark--bg);
@@ -45,10 +45,6 @@ defineProps({
   text-align: center;
   align-items: center;
   justify-content: center;
-}
-
-.card header img {
-  width: 96px;
 }
 
 .content {

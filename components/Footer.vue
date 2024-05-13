@@ -1,21 +1,20 @@
-
 <template>
   <footer>
     <nav>
       <h3>Company</h3>
       <NavLinks></NavLinks>
     </nav>
-    <section class="services">
-      <h3>Professional Services</h3>
+    <section class="products">
+      <h3>Products</h3>
       <ul>
         <li>
-          <NuxtLink to="/services-and-pricing#consulting-and-analysis">Consulting & Analysis</NuxtLink>
+          <NuxtLink to="/products#poker-planning">Poker Planning</NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/services-and-pricing#design-and-development">Design & Development</NuxtLink>
+          <NuxtLink to="/products#boochat">Boochat</NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/services-and-pricing#development-support">Development Support</NuxtLink>
+          <NuxtLink to="/products#play-poker-odds">Play Poker Odds</NuxtLink>
         </li>
       </ul>
     </section>
@@ -45,25 +44,24 @@ ul {
 footer {
   display: grid;
   grid-template-areas:
-    "nav services links"
+    "nav products links"
     "copyrights copyrights copyrights"
   ;
   background-image: url("/footer.png");
   background-size: cover;
-  margin-top: var(--gap-4);
+  /* margin-top: var(--gap-4); */
   padding: var(--gap-4) var(--gap-2);
   gap: var(--gap-1);
 }
 
-.services {
-  grid-area: services;
+.products {
+  grid-area: products;
   display: flex;
   flex-direction: column;
 }
 
 .partners {
   grid-area: partners;
-
 }
 
 .social {
@@ -119,9 +117,11 @@ ul {
     text-align: right;
     align-items: flex-end;
   }
+
   .social {
     text-align: center;
     align-items: center;
+
     h3 {
       width: 100%;
     }

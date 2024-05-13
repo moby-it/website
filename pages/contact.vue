@@ -7,18 +7,15 @@ useSeoMobyHead(
   });
 
 import * as v from 'valibot';
-import VueMultiselect from 'vue-multiselect';
 import { ContractSchema } from '~/utils/contact-form';
 
 const options = ["Consulting & Analysis", "Design & Development", "Development Support"];
 const form = reactive({
   email: '',
   name: '',
-  company: '',
-  services: [options[0]],
   moreInfo: ''
 });
-const disabled = computed(() => !(form.email && form.name && form.services.length && form.company));
+const disabled = computed(() => !(form.email && form.name));
 const formErrors = ref();
 const status = ref('idle');
 const buttonText = computed(() => status.value === 'pending' ? 'Sending' : 'Send');
@@ -61,17 +58,10 @@ async function submitForm() {
           <p>Date: {{ new Date().toLocaleDateString() }}</p>
         </header>
         <section class="contact-body">
-          <p>Hello Moby! My name is <input name="username" v-model="form.name" placeholder="Your Name"> and I represent
-            <input v-model="form.company" name="company" placeholder="Company name">.
+          <p>Hello Moby! My name is <input name="username" v-model="form.name" placeholder="Your Name">
           </p>
-          <section class="services"><span>I'm interested in</span>
-            <ClientOnly>
-              <VueMultiselect v-model="form.services" :multiple="true" :close-on-select="true" :options="options"
-                placeholder="Select a service" />
-            </ClientOnly>
-          </section>
           <textarea v-model="form.moreInfo" name="details" id="details"
-            placeholder="I'd also like to learn more about..."></textarea>
+            placeholder="I'd learn more about..."></textarea>
 
           <p class="error" v-for="error of formErrors">{{ error }}</p>
         </section>
