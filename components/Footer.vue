@@ -19,7 +19,7 @@
         </li>
       </ul>
     </section>
-    <section class="partners">
+    <!-- <section class="partners">
       <h3>Partners</h3>
       <ul>
         <li>
@@ -27,7 +27,7 @@
           </NuxtLink>
         </li>
       </ul>
-    </section>
+    </section> -->
     <section class="social">
       <h3>Links</h3>
       <Address white />
@@ -45,8 +45,8 @@ ul {
 footer {
   display: grid;
   grid-template-areas:
-    "nav services partners links"
-    "copyrights copyrights copyrights copyrights"
+    "nav services links"
+    "copyrights copyrights copyrights"
   ;
   background-image: url("/footer.png");
   background-size: cover;
@@ -108,7 +108,7 @@ ul {
   footer {
     grid-template-areas:
       "nav services"
-      "partners links"
+      "links links"
       "copyrights copyrights"
     ;
     gap: var(--gap-4);
@@ -118,6 +118,13 @@ ul {
   .services {
     text-align: right;
     align-items: flex-end;
+  }
+  .social {
+    text-align: center;
+    align-items: center;
+    h3 {
+      width: 100%;
+    }
   }
 }
 </style>

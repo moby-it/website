@@ -6,8 +6,8 @@ useSeoMobyHead(
     description: 'Don\'t be a stranger, let\'s talk!'
   });
 
-import VueMultiselect from 'vue-multiselect';
 import * as v from 'valibot';
+import VueMultiselect from 'vue-multiselect';
 import { ContractSchema } from '~/utils/contact-form';
 
 const options = ["Consulting & Analysis", "Design & Development", "Development Support"];
