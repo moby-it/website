@@ -34,13 +34,20 @@ useHead({
     {
       name: "viewport",
       content: 'width=device-width,initial-scale=1.0'
-    }
+    },
   ],
   script: [
     {
       src: 'https://moby-it.com/js/script.js',
       defer: true,
       "data-domain": 'moby-it.com'
+    },
+    {
+      type: 'application/ld+json',
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Moby IT",
+      "url": "https://moby-it.com",
     }
   ]
 });
@@ -56,10 +63,9 @@ onMounted(() => {
 </script>
 <template>
   <Header />
-  <NuxtLoadingIndicator   />
-  <section class="page">    
+  <NuxtLoadingIndicator />
+  <section class="page">
     <NuxtPage />
   </section>
   <Footer />
 </template>
-

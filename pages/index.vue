@@ -1,9 +1,9 @@
 <script setup>
-useSeoMobyHead(
-  {
-    title: 'Moby IT - Sofware Services',
-    description: 'Digitizing businesses workflows for small to medium enterprises at predictable prices.'
-  });
+useSeoMobyHead({
+  title: "Moby IT - Sofware Services",
+  description:
+    "Digitizing businesses workflows for small to medium enterprises at predictable prices.",
+});
 </script>
 <template>
   <main>
@@ -13,8 +13,10 @@ useSeoMobyHead(
       </template>
     </Banner>
     <section class="tagline">
-      <h4>Moby IT is a hub of creatives and coders, with the single goal of
-        creating joyful digital experiences.</h4>
+      <h4>
+        Moby IT is a hub of creatives and coders, with the single goal of
+        creating joyful digital experiences.
+      </h4>
     </section>
     <section>
       <article>
@@ -31,11 +33,11 @@ useSeoMobyHead(
             </template>
             <template #content>
               <p>
-                We're always exploring; exploring new tech stacks, new design frameworks and systems, new ways of
-                working.
+                We're always exploring; exploring new tech stacks, new design
+                frameworks and systems, new ways of working.
               </p>
               <p>And, ultimately, new ways of thinking.</p>
-              <p>We wear many hats. We want to learn how wear even more. </p>
+              <p>We wear many hats.</p>
             </template>
           </Card>
           <Card max-width="390px">
@@ -44,8 +46,8 @@ useSeoMobyHead(
               <h3 class="title">Creating</h3>
             </template>
             <template #content>
-              We want to apply what we learn. We test our ideas in production. We don't like having things in the lab
-              for too long. We want to get them out.
+              We want to apply what we learn. We test our ideas in production.
+              We don't like having things in the lab for too long.
             </template>
           </Card>
           <Card max-width="390px">
@@ -54,9 +56,9 @@ useSeoMobyHead(
               <h3 class="title">Sharing</h3>
             </template>
             <template #content>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book.
+              We aim to open source as much as possible: our code, our designs, and our processes. Moby IT consists of
+              tech professionals with diverse skills who already have full-time jobs, collaborating in their spare time
+              to create innovative solutions.
             </template>
           </Card>
         </div>
