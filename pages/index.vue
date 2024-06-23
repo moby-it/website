@@ -4,9 +4,9 @@ definePageMeta({
 });
 </script>
 <template>
-  <section>
+  <section style="color: white;">
     <h1 style="margin-bottom: var(--gap-1);">Coming Soon</h1>
-    <h4>Moby is currently underwater. He will resurface in a couple of days. Stay tuned!</h4>
+    <h4>Moby is currently underwater. He will resurface soon. <br> Stay tuned!</h4>
   </section>
 </template>
 <style>
