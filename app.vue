@@ -62,8 +62,8 @@ onMounted(() => {
 });
 </script>
 <template>
-  <!-- <Header /> -->
-  <!-- <NuxtLoadingIndicator   /> -->
+  <Header />
+  <NuxtLoadingIndicator />
   <section class="page">
     <NuxtPage />
   </section>
