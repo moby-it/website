@@ -1,0 +1,5 @@
+services:
+  client:
+    image: ghcr.io/moby-it/moby-website
+    ports:
+      - 44001:3000

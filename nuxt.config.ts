@@ -32,11 +32,9 @@ export default defineNuxtConfig({
     }
   },
   runtimeConfig: {
-    regionalPricingApiKey: '',
     automailerApiKey: '',
     public: {
       automailerUrl: '',
-      regionalPricingUrl: ''
     }
   },
   devtools: { enabled: true }
