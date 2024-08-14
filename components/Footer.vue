@@ -1,4 +1,3 @@
-
 <template>
   <footer>
     <nav>
@@ -19,20 +18,12 @@
         </li>
       </ul>
     </section>
-    <section class="partners">
-      <h3>Partners</h3>
-      <ul>
-        <li>
-          <NuxtLink target="_blank" to="https://www.linkedin.com/in/evangelia-litsa-mitsopoulou-5765135/">Evangelia
-          </NuxtLink>
-        </li>
-      </ul>
-    </section>
+
     <section class="social">
       <h3>Links</h3>
       <Address white />
     </section>
-    <p>© 2023 Moby IT. All rights reserved.</p>
+    <p>© 2024 Moby IT. All rights reserved.</p>
   </footer>
 </template>
 
@@ -45,8 +36,8 @@ ul {
 footer {
   display: grid;
   grid-template-areas:
-    "nav services partners links"
-    "copyrights copyrights copyrights copyrights"
+    "nav services links"
+    "copyrights copyrights copyrights"
   ;
   background-image: url("/footer.png");
   background-size: cover;
@@ -108,7 +99,7 @@ ul {
   footer {
     grid-template-areas:
       "nav services"
-      "partners links"
+      "links ."
       "copyrights copyrights"
     ;
     gap: var(--gap-4);
