@@ -2,10 +2,6 @@
 useHead({
   link: [
     {
-      rel: 'canonical',
-      href: 'https://moby-it.com'
-    },
-    {
       rel: 'stylesheet',
       href: 'https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap'
     },
@@ -56,10 +52,9 @@ onMounted(() => {
 </script>
 <template>
   <Header />
-  <NuxtLoadingIndicator   />
-  <section class="page">    
+  <NuxtLoadingIndicator />
+  <section class="page">
     <NuxtPage />
   </section>
   <Footer />
 </template>
-
