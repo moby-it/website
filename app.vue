@@ -40,7 +40,7 @@ useHead({
     {
       src: 'https://moby-it.com/js/script.js',
       defer: true,
-      "data-domain": 'moby-it.com'
+      "data-domain": 'services.moby-it.com'
     }
   ]
 });
