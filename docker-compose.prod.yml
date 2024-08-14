@@ -1,5 +1,5 @@
 services:
-  moby-services:
+  services:
     image: ghcr.io/moby-it/moby-website:services
     restart: always
     ports:
