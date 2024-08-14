@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  compatibilityDate: '2024-08-14',
   modules: [
     '@nuxt/image',
     '@nuxtjs/i18n'
@@ -35,8 +36,8 @@ export default defineNuxtConfig({
     regionalPricingApiKey: '',
     automailerApiKey: '',
     public: {
-      automailerUrl: '',
-      regionalPricingUrl: ''
+      automailerUrl: 'https://automailer.moby-it.com/send-email',
+      regionalPricingUrl: 'https://pricing.moby-it.com/regionalPrices'
     }
   },
   devtools: { enabled: true }

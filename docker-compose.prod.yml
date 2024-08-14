@@ -1,0 +1,7 @@
+services:
+  moby-services:
+    image: ghci.io/moby-it/moby-website:services
+    restart: always
+    ports:
+      - 44002:8080
+    env_file: .env.services
