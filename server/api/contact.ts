@@ -17,10 +17,16 @@ export default defineEventHandler(async event => {
     `,
     htmlContent:
       `
-    <h3>Email from ${body.email}</h3>
+    <h2>Sender: ${body.email}</h2>
     <br>
-    <p>Services Picked: ${body.services}</p>
-    <p>Details:${body.moreInfo} </p>
+    <section>
+      <h3>Services picked</h3>
+      <p>${body.services}</p>
+    </section>
+    <section>
+      <h3>Details</h3>
+      <p>${body.moreInfo}</p>
+    </section>
     `
   };
   const response = await fetch(automailerUrl, {
