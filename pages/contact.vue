@@ -14,11 +14,10 @@ const options = ["Consulting & Analysis", "Design & Development", "Development S
 const form = reactive({
   email: '',
   name: '',
-  company: '',
-  services: [options[0]],
+  services: [options[1]],
   moreInfo: ''
 });
-const disabled = computed(() => !(form.email && form.name && form.services.length && form.company));
+const disabled = computed(() => !(form.email && form.name && form.services.length));
 const formErrors = ref();
 const status = ref('idle');
 const buttonText = computed(() => status.value === 'pending' ? 'Sending' : 'Send');
@@ -61,8 +60,7 @@ async function submitForm() {
           <p>Date: {{ new Date().toLocaleDateString() }}</p>
         </header>
         <section class="contact-body">
-          <p>Hello Moby! My name is <input name="username" v-model="form.name" placeholder="Your Name"> and I represent
-            <input v-model="form.company" name="company" placeholder="Company name">.
+          <p>Hello Moby! My name is <input name="username" v-model="form.name" placeholder="Your Name">.
           </p>
           <section class="services"><span>I'm interested in</span>
             <ClientOnly>
