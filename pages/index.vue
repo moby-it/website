@@ -7,13 +7,9 @@ useSeoMobyHead({
 </script>
 <template>
     <main>
-        <Banner title="Lean Software Solutions" image-url="/img/fofos.jpg">
+        <Banner title="Software Reimagined" image-url="/img/fofos.jpg">
             <template #subtitle>
-                <h4>
-                    Enhancing
-                    <abbr title="Small and Medium Enterprises"> SMEs</abbr> at
-                    <NuxtLink to="/services-and-pricing"> predictable prices.</NuxtLink>
-                </h4>
+                <h4>Providing software services through <NuxtLink to="/services-and-pricing"> fixed prices.</NuxtLink></h4>
                 <h4>Your tech ally in a digital era.</h4>
             </template>
             <div style="padding: var(--gap-2)">

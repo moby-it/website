@@ -1,9 +1,11 @@
 :root {
     --dark--bg: #0e0124;
     --light--bg: #f9f9f9;
+    --light-300: #f9f9f9df;
     --gray: rgb(43, 43, 43);
-    --primary: rgb(42, 85, 212);
-    --secondary: #bad5f0;
+    --primary: hsl(225, 67%, 50%);
+    --primary-600: hsl(225, 65%, 20%);
+    --secondary: hsl(225, 64%, 84%);
     --primary--opacity--weak: rgba(42, 85, 213, 0.6);
     --primary--opacity--strong: rgba(42, 85, 212, 0.95);
     --secondary--opacity--weak: rgba(186, 213, 240, 0.19);

@@ -125,7 +125,6 @@ table {
     border-spacing: 0;
 }
 a {
-    color: var(--primary);
     text-decoration: inherit;
 }
 html {

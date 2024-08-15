@@ -7,9 +7,8 @@ const props = withDefaults(
         discount: boolean;
         discountPrice?: number;
         monthly: boolean;
-        star: boolean;
     }>(),
-    { monthly: true, star: false },
+    { monthly: true },
 );
 </script>
 <template>

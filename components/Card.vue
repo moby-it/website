@@ -23,7 +23,7 @@ defineProps({
         </div>
     </article>
 </template>
-<style>
+<style scoped>
 .card {
     box-sizing: border-box;
     background: var(--light--bg);
