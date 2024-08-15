@@ -1,6 +1,6 @@
-@import "styles/reset.css";
-@import "styles/spacing.css";
-@import "styles/colors.css";
-@import "styles/typography.css";
-@import "styles/root.css";
-@import "styles/scrollbar.css";
+@import 'styles/reset.css';
+@import 'styles/spacing.css';
+@import 'styles/colors.css';
+@import 'styles/typography.css';
+@import 'styles/root.css';
+@import 'styles/scrollbar.css';

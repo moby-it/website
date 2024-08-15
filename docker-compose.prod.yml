@@ -1,13 +1,13 @@
 services:
-  services:
-    image: ghcr.io/moby-it/moby-website:services
-    restart: always
-    ports:
-      - 44004:3000
-    env_file: .env.services
-  app:
-    restart: always
-    image: ghcr.io/moby-it/moby-website
-    env_file: .env
-    ports:
-      - 44001:3000
+    services:
+        image: ghcr.io/moby-it/moby-website:services
+        restart: always
+        ports:
+            - 44004:3000
+        env_file: .env.services
+    app:
+        restart: always
+        image: ghcr.io/moby-it/moby-website
+        env_file: .env
+        ports:
+            - 44001:3000

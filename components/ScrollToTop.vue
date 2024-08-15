@@ -1,43 +1,50 @@
 <script setup lang="ts">
 const props = defineProps<{
-  selector: string;
+    selector: string;
 }>();
 
 function scrollToTop() {
-  window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
 }
 const show = ref(false);
 onMounted(() => {
-  const observer = new IntersectionObserver((entries, observer) => {
-    for (const entry of entries) {
-      if (entry.isIntersecting)
-        show.value = false;
-      else
-        show.value = true;
-    }
-  }, { root: null, threshold: 0.1 });
-  const el = document.querySelector('#site-id');
-  if (el)
-    observer.observe(el);
+    const observer = new IntersectionObserver(
+        (entries, observer) => {
+            for (const entry of entries) {
+                if (entry.isIntersecting) show.value = false;
+                else show.value = true;
+            }
+        },
+        { root: null, threshold: 0.1 },
+    );
+    const el = document.querySelector('#site-id');
+    if (el) observer.observe(el);
 });
 </script>
 
 <template>
-  <NuxtImg v-show="show" ref="img" id="scroll-up" @click="scrollToTop" src="/icons/arrow-up.svg" alt="arrow up"
-    aria-label="scroll to top" :width="30" />
+    <NuxtImg
+        v-show="show"
+        ref="img"
+        id="scroll-up"
+        @click="scrollToTop"
+        src="/icons/arrow-up.svg"
+        alt="arrow up"
+        aria-label="scroll to top"
+        :width="30"
+    />
 </template>
 <style scoped>
 img {
-  cursor: pointer;
-  background-color: var(--primary--opacity--weak);
-  position: fixed;
-  right: var(--gap-3);
-  bottom: var(--gap-3);
-  border-radius: 50%;
-  padding: var(--gap-1);
+    cursor: pointer;
+    background-color: var(--primary--opacity--weak);
+    position: fixed;
+    right: var(--gap-3);
+    bottom: var(--gap-3);
+    border-radius: 50%;
+    padding: var(--gap-1);
 }
 img:hover {
-  background-color: var(--primary--opacity--strong);
-
+    background-color: var(--primary--opacity--strong);
 }
 </style>
