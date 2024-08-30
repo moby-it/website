@@ -253,7 +253,7 @@ function getImgAltFromIdx(idx: number): string {
                     </section>
                     <NuxtImg src="/img/design_and_development.jpg" />
                 </section>
-                <section id="development-support">
+                <section v-if="defaultPrices.length" id="development-support">
                     <section class="description">
                         <hgroup>
                             <h2>Development Support</h2>
@@ -304,9 +304,6 @@ function getImgAltFromIdx(idx: number): string {
                                 immediate improvements in meeting project timelines and enhancing
                                 overall project quality.
                             </p>
-                            <!-- <p>
-                <em> Featured Testimonials:</em>
-              </p> -->
                             <em
                                 >Price:
                                 <Price

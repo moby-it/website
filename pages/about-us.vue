@@ -12,7 +12,6 @@ useSeoMobyHead({
             image-url="/img/about.jpg"
             :header-styles="{
                 margin: 'auto',
-                color: 'var(--secondary)',
                 textAlign: 'center',
             }"
         ></Banner>

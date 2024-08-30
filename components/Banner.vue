@@ -57,13 +57,14 @@ hgroup h1:not(:only-child) {
     margin-bottom: var(--gap-2);
 }
 
-@media (width<=768px) {
+@media (width<=769px) {
     .banner {
         padding: var(--gap-2);
         padding-top: var(--gap-1);
     }
 
     .banner hgroup {
+        color: var(--primary);
         max-width: 100%;
     }
 }
