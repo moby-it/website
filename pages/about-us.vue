@@ -47,11 +47,6 @@ useSeoMobyHead({
                 <a href="https://gspanos.tech" target="_parent">gspanos.tech</a>.
             </p>
 
-            <h4 class="italic">
-                &ldquo;After experiencing how a well-oiled machine works, it's tough to go
-                back.&bdquo;
-            </h4>
-
             <p>
                 With a decade of experience in digitizing workflows for Enterprises of all scales, I
                 believe I know how to cultivate an environment in which teams can provide high-value
@@ -79,7 +74,7 @@ useSeoMobyHead({
                 <li>
                     <em>Predictability</em>: No one wants to wake up to unexpected costs and side
                     effects. For this:
-                    <ol>
+                    <ol style="padding-top: var(--gap-1)">
                         <li>
                             We provide our services at fixed monthly prices, aligned with clearly
                             defined, time-bound deliverables.

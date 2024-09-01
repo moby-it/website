@@ -17,9 +17,12 @@ body {
 ul:not(.nav-links, .multiselect__content),
 ol {
     padding-inline-start: var(--gap-4);
+    margin-bottom: var(--gap-1);
+
 }
 
-ul>li:not(:last-child) {
+ul>li:not(:last-child),
+ol>li:not(:last-child) {
     margin-bottom: var(--gap-1);
 }
 
