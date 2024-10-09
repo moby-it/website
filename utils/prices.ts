@@ -1,14 +1,14 @@
-import * as v from 'valibot';
+import * as v from "valibot";
 
 export const serviceSchema = v.object({
   Service_Name: v.string(),
-  Cost: v.number()
+  Cost: v.number(),
 });
 
 export const pricesResponseSchema = v.object({
   country: v.nullable(v.string()),
   defaultPrices: v.array(serviceSchema),
-  regionalPrices: v.optional(v.array(serviceSchema))
+  regionalPrices: v.optional(v.array(serviceSchema)),
 });
 
 export type Service = v.Input<typeof serviceSchema>;

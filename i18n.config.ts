@@ -1,15 +1,15 @@
 export default defineI18nConfig(() => ({
   legacy: false,
-  locale: 'en',
+  locale: "en",
   messages: {
     en: {
-      welcome: 'Welcome',
+      welcome: "Welcome",
       greet: {
-        name: 'George'
-      }
+        name: "George",
+      },
     },
     fr: {
-      welcome: 'Bienvenue'
-    }
-  }
+      welcome: "Bienvenue",
+    },
+  },
 }));

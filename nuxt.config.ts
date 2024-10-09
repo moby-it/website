@@ -1,32 +1,32 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@nuxt/image', '@nuxtjs/i18n', "@nuxt/ui"],
+  modules: ["@nuxt/image", "@nuxtjs/i18n", "@nuxt/ui"],
   colorMode: {
-    preference: 'light'
+    preference: "light",
   },
-  compatibilityDate: '2024-08-14',
+  compatibilityDate: "2024-08-14",
   future: {
-    compatibilityVersion: 4
+    compatibilityVersion: 4,
   },
   app: {
-    pageTransition: { name: 'page', mode: 'out-in' },
+    pageTransition: { name: "page", mode: "out-in" },
     head: {
       htmlAttrs: {
-        lang: 'en'
-      }
-    }
+        lang: "en",
+      },
+    },
   },
   routeRules: {
     "/js/script.js": {
       proxy: {
-        to: "https://plausible.io/js/script.js"
-      }
+        to: "https://plausible.io/js/script.js",
+      },
     },
     "/api/event": {
       proxy: {
-        to: "https://plausible.io/api/event"
-      }
-    }
+        to: "https://plausible.io/api/event",
+      },
+    },
   },
   nitro: {
     // routeRules: {
@@ -36,10 +36,10 @@ export default defineNuxtConfig({
     // }
   },
   runtimeConfig: {
-    automailerApiKey: '',
+    automailerApiKey: "",
     public: {
-      automailerUrl: '',
-    }
+      automailerUrl: "",
+    },
   },
-  devtools: { enabled: true }
+  devtools: { enabled: true },
 });
