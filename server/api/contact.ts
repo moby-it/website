@@ -12,15 +12,13 @@ export default defineEventHandler(async event => {
     to: "gspanos@moby-it.com",
     plainTextContent: `
     Email: ${body.email}
-    Services: ${body.services}
-    Details: ${body.moreInfo}
+    Body: ${body.moreInfo}
     `,
     htmlContent:
       `
     <h3>Email from ${body.email}</h3>
     <br>
-    <p>Services Picked: ${body.services}</p>
-    <p>Details:${body.moreInfo} </p>
+    <p>${body.moreInfo} </p>
     `
   };
   const response = await fetch(automailerUrl, {

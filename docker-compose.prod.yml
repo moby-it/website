@@ -1,0 +1,7 @@
+services:
+  client:
+    restart: always
+    image: ghcr.io/moby-it/moby-website
+    env_file: .env
+    ports:
+      - 44001:3000

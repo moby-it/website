@@ -1,9 +1,13 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: [
-    '@nuxt/image',
-    '@nuxtjs/i18n'
-  ],
+  modules: ['@nuxt/image', '@nuxtjs/i18n', "@nuxt/ui"],
+  colorMode: {
+    preference: 'light'
+  },
+  compatibilityDate: '2024-08-14',
+  future: {
+    compatibilityVersion: 4
+  },
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
     head: {
@@ -25,18 +29,16 @@ export default defineNuxtConfig({
     }
   },
   nitro: {
-    routeRules: {
-      '*': {
-        prerender: true
-      },
-    }
+    // routeRules: {
+    //   '*': {
+    //     prerender: true
+    //   },
+    // }
   },
   runtimeConfig: {
-    regionalPricingApiKey: '',
     automailerApiKey: '',
     public: {
       automailerUrl: '',
-      regionalPricingUrl: ''
     }
   },
   devtools: { enabled: true }

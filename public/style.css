@@ -1,6 +1,28 @@
-@import "styles/reset.css";
-@import "styles/spacing.css";
-@import "styles/colors.css";
 @import "styles/typography.css";
-@import "styles/root.css";
 @import "styles/scrollbar.css";
+
+#__nuxt {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 500ms ease-in-out;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.2s ease-in-out;
+}
+
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(1rem);
+}
