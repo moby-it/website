@@ -182,7 +182,7 @@ function getImgAltFromIdx(idx: number): string {
                             <em>
                                 Base price: {{ regionalPrices[0]?.cost ?? defaultPrices[0].cost }} €
                             </em>
-                            <p class="italic">Total price is typically determied per case.</p>
+                            <p class="italic">Total price is typically determined per case.</p>
                         </section>
                     </section>
                     <NuxtImg src="/img/consulting_and_analysis.png" />
