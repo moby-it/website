@@ -6,19 +6,14 @@ useSeoMobyHead({
 });
 </script>
 <template>
-  <main
-    class="min-h-screen flex flex-col items-center justify-center px-6 lg:px-24"
-  >
+  <main class="min-h-screen flex flex-col items-center justify-center px-6 lg:px-24">
     <UCard class="my-2">
       <template #header>
-        <h1 class="text-center text-2xl">Moby IT - software reimagined</h1>
+        <h1 class="text-center text-2xl">Moby IT - George Spano</h1>
       </template>
       <section class="bg-light max-w-2xl">
-        <NuxtImg
-          class="float-left self-start mr-6 mb-2 rounded-md shadow-md shadow-black w-28 md:w-52"
-          src="/img/george.jpg"
-          preload
-        />
+        <NuxtImg class="float-left self-start mr-6 mb-2 rounded-md shadow-md shadow-black w-28 md:w-52"
+          src="/img/george.jpg" preload />
 
         <section>
           <header class="lg:text-lg">
@@ -33,30 +28,16 @@ useSeoMobyHead({
             Through Moby IT, I'm trying to reinvent myself in the digital age,
             both as a professional and as a human being. My wish is to build a
             team of people that do care about creating products that provide
-            social/cultural value.
+            sociocultural value.
           </p>
           <p class="my-2 font-body text-sm lg:text-base">
             I'm still very much in my exploratory phase. If you'd like to learn
             more about me, you can check out my blog at
-            <a class="text-primary" href="https://gspanos.tech" target="_blank"
-              >gspanos.tech</a
-            >.
+            <a class="text-primary" href="https://gspanos.tech" target="_blank">gspanos.tech</a> or directly reach out
+            at <span class="italic">gspanos[at]moby-it[dot]com.</span>
           </p>
-          <p class="my-2 font-body text-sm lg:text-base">Stay tuned!</p>
         </section>
       </section>
-      <template #footer>
-        <p class="italic text-sm lg:text-base">
-          If you want to learn more about our software services, you can read
-          more at
-          <a
-            class="text-primary"
-            target="_blank"
-            href="https://services.moby-it.com"
-            >services.moby-it.com</a
-          >
-        </p>
-      </template>
     </UCard>
   </main>
 </template>
