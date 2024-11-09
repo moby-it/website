@@ -9,7 +9,7 @@ useSeoMobyHead({
   <main class="min-h-screen flex flex-col items-center justify-center px-6 lg:px-24">
     <UCard class="my-2">
       <template #header>
-        <h1 class="text-center text-2xl">Moby IT - George Spano</h1>
+        <h1 class="text-center text-2xl">Moby IT - George Spanos</h1>
       </template>
       <section class="bg-light max-w-2xl">
         <NuxtImg class="float-left self-start mr-6 mb-2 rounded-md shadow-md shadow-black w-28 md:w-52"
@@ -20,9 +20,8 @@ useSeoMobyHead({
             Hello! I'm George Spanos, the face behind Moby IT.
           </header>
           <p class="my-2 font-body text-sm lg:text-base">
-            Over the past 10 years, I've been providing software services to
-            enterprises, primarily through developing software and managing
-            teams, both in Greece and the EU.
+            Software engineer and tech lead with a decade of experience, providing services to both startups and
+            enterprises.
           </p>
           <p class="my-2 font-body text-sm lg:text-base">
             Through Moby IT, I'm trying to reinvent myself in the digital age,
@@ -36,6 +35,7 @@ useSeoMobyHead({
             <a class="text-primary" href="https://gspanos.tech" target="_blank">gspanos.tech</a> or directly reach out
             at <span class="italic">gspanos[at]moby-it[dot]com.</span>
           </p>
+          Cheers!
         </section>
       </section>
     </UCard>
