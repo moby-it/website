@@ -1,8 +1,8 @@
 <script setup>
 useSeoMobyHead({
-  title: "Moby IT - Software Reimagined",
+  title: "Moby IT - Software reimagined",
   description:
-    "Moby IT is a hub of designers, developers and product managers, with the single goal of creating joyful digital experiences.",
+    "Moby IT is a hub of craftspeople with the single goal of creating joyful digital experiences.",
 });
 </script>
 <template>
