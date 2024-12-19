@@ -12,7 +12,7 @@
   "devDependencies": {
     "@nuxt/ui": "^2.18.4",
     "@nuxtjs/i18n": "^8.3.3",
-    "nuxt": "^3.12.4",
+    "nuxt": "^3.14.1592",
     "typescript": "^5.5.4",
     "vue": "^3.4.37",
     "vue-router": "^4.4.3"

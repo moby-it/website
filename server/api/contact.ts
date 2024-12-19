@@ -1,4 +1,4 @@
-import { ContractSchema } from "~/utils/contact-form";
+import { type ContractSchema } from "#shared/utils/contact-form";
 
 export default defineEventHandler(async (event) => {
   const config = useRuntimeConfig(event);

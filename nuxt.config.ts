@@ -29,11 +29,11 @@ export default defineNuxtConfig({
     },
   },
   nitro: {
-    // routeRules: {
-    //   '*': {
-    //     prerender: true
-    //   },
-    // }
+    routeRules: {
+      "*": {
+        prerender: true,
+      },
+    },
   },
   runtimeConfig: {
     automailerApiKey: "",
