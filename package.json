@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "moby-website",
   "private": true,
   "type": "module",
   "scripts": {
@@ -10,18 +10,16 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@nuxt/ui": "^2.18.4",
-    "@nuxtjs/i18n": "^8.3.3",
-    "nuxt": "^3.12.4",
-    "typescript": "^5.5.4",
-    "vue": "^3.4.37",
-    "vue-router": "^4.4.3"
+    "nuxt": "^3.17.1",
+    "typescript": "^5.8.3",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.1"
   },
   "dependencies": {
-    "@nuxt/image": "^1.7.0",
-    "nuxt-vue-multiselect": "^1.0.4",
-    "valibot": "^0.30.0",
-    "vue-multiselect": "3.0.0"
+    "@nuxt/image": "^1.10.0",
+    "@nuxt/ui": "^3.1.1",
+    "tailwindcss": "^4.1.5",
+    "valibot": "^1.0.0"
   },
   "packageManager": "pnpm@9.0.4"
 }

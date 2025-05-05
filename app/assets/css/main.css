@@ -1,11 +1,23 @@
-@import "styles/typography.css";
-@import "styles/scrollbar.css";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
+
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@import "~/assets/css/typography.css";
+@import "~/assets/css/scrollbar.css";
+
+@theme static {
+  --font-sans: 'IBM Plex Sans', sans-serif;
+
+  --breakpoint-3xl: 1920px;
+}
 
 #__nuxt {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
+
 .v-enter-active,
 .v-leave-active {
   transition: opacity 500ms ease-in-out;

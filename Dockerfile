@@ -1,13 +1,13 @@
-FROM node:20.10.0-alpine as install
+FROM node:22.11.0-alpine AS install
 WORKDIR /src
 RUN npm i -g pnpm@9.0.4
 COPY package.json pnpm-lock.yaml ./
 RUN pnpm install --frozen-lockfile
 
-FROM install as build
+FROM install AS build
 COPY . .
 RUN pnpm build
 
-FROM build as run
+FROM build AS run
 EXPOSE 3000
-CMD exec node .output/server/index.mjs
+CMD ["node", ".output/server/index.mjs"]
