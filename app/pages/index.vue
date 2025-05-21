@@ -24,14 +24,10 @@ useSeoMobyHead({
             enterprises.
           </p>
           <p class="my-2 font-body text-sm lg:text-base">
-            Through Moby IT, I'm trying to reinvent myself in the digital age,
-            both as a professional and as a human being. My wish is to build a
-            team of people that do care about creating products that provide
-            sociocultural value.
+            Through Moby IT, I'm trying to reinvent myself in the digital age. I love programming, music. I love to learn and share.
           </p>
           <p class="my-2 font-body text-sm lg:text-base">
-            I'm still very much in my exploratory phase. If you'd like to learn
-            more about me, you can check out my blog at
+            If you'd like to learn more about me, you can check out my blog at
             <a class="text-primary" href="https://gspanos.tech" target="_blank">gspanos.tech</a> or directly reach out
             at <span class="italic">gspanos[at]moby-it[dot]com.</span>
           </p>
